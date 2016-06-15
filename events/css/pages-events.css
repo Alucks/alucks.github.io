@@ -751,6 +751,27 @@ only screen and (min-device-pixel-ratio : 1.5) {
   padding-right: 20px;
 }
 
+.txt-overview{
+    float: left;
+    width: 33%;
+    max-width: 640px;
+    padding: 10px;
+}
+
+.txt-content{
+    float: left;
+    width: 66%;
+    max-width: 1280px;
+    padding: 10px;
+		margin-top: 20px;
+		font-size: .8em;
+}
+
+.txt-overview .label {
+	margin-top: 15px;
+	text-decoration: underline;
+}
+
 #title-g{
 	margin-top: -25px;
 }
