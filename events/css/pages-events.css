@@ -747,29 +747,31 @@ only screen and (min-device-pixel-ratio : 1.5) {
 		padding-right: 20px;
 }
 .txt-head{
-	padding: 10px;
-  padding-right: 20px;
+	padding: 10px 20px 20px 10px;
+	display: inline-block;
 }
 
 .txt-overview{
     float: left;
-    width: 33%;
+    width: 260px;
     max-width: 640px;
     padding: 10px;
 }
 
 .txt-content{
     float: left;
-    width: 66%;
+    width: calc(100% - 260px);
     max-width: 1280px;
     padding: 10px;
 		margin-top: 20px;
-		font-size: .8em;
+		font-size: .9em;
 }
 
 .txt-overview .label {
 	margin-top: 15px;
-	text-decoration: underline;
+	margin-bottom: -10px;
+	color: grey;
+
 }
 
 #title-g{
@@ -836,9 +838,27 @@ a p {
 		width: 50%;
 	}
 
+	.txt-overview{
+	    width: 200px;
+	}
+
+	.txt-content{
+	    width: 100%;
+	}
+
 }
 
 @media (max-width:750px) {
+	.txt-overview{
+		position: initial;
+		width: calc(100% - 20px);
+	}
+
+	.txt-content{
+		position: initial;
+		width: calc(100% - 20px);
+	}
+
 	.details{
 		margin: 0 0 0 20px;
 		position: initial;

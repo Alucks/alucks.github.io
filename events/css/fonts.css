@@ -16,10 +16,10 @@
 /*--------------- NEWS GOTHIC CONDENSED ---------------------------*/
 @font-face {
 	font-family: 'NewsGothicBT-RomanCondensed';
-	src: url('http://www.tinyatlasquarterly.com/css/webfonts/24D241_0_0.eot');
-	src: url('http://www.tinyatlasquarterly.com/css/webfonts/24D241_0_0.eot?#iefix') format('embedded-opentype'),
-		 url('http://www.tinyatlasquarterly.com/css/webfonts/24D241_0_0.woff') format('woff'),
-		 url('http://www.tinyatlasquarterly.com/css/webfonts/24D241_0_0.ttf') format('truetype');
+	src: url('webfonts/24D241_0_0.eot');
+	src: url('webfonts/24D241_0_0.eot?#iefix') format('embedded-opentype'),
+		 url('webfonts/24D241_0_0.woff') format('woff'),
+		 url('webfonts/24D241_0_0.ttf') format('truetype');
 }
 
 /*--------------- HARRIET DISPLAY ---------------------------*/
