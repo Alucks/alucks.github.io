@@ -1,11 +1,16 @@
 body {
   font-family: 'calendas-plus';
   background-color: #f7f7f7;
+  font-size:16px;
 }
 
 a{
   color:#232323;
   text-decoration:none;
+}
+
+p {
+  line-height: 1.5;
 }
 
 .split {
@@ -55,16 +60,17 @@ a{
   background-color: #fff;
   height: auto;
   margin: 20px auto;
+  font-size: .8em;
   box-shadow: 0px 3px 8px rgba(0,0,0,.2);
 }
 
 .feature-small {
-  min-height: 380px;
-  height: 420px;
+  min-height: 340px;
+  height: 380px;
   width: 44%;
   min-width: 200px;
   position: relative;
-  /*   padding: 0 10px 10px 10px;   */
+  /* padding: 0 10px 10px 10px; */
 }
 
 .feature-small .preview {
@@ -89,6 +95,11 @@ a{
   border-bottom: 1px solid #E9E9E9;
 }
 
+.feature-card .meta{
+font-family:'GT-Haptik-Regular';
+font-size: .8em;
+}
+
 .feature-large {
   width: 94%;
   position: relative;
@@ -102,7 +113,7 @@ a{
 .feature-large .title {
   width: 230px;
   max-width: 80%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .feature-large .info {
@@ -135,7 +146,7 @@ a{
 .trip{
   margin:auto;
   width: 96vw;
-  height:90vh;
+  height: 100vh;
   position:relative;
   margin-bottom: 40px;
   background-size: cover;
@@ -161,4 +172,16 @@ button{
   padding:10px 20px;
   background-color: #fff;
   text-transform: uppercase;
+  font-family: 'GT-Haptik-Regular';
+}
+
+@media (max-width:860px) {
+  .split{
+    width:100%;
+    display:block;
+  }
+  .cover{
+    position:;
+  }
+
 }
