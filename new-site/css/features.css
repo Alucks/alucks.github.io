@@ -92,7 +92,7 @@ img {
 	height: 160px;
 	margin: 8.333333333333% 0px 0px 0.5%;
 	float:left;
-	background: transparent url(../../images/arrow_prev.png) no-repeat;
+	background: transparent url(../images/arrow_prev.png) no-repeat;
 	-webkit-background-size: contain;
 	-moz-background-size: contain;
 	-o-background-size: contain;
@@ -104,7 +104,7 @@ img {
 	height: 160px;
 	margin: 6% 0.5% 0 0;
 	float:right;
-	background: transparent url(../../images/arrow_next.png) no-repeat;
+	background: transparent url(../images/arrow_next.png) no-repeat;
 	-webkit-background-size: contain;
 	-moz-background-size: contain;
 	-o-background-size: contain;
@@ -710,7 +710,7 @@ div.pg-credits-box img {
 
 /*----------- MEDIA QUERIES -------------------- */
 /*----------- ORIENTATION -------------*/
-@media all and (orientation: portrait) {
+@media (orientation: portrait) {
 	div.pg-wrapper {
 		padding: 1em 1em 1em 1em;
 		width:100%;

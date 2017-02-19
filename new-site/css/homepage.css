@@ -27,7 +27,7 @@ p {
 .cover {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/199072/city-cover.png) center no-repeat;
   background-size: cover;
-  float: left;
+  left: 50%;
   position: fixed;
   z-index: -1;
 }
@@ -68,7 +68,7 @@ p {
   min-height: 340px;
   height: 380px;
   width: 44%;
-  min-width: 200px;
+  min-width: 181px;
   position: relative;
   /* padding: 0 10px 10px 10px; */
 }
@@ -113,7 +113,7 @@ font-size: .8em;
 .feature-large .title {
   width: 230px;
   max-width: 80%;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .feature-large .info {
@@ -176,12 +176,24 @@ button{
 }
 
 @media (max-width:860px) {
+  body{
+      /*font-size:14px;*/
+  }
+
   .split{
     width:100%;
     display:block;
   }
   .cover{
-    position:;
+    position:inherit;
+    max-height: 100vh;
+  }
+
+}
+
+@media (max-width:500px) {
+  .feature-small{
+    min-width: 260px;
   }
 
 }
