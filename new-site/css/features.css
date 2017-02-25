@@ -527,7 +527,7 @@ div.text-box-a a:hover, div.text-box-a a:active {
 }
 
 
-#pg-interview a  {
+#pg-interview .old a  {
 	color:#000;
 	background-color:#aebbd7;
 	text-decoration:none;
