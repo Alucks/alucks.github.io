@@ -36,6 +36,7 @@
 }
 .header-links-container a {
 	color:#232323;
+	letter-spacing: .5px;
 }
 
 .header-links-container a:link {

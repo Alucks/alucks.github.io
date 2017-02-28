@@ -25,7 +25,7 @@ img {
 	height: 60px;
 	width:100%;
 	background-color: white;
-	box-shadow: 0 -2px 4px 0 rgba(0,0,0,0.20);
+	box-shadow: 0 -2px 4px 0 rgba(0,0,0,0.08);
 }
 
 #nav {
@@ -60,7 +60,7 @@ img {
 	position: fixed;
 	text-align: center;
 	left: 0px;
-	top: 0px;
+	top: calc(50% - 172px);
 	z-index: 2000;
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -157,6 +157,16 @@ div.pg-box {
     font-family: 'calendas-plus';
     font-size: 14px;
     border-radius: 1px;
+    background-color: #fff;
+    color: #232323;
+    /* margin: 0.5em; */
+    padding: 2em;
+    /* font-weight: 300; */
+}
+
+div.pg-box-intro{
+	font-family: "GT-Haptik-light", sans-serif;
+	line-height: 1.8;
 }
 
 div.pg-box img{
@@ -347,7 +357,30 @@ h2 {
      font-size: 32px;
      line-height: 1.2;
      margin: 0 0 0.2em 0;
-     padding: 2.2em 0 0 0;
+     padding: 3.2em 0 0 0;
+}
+
+h4{
+	font-size: 1.8em;
+	margin:2em 0 .2em 0;
+}
+
+h5{
+	font-size: 1.1em;
+	margin: 1.1em 0 .2em 0;
+}
+
+a{
+	color: #232323;
+	text-decoration: underline;
+}
+
+a:hover{
+	color:#BC981F;
+}
+
+a:visited{
+	color:#444;
 }
 
 p {
@@ -408,9 +441,9 @@ div.text-box-a a:link, div.text-box-a a:visited {
 	text-decoration:none;
 }
 
-div.text-box-a a:hover, div.text-box-a a:active {
+/*div.text-box-a a:hover, div.text-box-a a:active {
 	text-decoration:none; background-color:#125c2f; color:#fff;
-}
+}*/
 
 .text-box-b {
 	font-family: 'harriet_display_regularRg' !important;
@@ -420,11 +453,11 @@ div.text-box-a a:hover, div.text-box-a a:active {
 
 /*--- CAPTIONS --*/
 .pg-lower-caption {
-	margin: 0.5em;
-	padding: 2em;
-	/*font-family: 'NewsGothicBT-RomanCondensed',sans-serif;*/
+	/* margin: 0.5em; */
+	/* padding: 2em; */
+	/* font-family: 'NewsGothicBT-RomanCondensed',sans-serif; */
 	font-family: 'harriet_display_regularRg',serif;
-	text-align:left;
+	/* text-align:left; */
 	background-color: #fff;
 	color:#000;
 	top: 76.42%;
@@ -443,8 +476,8 @@ div.text-box-a a:hover, div.text-box-a a:active {
 }
 
 .pg-caption-light {
-	background-color: #fff;
-	color: #232323;
+	/* background-color: #fff; */
+	/* color: #232323; */
 	/* opacity:0.85; */
 	filter:alpha(opacity=85);
 }
@@ -458,10 +491,10 @@ div.text-box-a a:hover, div.text-box-a a:active {
 }
 
 .pg-upper-right-caption {
-	top: 50vh;
+	top: 100px;
 	left: calc(70vw - 200px);
 	width: 420px;
-	margin-bottom: 1200px;
+	margin-bottom: 100px;
 	max-width: 45vw;
 	/* text-align:left; */
 }
@@ -534,12 +567,9 @@ div.text-box-a a:hover, div.text-box-a a:active {
 }
 
 #pg-interview a:link, #pg-interview a:visited {
-	text-decoration:none;
+	/* text-decoration:none; */
 }
 
-#pg-interview a:hover, #pg-interview a:active {
-	background-color:#fa7277; color:#fff;
-}
 
 
 /*-----------    CONTRIBUTORS + RESOURCES   --------------*/
@@ -673,10 +703,6 @@ div.pg-credits-box a:link, div.pg-credits-box a:visited, div.pg-wardrobe-label a
 	text-decoration:none;
 }
 
-div.pg-credits-box a:hover, div.pg-credits-box a:active, div.pg-wardrobe-label a:hover, div.pg-wardrobe-label a:active {
-	text-decoration:none; background-color: #fa7277; color:#fff;
-}
-
 div.pg-credits-box img {
 	/* float:left; */
 	position: absolute;
@@ -704,15 +730,11 @@ div.pg-credits-box img {
 	text-decoration:none;
 }
 
-.sponsor-bar a:hover, .sponsor-bar a:active {
-	text-decoration:none; background-color: #fa7277; color:#fff;
-}
-
 /*----------- MEDIA QUERIES -------------------- */
 /*----------- ORIENTATION -------------*/
 @media (orientation: portrait) {
 	div.pg-wrapper {
-		padding: 1em 1em 1em 1em;
+		/* padding: 1em 1em 1em 1em; */
 		width:100%;
 	}
 
@@ -774,15 +796,15 @@ div.pg-credits-box img {
 	}
 
 	 div.pg-box {
-		     position: inherit;
-				 top:0;
-				 left:0;
-				 bottom:0;
-				 max-width:100%;
-				 max-width:450px;
-				 width:100%;
-				 margin:auto;
-	 }
+		     position: initial;
+		     top:0;
+		     left:0;
+		     bottom:0;
+		     max-width:100%;
+		     max-width:450px;
+		     width:100%;
+		     margin:auto;
+		}
 
 	 #nav-buttons{
 		     display: none !important;
@@ -858,6 +880,17 @@ div.pg-credits-box img {
 		font-size: 16px;
    }
 }
+
+/*----------- About & Detail Pages -------------*/
+.about-logo{
+	margin: 70px auto 60px;
+	width: 279px;
+	max-width: 100%;
+}
+
+
+
+
 
 
 /*----------- THE REST -------------*/

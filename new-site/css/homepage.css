@@ -2,7 +2,6 @@ body {
   font-family: 'calendas-plus';
   background-color: #f9f9f9;
   font-size:16px;
-  
 }
 
 a{
@@ -18,7 +17,6 @@ p {
   width: 50%;
   min-height: 100vh;
   display: inline-block;
-  padding-bottom: 20vh
 }
 
 .content {
@@ -31,10 +29,9 @@ p {
   left: 50%;
   position: fixed;
   z-index: -1;
-
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cover img{
@@ -64,11 +61,12 @@ p {
 
 .feature-grid {
   max-width: 800px;
-  padding: 0 3%;
-  margin: auto;
+  padding-bottom: 38px;
+  margin: 0 3% 80px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .feature-card {
@@ -100,12 +98,13 @@ p {
 }
 
 .feature-small .title {
-  margin-top: 40px;
+  /* margin-top: 40px; */
   max-width: 170px;
-  max-height:80px;
+  max-height: 70px;
 }
 
 .feature-card .text {
+  font-family: "GT-Haptik-Light", sans-serif;
   margin: 10px 0;
   padding-bottom: 10px;
   border-bottom: 1px solid #E9E9E9;
@@ -114,6 +113,10 @@ p {
 .feature-card .meta{
 font-family:'GT-Haptik-Regular';
 font-size: .8em;
+text-transform: uppercase;
+}
+.feature-card .meta span{
+  float: right;
 }
 
 .feature-large {
@@ -147,7 +150,7 @@ font-size: .8em;
   z-index: 99;
   width: 100%;
   min-height: 100vh;
-  background-color: #fff;
+  background-color: #f9f9f9;
   /* padding: 10vh 0; */
 }
 
@@ -217,7 +220,15 @@ button{
   font-family: 'GT-Haptik-Regular';
 }
 
-@media (max-width:860px) {
+@media (min-width:1340px) {
+  .feature-small{
+    min-height: 420px;
+  }
+}
+
+
+
+@media (max-width: 900px) {
   body{
       /*font-size:14px;*/
   }
@@ -229,7 +240,14 @@ button{
   .cover{
     position:inherit;
     display: inline-flex;
-    max-height: 100vh;
+    min-height: 300px;
+    height: 70vh;
+    margin-top: 50px;
+    padding-bottom: 0;
+  }
+
+  .cover img {
+    width: 240px;
   }
 
   .section-issues .issue{
@@ -239,12 +257,43 @@ button{
     margin:auto;
   }
 
+.feature-grid{
+  max-width: 680px;
+}
+
+.feature-small{
+  height:400px;
+}
+
 }
 
 @media (max-width:500px) {
-  .feature-small{
-    min-width: 260px;
+  .feature-card{
+    width: 94%;
+    max-width: 360px;
+    height: auto;
   }
+
+  .feature-small .info {
+    position: initial;
+  }
+
+  .feature-small .title{
+    max-height: 130px;
+    width: 230px;
+  }
+
+  .feature-card .preview{
+    width: 100%;
+    padding-bottom: 40px;
+  }
+  .feature-large .info{
+    position: initial;
+    left: auto;
+  }
+
+}
+ }
 
 }
  }
