@@ -115,6 +115,10 @@
                     </a>
                 </div>
 
+                <div class="grid-divider">
+
+                </div>
+
             </div>
         </div>
 
@@ -128,23 +132,42 @@
                 </div>
 
 
-                <div class="trip" style="background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/199072/trip-preview-tahiti.jpg) center no-repeat;background-size: cover;">
+                <div class="trip">
+                  <img src="images/trip-preview-tahiti.jpg" alt=""class="trip-preview">
                     <div class="details">
-                        <h2>Tahiti</h2>
+                        <h3>Tahiti</h3>
                         <p>The islands, deep in the pacific, offer tropical landscapes, a reef accessible in minutes that’s a mecca for underwater wildlife just waiting to be photographed, and equally exciting surf in each spot.</p>
                         <button>View Trip</button>
                     </div>
                 </div>
 
-                <div class="trip" style="background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/199072/trip-preview-tofino.jpg) center no-repeat;background-size: cover;">
+                <div class="trip">
+                    <img src="images/trip-preview-tofino.jpg" alt=""class="trip-preview">
                     <div class="details">
-                        <h2>Tofino</h2>
+                        <h3>Tofino</h3>
                         <p>On Vancouver Island we have dreamed up an ideal five-day vacation that combines photography, surf and outdoor adventure – shaped by a live-local travel itinerary and with planet conservation at the heart of the experience.</p>
                         <button>View Trip</button>
                     </div>
                 </div>
 
             </div>
+
+        </div>
+
+        <div class="section">
+          <div id="instafeed"class="">
+            
+          </div>
+          <script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'user',
+        userId: '9468500',
+        accessToken: '9468500.1e17c13.45821e04c6c644409e850ef202465182',
+        template: '<a href="{{link}}"><img src="{{image}}" /></a>'
+    });
+    feed.run();
+</script>
+
 
         </div>
 

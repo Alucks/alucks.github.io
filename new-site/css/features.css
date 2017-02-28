@@ -169,6 +169,11 @@ div.pg-box-intro{
 	line-height: 1.8;
 }
 
+div.pg-lower{
+	top: 50vh;
+
+}
+
 div.pg-box img{
 	top: inherit !important;
 	left: inherit;
@@ -388,6 +393,24 @@ p {
 	margin:0.5em 0 0 0;
 	padding:0;
 
+}
+
+.ill{
+
+}
+
+.ill-small{
+	width: 40%;
+	display: inline-block;
+	float: right;
+}
+
+h2.with-ill{
+	padding-top: 1.1em;
+}
+
+h2.with-ill-small{
+	padding-top: 6em;
 }
 
 .first {

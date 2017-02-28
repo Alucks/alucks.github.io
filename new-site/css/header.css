@@ -6,6 +6,7 @@
 	position: fixed;
 	z-index: 100;
 	width: 100%;
+	/* max-width: 1440px; */
 	top: 0;
 	left: 0;
 	background-color: #fff;

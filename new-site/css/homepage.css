@@ -1,5 +1,5 @@
 body {
-  font-family: 'calendas-plus';
+  font-family: 'GT-Haptik-Light';
   background-color: #f9f9f9;
   font-size:16px;
 }
@@ -61,12 +61,11 @@ p {
 
 .feature-grid {
   max-width: 800px;
-  padding-bottom: 38px;
-  margin: 0 3% 80px;
+  padding: 0 3%;
+  margin: 0 auto 80px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  border-bottom: 1px solid #e6e6e6;
 }
 
 .feature-card {
@@ -143,6 +142,12 @@ text-transform: uppercase;
 }
 .feature-card:hover {box-shadow: 0px 3px 8px rgba(0,0,0,0.1);}
 
+.grid-divider{
+  width: 94%;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 40px;
+}
+
 /* ====== Sections ====== */
 
 .section {
@@ -155,7 +160,7 @@ text-transform: uppercase;
 }
 
 .section h3{
-  font-size: 3em;
+  font-size: 2.1em;
   margin: 0;
 }
 
@@ -178,32 +183,41 @@ text-transform: uppercase;
 .trip{
   margin:auto;
   width: 100%;
-  height: 63vh;
-  position:relative;
+  max-width: 960px;
+  /* margin-bottom: 40px; */
+  background-color: #ffffff;
   margin-bottom: 40px;
-  background-size: cover;
-  p;
+}
+.trip img{
+  /* max-width: 620px; */
+  width: 67%;
+  display: inline-block;
+  vertical-align: bottom;
 }
 
 .trip .details {
-  width: 380px;
-  max-width:65%;
-  position: absolute;
-  bottom: 40px;
-  left:40px;
-  background-color: #fff;
-  padding: 40px 20px;
-  text-align: center;
+  display: inline-block;
+  width: 31%;
+  /* max-width: 68%; */
+  box-sizing: border-box;
+  /* bottom: 40px; */
+  /* left:40px; */
+  /* background-color: #fff; */
+  padding: 30px 20px;
+  vertical-align: bottom;
+}
 
+.trip p{
+  font-size: .9em;
 }
 
 /* ====== Latest Issues ====== */
 
-.section-issues{padding: 0 20px;max-width: 800px;margin: auto;}
+.section-issues{padding: 0 20px;max-width: 960px;margin: auto;}
 .section-issues .issue{
-  max-width: 27%;
+  max-width: 30%;
   display: inline-block;
-  padding: 20px 3%;
+  padding: 20px 1%;
 }
 
 .section-issues .issue img{
