@@ -288,6 +288,20 @@ button{
   height:400px;
 }
 
+.trip .details {
+  width: 100%;
+  display: block;
+}
+
+.trip .details p{
+  max-width: 600px;
+}
+
+.trip img{
+  width: 100%;
+  display: block;
+}
+
 }
 
 @media (max-width:500px) {
@@ -315,7 +329,9 @@ button{
     left: auto;
   }
 
+
 }
+
  }
 
 }
