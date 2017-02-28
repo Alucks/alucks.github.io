@@ -1,7 +1,8 @@
 body {
   font-family: 'calendas-plus';
-  background-color: #f7f7f7;
+  background-color: #f9f9f9;
   font-size:16px;
+  transition: .3s ease;
 }
 
 a{
@@ -30,6 +31,17 @@ p {
   left: 50%;
   position: fixed;
   z-index: -1;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover img{
+  max-width: 80%;
+  width: 400px;
+  /* position: relative; */
+  left: 30%;
 }
 
 .main-logo img {
@@ -38,10 +50,13 @@ p {
   margin: 100px auto 40px;
 }
 
-.discription {
+.description {
+  font-size: .9em;
   max-width: 400px;
   margin: auto;
+  text-align: center;
   padding: 0 30px;
+  font-family: 'GT-Haptik-Light', sans-serif;
 }
 
 
@@ -61,8 +76,8 @@ p {
   height: auto;
   margin: 20px auto;
   font-size: .8em;
-  box-shadow: 0px 3px 8px rgba(0,0,0,.2);
-  transition: .3s ease; 
+  /* box-shadow: 0px 3px 8px rgba(0,0,0,.2); */
+  transition: .3s ease;
 }
 
 .feature-small {
@@ -123,9 +138,7 @@ font-size: .8em;
   left: 50%;
   bottom: 0;
 }
-.feature-card:hover {
-box-shadow: 0px 5px 12px rgba(0,0,0,.2);
-}
+.feature-card:hover {box-shadow: 0px 3px 8px rgba(0,0,0,0.1);}
 
 /* ====== Sections ====== */
 
@@ -135,11 +148,12 @@ box-shadow: 0px 5px 12px rgba(0,0,0,.2);
   width: 100%;
   min-height: 100vh;
   background-color: #fff;
-  padding: 10vh 0;
+  /* padding: 10vh 0; */
 }
 
 .section h3{
   font-size: 3em;
+  margin: 0;
 }
 
 
@@ -151,20 +165,21 @@ box-shadow: 0px 5px 12px rgba(0,0,0,.2);
 }
 
 .section .description {
-  width: 600px;
+  /* width: 100%; */
   text-align: center;
-  max-width: 100%;
-  padding: 20px 20px 20px 40px;
+  max-width: 560px;
+  padding: 5em 20px 3em 20px;
   margin:auto;
 }
 
 .trip{
   margin:auto;
   width: 100%;
-  height: 100vh;
+  height: 63vh;
   position:relative;
   margin-bottom: 40px;
-  background-size: cover;p
+  background-size: cover;
+  p;
 }
 
 .trip .details {
@@ -181,11 +196,11 @@ box-shadow: 0px 5px 12px rgba(0,0,0,.2);
 
 /* ====== Latest Issues ====== */
 
-.section-issues{padding: 0 20px;}
+.section-issues{padding: 0 20px;max-width: 800px;margin: auto;}
 .section-issues .issue{
-  max-width: 33%;
+  max-width: 27%;
   display: inline-block;
-  padding-bottom: 20px;
+  padding: 20px 3%;
 }
 
 .section-issues .issue img{
@@ -213,6 +228,7 @@ button{
   }
   .cover{
     position:inherit;
+    display: inline-flex;
     max-height: 100vh;
   }
 

@@ -102,12 +102,12 @@
   visibility: visible;
 }
 
-.list-triangle:after{
+/*.list-triangle:after{
 	display: inline-block;
   content: url('../images/triangle.svg');
 	width: 9px;
 	transform: translate3d(0, -1px, 0);
-}
+}*/
 
 /*----------- Media Queries ------------------------------------------*/
 @media (max-width:600px) {
