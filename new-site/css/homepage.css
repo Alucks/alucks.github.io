@@ -140,7 +140,7 @@ text-transform: uppercase;
   left: 50%;
   bottom: 0;
 }
-.feature-card:hover {box-shadow: 0px 3px 8px rgba(0,0,0,0.1);}
+.feature-card:hover, .trip:hover {box-shadow: 0px 3px 8px rgba(0,0,0,0.1);}
 
 .grid-divider{
   width: 94%;
@@ -162,6 +162,7 @@ text-transform: uppercase;
 .section h3{
   font-size: 2.1em;
   margin: 0;
+  font-family: 'calendas-plus', serif;
 }
 
 
@@ -176,20 +177,23 @@ text-transform: uppercase;
   /* width: 100%; */
   text-align: center;
   max-width: 560px;
-  padding: 5em 20px 3em 20px;
+  padding: 5em 20px 0 20px;
   margin:auto;
+}
+
+.description a:hover {
+  text-decoration: underline;
 }
 
 .trip{
   margin:auto;
   width: 100%;
   max-width: 960px;
-  /* margin-bottom: 40px; */
   background-color: #ffffff;
   margin-bottom: 40px;
+  transition: .3s ease;
 }
 .trip img{
-  /* max-width: 620px; */
   width: 67%;
   display: inline-block;
   vertical-align: bottom;
@@ -211,6 +215,29 @@ text-transform: uppercase;
   font-size: .9em;
 }
 
+/* ====== Shop ====== */
+
+.section-shop {max-width: 960px;margin: auto;background-color: #fff;}
+
+.section-shop img{
+  /* float: left; */
+  display: inline-block;
+  max-width: 50%;
+}
+
+.section-shop .shop-info{
+  display: inline-block;
+  max-width: 50%;
+  float: right;
+  padding: 70px 20px 50px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.section-shop .shop-info span{
+  font-family: 'GT-haptik-regular', sans-serif;
+  font-size: .8em;
+}
 /* ====== Instafeed ====== */
 
 #instafeed{
@@ -227,9 +254,9 @@ text-transform: uppercase;
 
 /* ====== Latest Issues ====== */
 
-.section-issues{padding: 0 20px;max-width: 960px;margin: auto;}
+.section-issues{padding: 0 20px;max-width: 960px;margin: 0 auto 40px;}
 .section-issues .issue{
-  max-width: 30%;
+  max-width: 30.99%;
   display: inline-block;
   padding: 20px 1%;
 }
@@ -237,6 +264,18 @@ text-transform: uppercase;
 .section-issues .issue img{
   max-width: 100%;
 }
+
+/* ====== Footer ====== */
+
+footer{
+  background-color: #ffffff;
+  width: 100%;
+  padding: 1em 0;
+  color: #666;
+  font-size: 1.2em;
+  text-align: center;
+}
+
 
 /* ====== UI Elements ====== */
 
@@ -332,6 +371,14 @@ button{
   .feature-large .info{
     position: initial;
     left: auto;
+  }
+
+  .feature-grid {
+    margin-bottom: 0px;
+  }
+
+  .section .description {
+    padding-top: 2em;
   }
 
   #instafeed img{

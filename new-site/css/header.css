@@ -49,7 +49,7 @@
 }
 
 .header-links-container a:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 .header-links-container a:active {
