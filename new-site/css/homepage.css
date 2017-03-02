@@ -214,11 +214,16 @@ text-transform: uppercase;
 /* ====== Instafeed ====== */
 
 #instafeed{
+  width: 100%;
   max-width: 960px;
   margin:auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  align-content: center;
 }
 
-#instafeed img {margin: 10px;max-width: 220px;}
+#instafeed img {/* box-sizing: border-box; */padding: 10px;max-width: 220px;}
 
 /* ====== Latest Issues ====== */
 
@@ -327,6 +332,11 @@ button{
   .feature-large .info{
     position: initial;
     left: auto;
+  }
+
+  #instafeed img{
+    max-width: 320px;
+    margin: auto;
   }
 
 
