@@ -72,7 +72,7 @@ ul#share-menu li a {
 	}
 
 
-a { outline: none; }
+a {outline: none;}
 
 #share-menu li:after {content: "."; display: block; height: 1em; clear: both; visibility: hidden;}
 

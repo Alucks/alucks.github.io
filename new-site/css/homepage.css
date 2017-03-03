@@ -393,6 +393,8 @@ button{
 
   #instafeed img{
     max-width: 320px;
+  }
+  #instafeed a {
     margin: auto;
   }
 
