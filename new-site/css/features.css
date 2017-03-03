@@ -60,7 +60,7 @@ img {
 	position: fixed;
 	text-align: center;
 	left: 0px;
-	top: calc(50% - 172px);
+	top: calc(50% - 140px);
 	z-index: 2000;
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -88,9 +88,9 @@ img {
 }
 
 .pg-nav span.pg-prev {
-	width: 8%;
+	width: 5%;
 	height: 160px;
-	margin: 8.333333333333% 0px 0px 0.5%;
+	margin: 6% 0px 0px 0.5%;
 	float:left;
 	background: transparent url(../images/arrow_prev.png) no-repeat;
 	-webkit-background-size: contain;
@@ -100,7 +100,7 @@ img {
 	background-size: contain;
 }
 .pg-nav span.pg-next {
-	width: 11%;
+	width: 5%;
 	height: 160px;
 	margin: 6% 0.5% 0 0;
 	float:right;
@@ -120,7 +120,7 @@ img {
 .pg-nav span.pg-prev:hover,
 .pg-nav span.pg-next:hover,
 .pg-nav span.pg-dot:hover{
-	opacity: 0.8;
+	opacity: 0.9;
 }
 
 /*----------- PAGE CLASSES--------------*/
