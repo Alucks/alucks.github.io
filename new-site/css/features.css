@@ -753,6 +753,24 @@ div.pg-credits-box img {
 	text-decoration:none;
 }
 
+
+/*----------- Masthead -------------------- */
+
+.masthead h1, .masthead h2, .masthead h3 {
+	font-family: 'GT-Haptik-Regular',sans-serif;
+	text-transform: uppercase;
+}
+.masthead h2 {
+	font-size: 1.6em;
+	font-style: normal;
+	padding: 0;
+}
+
+.masthead h3 {
+	font-size: .8em;
+	margin-bottom: 2px;
+}
+
 /*----------- MEDIA QUERIES -------------------- */
 /*----------- ORIENTATION -------------*/
 @media (orientation: portrait) {
