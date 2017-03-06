@@ -15,7 +15,8 @@ ul#share-menu li a {
 	display: block;
 	float: left;
 	height: 44px;
-	background-image: url(../images/share-menu-sprite.png); text-indent: -9999px;
+	background-image: url(../images/share-menu-sprite.png);
+	text-indent: -9999px;
 }
 
 	ul#share-menu li a.instagram {
@@ -27,7 +28,8 @@ ul#share-menu li a {
 	}
 
 	ul#share-menu li a.pinterest {
-		width: 54px; background-position: -74px 0;
+		width: 54px;
+		background-position: -74px 0;
 	}
 
 	ul#share-menu li a.twitter {
