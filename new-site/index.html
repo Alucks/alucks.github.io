@@ -20,6 +20,7 @@
     <link rel="stylesheet" type="text/css" href="css/header.css" />
     <link rel="stylesheet" type="text/css" href="css/socialbuttons.css" />
     <link rel="stylesheet" type="text/css" href="css/social_btns.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
 
 
 
@@ -27,6 +28,7 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/velocity.min.js"></script>
     <script src="js/instafeed.js"></script>
+    <script src="js/lazyload.js"></script>
     <script>
         $(document).ready(function() {
             //$(function(){
@@ -73,26 +75,27 @@
             </div>
         </div>
 
-        <div class="split cover">
-            <img src="images/2017-city-logo.png" alt="">
+        <div class="split cover fadeIn animated">
+            <img src="images/2017-city-logo.png" alt="" class="fadeIn animated">
         </div>
         <div class="split content">
             <div class="intro">
                 <div class="main-logo">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/199072/cover-logo.png" alt="" />
+                    <img src="images/cover-logo.png" alt="" />
                 </div>
                 <div class="description">
-                    <p>Tiny Atlas Quarterly is a photography-led lifestyle travel brand and social community that brings personal travel to life: in our magazine, through events and products and on immersive adventures.</p>
+                    <p class="btm-padding">Tiny Atlas Quarterly is a photography-led lifestyle travel brand and social community that brings personal travel to life: in our magazine, through events and products and on immersive adventures.</p>
                     <h3>CURRENT ISSUE - 2017 CITY</h3>
+                    <p><a href="about/editors-letter.html">Editor's Letter</a> / <a href="about/masthead.html">Masthead</a></p>
                 </div>
             </div>
 
             <div class="feature-grid">
                 <div class="feature-card feature-small">
                     <a href="paris/index.html">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/199072/paris-preview.png" alt="" class="preview" />
+                        <img src="images/paris-preview.jpg" alt="" class="preview" />
                         <div class="info">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/199072/paris-title.png" alt="" class="title" />
+                            <img src="images/paris-title.png" alt="" class="title" />
                             <p class="text">From the buttery croissants to the hidden hammams, it’s the little things that make Paris a girl’s ultimate dream</p>
                             <div class="meta">Girls <span>2.28.2016</span></div>
 
@@ -102,9 +105,9 @@
 
                 <div class="feature-card feature-small">
                     <a href="tel-aviv/index.html">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/199072/tel-aviv-feautre.png" alt="" class="preview" />
+                        <img src="images//tel-aviv-feautre.jpg" alt="" class="preview" />
                         <div class="info">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/199072/tel-aviv-title.png" alt="" class="title" />
+                            <img src="images/tel-aviv-title.png" alt="" class="title" />
                             <p class="text">In a Tel Avivian neighborhood destined to make you feel local, even simple gazpacho tastes bett</p>
                             <div class="meta">Neighborhood <span>2.28.2016</span></div>
                         </div>
@@ -113,9 +116,9 @@
 
                 <div class="feature-card feature-large">
                     <a href="havana/index.html">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/199072/havana-feature.png" alt="" class="preview" />
+                        <img src="images/havana-feature.jpg" alt="" class="preview" />
                         <div class="info">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/199072/havana-title.png" alt="" class="title" />
+                            <img src="images/havana-title.png" alt="" class="title" />
                             <p class="text">Unpredictable, unmanicured and pulsating with life, Havana might be trending but its’ shabby charm never really went anywhere</p>
                             <div class="meta">Travel Log <span>2.28.2016</span></div>
                         </div>
@@ -142,7 +145,7 @@
 
                 <div class="trip">
                   <a href="#">
-                  <img src="images/trip-preview-tahiti.jpg" alt=""class="trip-preview">
+                  <img src="images/trip-preview-tahiti.jpg" alt=""class="trip-preview lazy">
                     <div class="details">
                         <h3>Tahiti</h3>
                         <p>The islands, deep in the pacific, offer tropical landscapes, a reef accessible in minutes that’s a mecca for underwater wildlife just waiting to be photographed, and equally exciting surf in each spot.</p>
@@ -152,7 +155,7 @@
                 </div>
 
                 <div class="trip">
-                    <a href="#"><img src="images/trip-preview-tofino.jpg" alt=""class="trip-preview">
+                    <a href="#"><img src="images/trip-preview-tofino.jpg" alt=""class="trip-preview lazy">
                     <div class="details">
                         <h3>Tofino</h3>
                         <p>On Vancouver Island we have dreamed up an ideal five-day vacation that combines photography, surf and outdoor adventure – shaped by a live-local travel itinerary and with planet conservation at the heart of the experience.</p>
@@ -167,7 +170,7 @@
 
         <div class="section">
           <div class="section-shop">
-            <img src="images/solas-image-1.png" alt="Solas Bag Image">
+            <img src="images/solas-image-1.png" alt="Solas Bag Image" class="lazy">
             <div class="shop-info">
               <img src="images/solas-logo.png" alt="Solas Logo" class="logo">
               <h3>A casual camera bag for  photographers</h3>
@@ -193,7 +196,7 @@
         limit: '8',
         resolution: 'low_resolution',
         accessToken: '381960653.1e17c13.4f486b3f47d74b899b7a70705a5730ec',
-        template: '<a href="{{link}}"><img src="{{image}}" /></a>'
+        template: '<a href="{{link}}"><img src="{{image}}" class="lazy" /></a>'
     });
     feed.run();
 </script>
@@ -208,19 +211,19 @@
             </div>
 
             <div class="issue">
-                <a href="#">
-                  <img src="images/tiny-atlas-cover-west-coast-2016.jpg" alt="">
+                <a href="previous-issues.html#west-coast">
+                  <img src="images/tiny-atlas-cover-west-coast-2016.jpg" alt="" class="lazy">
                 </a>
             </div>
 
             <div class="issue">
-                <a href="#">
-                  <img src="images/tiny-atlas-cover-earth-2015.jpg" alt="">
+                <a href="previous-issues.html#earth">
+                  <img src="images/tiny-atlas-cover-earth-2015.jpg" alt="" class="lazy">
                 </a>
             </div>
 
             <div class="issue">
-                <a href="#">
+                <a href="previous-issues.html#fire">
                   <img src="images/tiny-atlas-cover-fire-2015.jpg" alt="">
                 </a>
             </div>
@@ -238,7 +241,7 @@
             	<div id="social-share">
         		  <div id="social-labels">
         				<div id="share-label">SHARE</div>
-        				<div id="newsletter-label" style="font-size:0.8em;display:block; float: left; width: 50%; text-align: right;"><span>SUBSCRIBE</span></div>
+        				<div id="newsletter-label" style="font-size:0.8em;display:block; float: left; width: 50%; text-align: center;"><span>SUBSCRIBE</span></div>
         				<div style="clear: both; height: 1px;"></div>
         		  </div>
         			<ul id="share-menu">
@@ -269,6 +272,44 @@
             <!--- END FOOTER -->
 
     </div>
+
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+		<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+    <script src="js/picturefill.2.1.0.js"></script>
+		<script type="text/javascript">
+				window.addEventListener("load",function() {
+					setTimeout(function(){
+					window.scrollTo(0, 0);
+				}, 0);
+				});
+
+      // Lazy load
+      $(function() {
+         $("img.lazy").lazyload({
+             effect : "fadeIn"
+         });
+
+      });
+
+
+			// THE FACEBOOK
+			(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));
+
+			// THE GOOGLE --------------------->
+	  	var _gaq = _gaq || [];
+	  	_gaq.push(['_setAccount', 'UA-39716054-1']);
+	  	_gaq.push(['_trackPageview']);
+
+	  	(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  	})();
+
+		</script>
 
 </body>
 
