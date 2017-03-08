@@ -396,7 +396,8 @@ h5{
 
 a{
 	color: #232323;
-	text-decoration: underline;
+	/* text-decoration: underline; */
+	border-bottom: 1px solid #232323;
 	transition: all .2s ease-in-out;
 }
 
@@ -610,7 +611,7 @@ div.text-box-a a:link, div.text-box-a a:visited {
 }
 
 #pg-interview a:link, #pg-interview a:visited {
-	/* text-decoration:none; */
+	text-decoration:none;
 }
 
 

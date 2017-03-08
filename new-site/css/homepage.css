@@ -214,7 +214,7 @@ text-transform: uppercase;
 
 
 .description a:hover {
-  text-decoration: underline;
+  border-bottom: 1px solid #232323;
 }
 
 .description h2 {
@@ -345,7 +345,7 @@ footer{
 button{
   border: 1px solid #232323;
   padding:10px 20px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0);
   text-transform: uppercase;
   font-family: 'GT-Haptik-Regular';
 }

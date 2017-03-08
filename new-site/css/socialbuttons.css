@@ -74,7 +74,7 @@ ul#share-menu li a {
 	}
 
 
-a {outline: none;}
+a {outline: none;padding-bottom: 3px;/* border-bottom: 1px solid #232323; */}
 
 #share-menu li:after {content: "."; display: block; height: 1em; clear: both; visibility: hidden;}
 
