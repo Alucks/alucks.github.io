@@ -57,6 +57,7 @@ p {
 }
 
 
+
 /* ====== Feature Cards ====== */
 
 .feature-grid {
@@ -185,6 +186,11 @@ text-transform: uppercase;
   padding: 5em 20px 0 20px;
   margin:auto;
 }
+
+.section .description-bottom {
+  padding: 10px 20px 40px;
+}
+
 
 .description a:hover {
   text-decoration: underline;
