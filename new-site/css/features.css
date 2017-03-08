@@ -40,6 +40,13 @@ img {
 	float: left;
 }
 
+#nav .back-arrow{
+	display: inline-block;
+	width: 9px;
+	margin: 19px 7px 0 0;
+	float: left;
+}
+
 #nav .title {
   margin: 4px 20px;
 	float: left;
