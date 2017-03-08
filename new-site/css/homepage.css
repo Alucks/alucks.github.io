@@ -1,7 +1,7 @@
 body {
   font-family: 'GT-Haptik-Light';
   background-color: #fff;
-  font-size:16px;
+  font-size: 15px;
 }
 
 a{
@@ -237,7 +237,7 @@ text-transform: uppercase;
 
 /* ====== Shop ====== */
 
-.section-shop {max-width: 960px;margin: auto;/* background-color: #fff; */}
+.section-shop {max-width: 960px;margin: auto;/* background-color: #fff; */margin-top: 40px;}
 
 .section-shop img{
   /* float: left; */
@@ -397,6 +397,9 @@ button{
 }
 
 @media (max-width:500px) {
+  body{
+        font-size: 14px;
+  }
   .feature-card{
     width: 94%;
     max-width: 360px;

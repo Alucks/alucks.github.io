@@ -512,6 +512,9 @@
                     <span class="issue">City 2O17</span><br>
                     <span class="feature">Havana</span>
                 </div>
+                <div class="feature-links">
+                  <span id="pageLink"><a href="#page12">Resources</a></span>
+                </div>
             </div>
         </div>
 
@@ -620,6 +623,31 @@
         }
         //------ END UP DOWN ------//
 
+        //------ Resources Linking ------//
+        $('#pageLink').on('click', function() {
+            pageLink();
+        });
+
+        function pageLink(){
+          $("#" + pgPages[pageCount]).velocity({
+              opacity: 0
+          }, {
+              display: "none"
+          }, {
+              duration: 1000
+          }, "easeInOutQuint"); // OUT
+          $("#page12").velocity({
+              opacity: 1
+          }, {
+              display: "block"
+          }, {
+              duration: 1000
+          }, "easeInOutQuint"); // IN
+          pageCount = 11;
+          pageNext = 11;
+        }
+
+
         // TOUCH HANDLERS
         var myElement = document.getElementById('taqPage');
         var mc = new Hammer(myElement);
@@ -638,7 +666,7 @@
 
 
 
-        <!-------------------- THE GOOGLE --------------------->
+        //------------------ THE GOOGLE --------------------//
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-39716054-1']);
         _gaq.push(['_trackPageview']);
