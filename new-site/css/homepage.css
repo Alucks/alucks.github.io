@@ -215,6 +215,7 @@ text-transform: uppercase;
 
 .description a:hover {
   border-bottom: 1px solid #232323;
+  /* padding-bottom: 41px; */
 }
 
 .description h2 {
