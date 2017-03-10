@@ -1,4 +1,8 @@
 /*----------- START TOP NAV ------------------------------------------*/
+body{
+	    text-rendering: geometricPrecision;
+}
+
 .header-container {
 	text-transform: uppercase;
 	padding: 0.5em 1em;
