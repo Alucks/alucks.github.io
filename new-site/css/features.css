@@ -397,7 +397,7 @@ h5{
 	margin: 1.1em 0 .2em 0;
 }
 
-a{
+p a, h5 a{
 	color: #232323;
 	/* text-decoration: underline; */
 	border-bottom: 1px solid #232323;
@@ -802,6 +802,7 @@ div.pg-credits-box img {
 	div.pg-wrapper {
 		/* padding: 1em 1em 1em 1em; */
 		width:100%;
+		box-sizing: border-box;
 	}
 
 	div.pg-wrapper img {
@@ -870,6 +871,7 @@ div.pg-credits-box img {
 		     max-width:450px;
 		     width:100%;
 		     margin:auto;
+		     box-sizing: border-box;
 		}
 
 	 #nav-buttons{
