@@ -79,6 +79,34 @@
         });
     </script>
 
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1763007330608074');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" src="https://www.facebook.com/tr?id=1763007330608074&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
 </head>
 
 
@@ -421,12 +449,14 @@
                         <p>An intricate glimpse into the life of Ernest Hemingway, who once adopted Cuba as his home country.</p>
 
                         <h5>El Malecon</h5>
-                        <p>Havana’s boardwalk stretches alongside the city, offering a gallery of faces, sounds and images.</p>
+                        <p>Havana’s boardwalk stretches alongside the city, offering a gallery of faces, sounds and images.<br/></p>
 
+
+                        <p>There are some excellent options for personalized, guided small group trips to Cuba if you don’t want to figure out logistics yourself.</p>
                         <a href="http://www.coasttocosta.com "><h5>Coast to Coasta</h5></a>
                         <a href="http://www.intrepidtravel.com"><h5>Intrepid Travel</h5></a>
                         <a href="http://www.elcamino.travel"><h5>El Camino</h5></a>
-                        <p>There are some excellent options for personalized, guided small group trips to Cuba if you don’t want to figure out logistics yourself.</p>
+
 
                     </div>
                 </div>
@@ -513,7 +543,7 @@
                     <span class="feature">Havana</span>
                 </div>
                 <div class="feature-links">
-                  <span id="pageLink"><a href="#page12">Resources</a></span>
+                    <span id="pageLink"><a href="#page12">Trip Resources</a></span>
                 </div>
             </div>
         </div>
@@ -628,23 +658,23 @@
             pageLink();
         });
 
-        function pageLink(){
-          $("#" + pgPages[pageCount]).velocity({
-              opacity: 0
-          }, {
-              display: "none"
-          }, {
-              duration: 1000
-          }, "easeInOutQuint"); // OUT
-          $("#page12").velocity({
-              opacity: 1
-          }, {
-              display: "block"
-          }, {
-              duration: 1000
-          }, "easeInOutQuint"); // IN
-          pageCount = 11;
-          pageNext = 11;
+        function pageLink() {
+            $("#" + pgPages[pageCount]).velocity({
+                opacity: 0
+            }, {
+                display: "none"
+            }, {
+                duration: 1000
+            }, "easeInOutQuint"); // OUT
+            $("#page12").velocity({
+                opacity: 1
+            }, {
+                display: "block"
+            }, {
+                duration: 1000
+            }, "easeInOutQuint"); // IN
+            pageCount = 11;
+            pageNext = 11;
         }
 
 

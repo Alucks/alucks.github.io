@@ -78,6 +78,33 @@
             });
         });
     </script>
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1763007330608074');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" src="https://www.facebook.com/tr?id=1763007330608074&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
 
 </head>
 
@@ -378,7 +405,7 @@
             <!-- IMAGE END -->
 
             <!-- BOX  INTERVIEW-->
-                 <div class="pg-box pg-lower-caption pg-upper-right-caption pg-lower">
+                 <div class="pg-box pg-lower-caption pg-upper-right-caption">
             <!-- CAPTION -->
             <!-- LEFT CAPTION -->
             <div class="pg-box-content">
@@ -579,7 +606,7 @@
                     <span class="feature">Tel Aviv</span>
                 </div>
                 <div class="feature-links">
-                  <span id="pageLink"><a href="#page15">Resources</a></span>
+                  <span id="pageLink"><a href="#page15">Trip Resources</a></span>
                 </div>
             </div>
         </div>

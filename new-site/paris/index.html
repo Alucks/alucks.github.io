@@ -84,6 +84,33 @@
             top: 5vh;
         }
     </style>
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1763007330608074');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" src="https://www.facebook.com/tr?id=1763007330608074&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
 
 </head>
 
@@ -353,6 +380,13 @@
                     <p>Why make breakfast at home when every city block is a smörgasboard of the world's most luscious delights? From your quaint hotel room in the 10th arrondissement, today's haven for hipster cafes and low-key modern bistros, take a stroll
                         toward the Canal Saint Martin and pick up a cafe crème à emporter (to go) from Ten Belles. Don't drink it all in one sip — it must be saved for a taste of heaven at La Boulangerie Des Pains et Des Idées, just across the water.
                         You'll never find a flakier pain au chocolat, or a richer chausson aux pommes.</p>
+                        <img src="images/Paris-Brie.jpg" alt="" class="ill-small">
+                          <h2 class="with-ill-small">Culture and Coffee</h2>
+                          <p>Once you've had your dose, stroll past La Place de la République and into the Marais, past the art galleries and clothing boutiques to the Centre Pompidou. The largest-ever retrospective of works by American artist Cy Twombly won't
+                              disappoint, and a quick espresso pick-me-up in the museum's 6th floor Café Panoramique offers stunning aerial views of the city. Culture fix complete, it's time to eat again. Continue through the Marais and wander down the
+                              historic streets of the Jewish quarter, with its Kosher bakeries and falafel sellers. But don't let them entice you: Miznon makes the best lamb kebab sandwich in the city, served with fresh cilantro and herbs in a warm pita.
+                              You'll walk it off on your way toward the Seine River.</p>
+
                 </div>
             </div>
             <!--END INTERVIEW -->
@@ -379,27 +413,6 @@
             </picture>
             <!-- IMAGE END -->
 
-            <!-- BOX  INTERVIEW-->
-            <div class="pg-box pg-lower-caption pg-upper-right-caption pg-caption-light">
-
-                <!-- CAPTION -->
-                <!-- LEFT CAPTION -->
-                <div class="pg-box-content">
-                    <!-- CONTENT -->
-                    <!-- INTERVIW -->
-                    <div id="pg-interview">
-                      <img src="images/Paris-Brie.jpg" alt="" class="ill-small">
-                        <h2 class="with-ill-small">Culture and Coffee</h2>
-                        <p>Once you've had your dose, stroll past La Place de la République and into the Marais, past the art galleries and clothing boutiques to the Centre Pompidou. The largest-ever retrospective of works by American artist Cy Twombly won't
-                            disappoint, and a quick espresso pick-me-up in the museum's 6th floor Café Panoramique offers stunning aerial views of the city. Culture fix complete, it's time to eat again. Continue through the Marais and wander down the
-                            historic streets of the Jewish quarter, with its Kosher bakeries and falafel sellers. But don't let them entice you: Miznon makes the best lamb kebab sandwich in the city, served with fresh cilantro and herbs in a warm pita.
-                            You'll walk it off on your way toward the Seine River.</p>
-
-                    </div>
-                </div>
-                <!--END INTERVIEW -->
-            </div>
-            <!-- END BOX -->
 
         </div>
         <!-- end wrapper div -->
@@ -786,7 +799,7 @@
                     <span class="feature">Paris</span>
                 </div>
                 <div class="feature-links">
-                  <span id="pageLink"><a href="#page23">Resources</a></span>
+                  <span id="pageLink"><a href="#page23">Trip Resources</a></span>
                 </div>
             </div>
         </div>

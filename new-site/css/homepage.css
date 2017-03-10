@@ -186,6 +186,7 @@ text-transform: uppercase;
   font-size: 2.1em;
   margin: 0;
   font-family: 'calendas-plus', serif;
+  font-weight: 400;
 }
 
 .section .logo {
@@ -221,6 +222,10 @@ text-transform: uppercase;
 .description h2 {
   text-transform: uppercase;
   letter-spacing: 5px;
+}
+
+.description h3{
+  font-size: 1.5em;
 }
 
 .trips .description {
