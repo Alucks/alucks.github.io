@@ -533,47 +533,47 @@
 
                                          <h4>Eat:</h4>
 
-                                         <a href="https://www.halutzim3.com/"><h5>HaHlutzim 3</h5></a>
+                                         <h5><a href="https://www.halutzim3.com/">HaHlutzim 3</a></h5>
                                          <p>An intimate restaurant by Eytan Vanunu and Naama Szterenlicht.</p>
 
-                                         <a href="http://dalidatlv.co.il/"><h5>Dalida</h5></a>
+                                         <h5><a href="http://dalidatlv.co.il/">Dalida</a></h5>
                                          <p>A romantic, candle lit restaurant with an outdoor garden, serving elevated Mediterranean fare.</p>
 
-                                         <a href="https://www.facebook.com/Fifis.Asian.Food/"><h5>Fifi’s</h5></a>
+                                         <h5><a href="https://www.facebook.com/Fifis.Asian.Food/">Fifi’s</a></h5>
                                          <p>A brand new, family-owned spot serving authentic Thai food.</p>
 
-                                         <a href="https://www.facebook.com/CaffeKaymak/"><h5>Cafe Kaimak</h5></a>
+                                         <h5><a href="https://www.facebook.com/CaffeKaymak/">Cafe Kaimak</a></h5>
                                          <p>A tiny coffee shop perfect for breakfast.</p>
 
-                                         <a href="https://www.facebook.com/Barmitzvah.kaymak/"><h5>Bar Mitzva</h5></a>
+                                         <h5><a href="https://www.facebook.com/Barmitzvah.kaymak/">Bar Mitzva</a></h5>
                                          <p>A small local bar with unpretentious atmosphere.</p>
 
-                                         <a href="https://www.facebook.com/levinsky41/"><h5>Cafe Levinsky 41</h5></a>
+                                         <h5><a href="https://www.facebook.com/levinsky41/">Cafe Levinsky 41</a></h5>
                                          <p>A tiny kiosk serving delicious sparkly drinks.</p>
 
-                                         <a href="http://en.shuktlv.co.il/category/chavshush"><h5>Chavshush Ariye</h5></a>
+                                         <h5><a href="http://en.shuktlv.co.il/category/chavshush">Chavshush Ariye</a></h5>
                                          <p>A chaotic, authentic spice shop run by a family.</p>
 
-                                         <a href="http://en.shuktlv.co.il/category/levinsky-burekas"><h5>Burekas Levinsky</h5></a>
+                                         <h5><a href="http://en.shuktlv.co.il/category/levinsky-burekas">Burekas Levinsky</a></h5>
                                          <p>A bakery specializing in crumbly,  savory phyllo dough pastries.</p>
 
                                          <h4>Stay:</h4>
 
-                                         <a href="https://florentinhouse.com/"><h5>Florentine House</h5></a>
+                                         <h5><a href="https://florentinhouse.com/">Florentine House</a></h5>
                                          <p>A urban, minimal boutique hotel in the heart of Florentin.</p>
 
-                                         <a href="https://www.airbnb.com/rooms/13655167?adults=1&checkin=04%2F01%2F2017&checkout=04%2F 02%2F2017&children=0&guests=1&infants=0&locale=en&s=VVhYAsqw"><h5>Dream Bauhaus</h5></a>
+                                         <h5><a href="https://www.airbnb.com/rooms/13655167?adults=1&checkin=04%2F01%2F2017&checkout=04%2F 02%2F2017&children=0&guests=1&infants=0&locale=en&s=VVhYAsqw">Dream Bauhaus</a></h5>
                                          <p>A spacious loft with a clawfoot bathtub and exposed brick walls.</p>
 
-                                         <a href="http://lilyandbloom.com/en/homepage/"><h5>Lily and Bloom</h5></a>
+                                         <h5><a href="http://lilyandbloom.com/en/homepage/">Lily and Bloom</a></h5>
                                          <p>A new and polished boutique hotel just outside of Florentin.</p>
 
                                          <h4>Do:</h4>
 
-                                         <a href="http://en.shuktlv.co.il/category/chaim-raphael"><h5>Haim Rafael</h5></a>
+                                         <h5><a href="http://en.shuktlv.co.il/category/chaim-raphael">Haim Rafael</a></h5>
                                          <p>This is the best deli in the neighborhood, offering pickles, charcuterie and smoked fish.</p>
 
-                                         <a href="https://www.tel-o-fun.co.il/en/"><h5>Tel-O-fun</h5></a>
+                                         <h5><a href="https://www.tel-o-fun.co.il/en/">Tel-O-fun</a></h5>
                                          <p>Explore the neighborhood with Tel Aviv’s bike share system. The green bike stations  all over
                         Florentin, available to rent on hourly basis.</p>
 
@@ -723,22 +723,27 @@
         });
 
         function pageLink(){
-          $("#" + pgPages[pageCount]).velocity({
-              opacity: 0
-          }, {
-              display: "none"
-          }, {
-              duration: 1000
-          }, "easeInOutQuint"); // OUT
-          $("#page15").velocity({
-              opacity: 1
-          }, {
-              display: "block"
-          }, {
-              duration: 1000
-          }, "easeInOutQuint"); // IN
-          pageCount = 14;
-          pageNext = 0;
+            if (window.innerHeight > window.innerWidth) {
+
+          } else {
+            $("#" + pgPages[pageCount]).velocity({
+                opacity: 0
+            }, {
+                display: "none"
+            }, {
+                duration: 1000
+            }, "easeInOutQuint"); // OUT
+            $("#page15").velocity({
+                opacity: 1
+            }, {
+                display: "block"
+            }, {
+                duration: 1000
+            }, "easeInOutQuint"); // IN
+            pageCount = 14;
+            pageNext = 0;
+          }
+
         }
 
         // TOUCH HANDLERS

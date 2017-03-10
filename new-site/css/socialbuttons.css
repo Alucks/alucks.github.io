@@ -14,7 +14,7 @@ ul#share-menu li { display: inline-block; }
 ul#share-menu li a {
 	display: block;
 	float: left;
-	height: 42px;
+	height: 44px;
 	background-image: url(../images/share-menu-sprite.png);
 	text-indent: -9999px;
 }
@@ -74,7 +74,7 @@ ul#share-menu li a {
 	}
 
 
-a {outline: none;padding-bottom: 3px;/* border-bottom: 1px solid #232323; */}
+a {/* outline: none; *//* padding-bottom: 3px; *//* border-bottom: 1px solid #232323; */}
 
 #share-menu li:after {content: "."; display: block; height: 1em; clear: both; visibility: hidden;}
 

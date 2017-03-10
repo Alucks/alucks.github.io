@@ -426,26 +426,26 @@
 
                         <h4>Eat: </h4>
 
-                        <a href="http://www.laguarida.com/en/"><h5>Paladar La Guardia</h5></a>
+                        <h5><a href="http://www.laguarida.com/en/">Paladar La Guardia</a></h5>
                         <p>A Cuban establishment, serving traditional and adventurous recipes.</p>
 
-                        <a href="https://www.facebook.com/paladardona.eutimia"><h5>Paladar Doña Eutemia</h5></a>
+                        <h5><a href="https://www.facebook.com/paladardona.eutimia">Paladar Doña Eutemia</a></h5>
                         <p>A centrally located, family-owned restaurant serving simple and straightforward Cuban cuisine.</p>
 
-                        <a href="http://www.lahabana.com/guide/museo-del-chocolate/"><h5>Museo del Chocolate</h5></a>
+                        <h5><a href="http://www.lahabana.com/guide/museo-del-chocolate/">Museo del Chocolate</a></h5>
                         <p>Part museum part coffee shop, the Museo serves addictive cold chocolate drinks.</p>
 
                         <h4>Stay:</h4>
 
-                        <a href="http://www.casaparticular.com/"><h5>Casas Particulares</h5></a>
+                        <h5><a href="http://www.casaparticular.com/">Casas Particulares</a></h5>
                         <p>The best way to stay in Havana is rent a room in a private family house. Locals must officially to provide the service, and it’s a great way to help families financially and get a glimpse of authentic Cuban life.<a href="http://www.havanacasaparticular.com/">http://www.havanacasaparticular.com/</a></p>
 
                         <h4>Do:</h4>
 
-                        <a href="http://www.bellasartes.cult.cu/"><h5>Museo Nacional de Bellas Artes</h5></a>
+                        <h5><a href="http://www.bellasartes.cult.cu/">Museo Nacional de Bellas Artes</a></h5>
                         <p>An expansive museum with collections from Spain, ancient Greece and modern-day Cuba.</p>
 
-                        <a href="http://www.hemingwaycuba.com/finca-la-vigia.html"><h5>Museo Hemingway Finca Vigia</h5></a>
+                        <h5><a href="http://www.hemingwaycuba.com/finca-la-vigia.html">Museo Hemingway Finca Vigia</a></h5>
                         <p>An intricate glimpse into the life of Ernest Hemingway, who once adopted Cuba as his home country.</p>
 
                         <h5>El Malecon</h5>
@@ -453,9 +453,9 @@
 
 
                         <p>There are some excellent options for personalized, guided small group trips to Cuba if you don’t want to figure out logistics yourself.</p>
-                        <a href="http://www.coasttocosta.com "><h5>Coast to Coasta</h5></a>
-                        <a href="http://www.intrepidtravel.com"><h5>Intrepid Travel</h5></a>
-                        <a href="http://www.elcamino.travel"><h5>El Camino</h5></a>
+                        <h5><a href="http://www.coasttocosta.com ">Coast to Coasta</a></h5>
+                        <h5><a href="http://www.intrepidtravel.com">Intrepid Travel</a></h5>
+                        <h5><a href="http://www.elcamino.travel">El Camino</a></h5>
 
 
                     </div>
@@ -659,6 +659,9 @@
         });
 
         function pageLink() {
+            if (window.innerHeight > window.innerWidth) {
+
+          } else {
             $("#" + pgPages[pageCount]).velocity({
                 opacity: 0
             }, {
@@ -675,6 +678,7 @@
             }, "easeInOutQuint"); // IN
             pageCount = 11;
             pageNext = 11;
+          }
         }
 
 

@@ -580,7 +580,7 @@ div.pg-credits-box img {
 
 /*----------- MOBILE -------------*/
 @media (max-width:640px) {
-	body {
+	body.centered {
 		font-size: 14px;
    }
 
@@ -745,12 +745,12 @@ only screen and (min-device-pixel-ratio : 1.5) {
 
 .centered{
 	background-color: #f8f8f8;
-	    font-size: 16px;
+	font-size: 16px;
 }
 
 .centered p{
 	font-family: 'GT-Haptik-Light', helvetica, sans-serif;
-	line-height: 1.2em;
+	line-height: 1.5em;
 }
 
 .details {
@@ -767,7 +767,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
 	 height: auto;
 	 width:770px;
 	 max-width: 100%;
-	 color: #7A7A7A;
+	 color: #232323;
 	 background-color: #fff;
 	 margin:-130px auto 50px;
 	 box-shadow: 0 26px 40px -24px rgba(0,0,0,0.2);
@@ -780,15 +780,15 @@ only screen and (min-device-pixel-ratio : 1.5) {
 }
 
 .details-card a, .lead-in a{
-	/* border-bottom: 1px solid #232323; */
-	color: #717035;
+	border-bottom: 1px solid #232323;
+	/* color: #717035; */
 }
 
 .details-card .sidebar p{
 		float: left;
 		clear: both;
-    width: 130px;
-		color: #4D4D4D;
+		width: 130px;
+		color: #232323;
 }
 
 .details-card .sidebar p{
@@ -860,7 +860,7 @@ font-size: 1.8em;
 	max-width: 770px;
 	padding: 60px 20px 0px;
 	margin: 20px auto 40px;
-	color: #7A7A7A;
+	color: #232323;
 }
 
 .centered .gram p{
@@ -945,14 +945,11 @@ height:280px;
 	background-color: #ffee98;
 }
 
-a {
-transition: .3s ease-in-out;
-text-decoration: none;
-color: grey;
-}
+a {transition: .3s ease-in-out;text-decoration: none;color: #232323;}
 
 a:hover {
-	color: #e25813;
+	/* color: #e25813; */
+	border-bottom: 1px solid rgba(0,0,0,0);
 }
 
 a p {

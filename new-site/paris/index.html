@@ -687,47 +687,47 @@
 
                     <h4>Eat:</h4>
 
-                    <a href="http://www.tenbelles.com/"><h5>Ten Belles</h5></a>
+                    <h5><a href="http://www.tenbelles.com/">Ten Belles</a></h5>
                     <p>High-quality coffee bar and cafe along the Canal Saint Martin, selling home-baked  pastries and sandwiches.</p>
 
-                    <a href="https://dupainetdesidees.com/en/"><h5>Boulangerie des Pains et des Idées</h5></a>
+                    <h5><a href="https://dupainetdesidees.com/en/">Boulangerie des Pains et des Idées</a></h5>
                     <p>Open exclusively on weekdays, come for Escargots à la pistache and petit pain rolls.</p>
 
-                    <a href="https://www.facebook.com/miznonparis/"><h5>Miznon</h5></a>
+                    <h5><a href="https://www.facebook.com/miznonparis/">Miznon</a></h5>
                     <p>The Parisian outpost of Israeli chef Eyal Shani’s Tel Aviv restaurant serves the best lamb-kebab pita in the city.</p>
 
-                    <a href="http://www.berthillon.fr/"><h5>Berthillon</h5></a>
+                    <h5><a href="http://www.berthillon.fr/">Berthillon</a></h5>
                     <p>Unanimously considered the best homemade, small batch ice-cream in Paris.</p>
 
-                    <a href="https://www.cooperative-de-beaufort.com/"><h5>La Coopérative Laitiere du Beaufortain</h5></a>
+                    <h5><a href="https://www.cooperative-de-beaufort.com/">La Coopérative Laitiere du Beaufortain</a></h5>
                     <p>This farmer-cooperative-run shop is a haven for cheese and charcuterie lovers.</p>
 
-                    <a href="http://www.rotondemontparnasse.com/"><h5>La Rotonde</h5></a>
+                    <h5><a href="http://www.rotondemontparnasse.com/">La Rotonde</a></h5>
                     <p>Cozy Latin Quarter bistro historically visited by the likes of Picasso, Hemingway and Matisse, known for its traditional French cuisine.</p>
 
                     <h4>Stay:</h4>
 
-                    <a href="http://www.le5codet.com/en/"><h5>Le Cinq Codet</h5></a>
+                    <h5><a href="http://www.le5codet.com/en/">Le Cinq Codet</a></h5>
                     <p>Located a short walk from Les Invalides in the 7th arrondissement, the chic 5-star hotel has 67 loft-like rooms with New Nordic touches.</p>
 
-                    <a href="http://hotelpanache.com/en/"><h5>Hotel Panache</h5></a>
+                    <h5><a href="http://hotelpanache.com/en/">Hotel Panache</a></h5>
                     <p>A 3-star hotel in the hip 10th arrondissement with quirky Parisian charm and art-deco furnishings and retro touches.</p>
 
-                    <a href="http://www.mamashelter.com/en/paris/"><h5>Mama Shelter Paris</h5></a>
+                    <h5><a href="http://www.mamashelter.com/en/paris/">Mama Shelter Paris</a></h5>
                     <p>Young, affordable and designed by Philippe Starck, this casual hotel features a pizzeria and a rooftop bar.</p>
 
                     <h4>Do:</h4>
 
-                    <a href="https://www.centrepompidou.fr/en"><h5>Centre Pompidou</h5></a>
+                    <h5><a href="https://www.centrepompidou.fr/en">Centre Pompidou</a></h5>
                     <p>The city's boldest center for contemporary art and design, housed in a striking building designed by Italian architect Renzo Piano.</p>
 
                     <h5>Rue de Rennes</h5>
                     <p>A wide, bustling street in the heart of the Latin Quarter, chockablock with boutiques, antique and jewelry shops.</p>
 
-                    <a href="http://www.mosqueedeparis.net/"><h5>La Mosquée de Paris</h5></a>
+                    <h5><a href="http://www.mosqueedeparis.net/">La Mosquée de Paris</a></h5>
                     <p>One of the largest mosques in France, serving authentic Moroccan treats on a tiled terrace and featuring traditional Hammam baths.</p>
 
-                    <a href="http://www.french-gardens.com/gardens/jardindeluxembourg.php"><h5>The Luxembourg Gardens</h5></a>
+                    <h5><a href="http://www.french-gardens.com/gardens/jardindeluxembourg.php">The Luxembourg Gardens</a></h5>
                     <p>Expanses, fountains, and sculpture gardens offer a peaceful oasis from city life.</p>
 
 
@@ -925,6 +925,9 @@
         });
 
         function pageLink(){
+            if (window.innerHeight > window.innerWidth) {
+
+          } else {
           $("#" + pgPages[pageCount]).velocity({
               opacity: 0
           }, {
@@ -941,6 +944,7 @@
           }, "easeInOutQuint"); // IN
           pageCount = 22;
           pageNext = 22;
+        }
         }
 
 

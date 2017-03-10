@@ -7,6 +7,7 @@ body {
 a{
   color:#232323;
   text-decoration:none;
+  /* border-bottom: 1px solid #232323; */
 }
 
 p {
@@ -131,7 +132,7 @@ padding-bottom: 20px;
   border-bottom: 1px solid #E9E9E9;
 }
 
-.feature-card .meta{
+.meta{
 font-family:'GT-Haptik-Regular';
 font-size: .8em;
 text-transform: uppercase;
@@ -162,7 +163,7 @@ text-transform: uppercase;
   left: 50%;
   bottom: 0;
 }
-.feature-card:hover, .trip:hover {background-color: #f7f7f7;/* box-shadow: 0px 3px 8px rgba(0,0,0,0.1); */}
+.feature-card:hover{background-color: #f7f7f7;/* box-shadow: 0px 3px 8px rgba(0,0,0,0.1); */}
 
 .grid-divider{
   width: 94%;
@@ -232,6 +233,15 @@ text-transform: uppercase;
   margin-bottom: 40px;
 }
 
+.trips .meta{
+  color: #a2a2a2;
+}
+
+.link-style{
+  border-bottom: 1px solid #232323;
+  text-transform: uppercase;
+}
+
 .trip{
   margin:auto;
   width: 100%;
@@ -254,8 +264,9 @@ text-transform: uppercase;
   /* bottom: 40px; */
   /* left:40px; */
   /* background-color: #fff; */
-  padding: 30px 20px;
-  vertical-align: bottom;
+  padding: 60px 20px 40px 20px;
+  float: right;
+  /* vertical-align: middle; */
 }
 
 .trip p{
@@ -354,6 +365,11 @@ button{
   background-color: rgba(255, 255, 255, 0);
   text-transform: uppercase;
   font-family: 'GT-Haptik-Regular';
+  transition: 1s ease-in-out;
+}
+
+button:hover{
+  border: 1 solid #000;
 }
 
 @media (min-width:1340px) {
@@ -399,6 +415,7 @@ button{
 .trip .details {
   width: 100%;
   display: block;
+  padding: 10px 0px 60px 0px;
 }
 
 .trip .details p{
