@@ -125,6 +125,11 @@ padding-bottom: 20px;
   max-height: 70px;
 }
 
+.title.title-wide{
+  width:200px;
+  max-width: 90%;
+}
+
 .feature-card .text {
   font-family: "GT-Haptik-Light", sans-serif;
   margin: 10px 0;
