@@ -397,7 +397,7 @@ h5{
 	margin: 1.1em 0 .2em 0;
 }
 
-p a, h5 a, span a{
+p a, h5 a, span a, h3 a{
 	color: #232323;
 	/* text-decoration: underline; */
 	border-bottom: 1px solid #232323;
