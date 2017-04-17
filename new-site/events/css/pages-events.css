@@ -923,7 +923,7 @@ font-size: 1.8em;
 .gram img {
 	transition: .5s;
   box-shadow: 1px 1px 6px rgba(136, 136, 136, 0.29);
-  border: white 12px solid;
+  /*border: white 12px solid;*/
   border-radius: 2px;
 }
 .gram .hotels {
