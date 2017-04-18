@@ -21,244 +21,12 @@
 <body class="centered">
 <script>
 
-var tofinoPeople = [
-    {
-        "image": "tofino-01.jpg",
-        "name": "Emily Nathan",
-        "handle": "ernathan"
-    },
-    {
-        "image": "tofino-02.jpg",
-        "name": "Ja Soon Kim",
-        "handle": "omjsk"
-    },
-    {
-        "image": "tofino-03.jpg",
-        "name": "Emily Nathan",
-        "handle": "ernathan"
-    },
-    {
-        "image": "tofino-04.jpg",
-        "name": "Nicole Franzen",
-        "handle": "nicole_franzen"
-    },
-    {
-        "image": "tofino-05.jpg",
-        "name": "Emily Nathan",
-        "handle": "ernathan"
-    },
-   {
-       "image": "tofino-06.jpg",
-       "name": "Emily Nathan",
-       "handle": "ernathan"
-   },
-   {
-       "image": "tofino-07.jpg",
-       "name": "Ryan Struck",
-       "handle": "ryanstruck"
-   },
-   {
-       "image": "tofino-08.jpg",
-       "name": "Emily Nathan",
-       "handle": "ernathan"
-   },
-   {
-       "image": "tofino-09.jpg",
-       "name": "Emily Nathan",
-       "handle": "ernathan"
-   },
-   {
-       "image": "tofino-10.jpg",
-       "name": "Emily Nathan",
-       "handle": "ernathan"
-   },
-   {
-       "image": "tofino-11.jpg",
-       "name": "Ryan Struck",
-       "handle": "ryanstruck"
-   },
-   {
-       "image": "tofino-12.jpg",
-       "name": "Nicole Franzen",
-       "handle": "nicole_franzen"
-   },
-   {
-       "image": "tofino-13.jpg",
-       "name": "Emily Nathan",
-       "handle": "ernathan"
-   },
-   {
-       "image": "tofino-14.jpg",
-       "name": "Emily Nathan",
-       "handle": "ernathan"
-   },
-   {
-       "image": "tofino-15.jpg",
-       "name": "Emily Nathan",
-       "handle": "ernathan"
-   },
-   {
-       "image": "tofino-16.jpg",
-       "name": "Nicole Franzen",
-       "handle": "nicole_franzen"
-   },
-   {
-       "image": "tofino-17.jpg",
-       "name": "Ryan Struck",
-       "handle": "ryanstruck"
-   },
-   {
-       "image": "tofino-18.jpg",
-       "name": "Nicole Franzen",
-       "handle": "nicole_franzen"
-   },
-   {
-       "image": "tofino-19.jpg",
-       "name": "Ryan Struck",
-       "handle": "ryanstruck"
-   },
-   {
-       "image": "tofino-20.jpg",
-       "name": "Emily Nathan",
-       "handle": "ernathan"
-   },
-   {
-       "image": "tofino-21.jpg",
-       "name": "Ryan Struck",
-       "handle": "ryanstruck"
-   }
-   ]
-
-var tahitiPeople = [
-    {
-        "image": "tahiti-01.jpg",
-        "name": "Salty Wings",
-        "handle": "saltywings"
-    },
-    {
-        "image": "tahiti-02.jpg",
-        "name": "Salty Wings",
-        "handle": "saltywings"
-    },
-    {
-        "image": "tahiti-03.jpg",
-        "name": "Salty Wings",
-        "handle": "saltywings"
-    },
-    {
-        "image": "tahiti-04.jpg",
-        "name": "Ja Soon Kim",
-        "handle": "omjsk"
-    },
-    {
-        "image": "tahiti-05.jpg",
-        "name": "Tyson Wheatley",
-        "handle": "twheat"
-    },
-   {
-       "image": "tahiti-06.jpg",
-       "name": "Emily Nathan",
-       "handle": "ernathan"
-   },
-   {
-       "image": "tahiti-07.jpg",
-       "name": "Dan Tom",
-       "handle": "dantom"
-   },
-   {
-       "image": "tahiti-08.jpg",
-       "name": "Emily Nathan",
-       "handle": "ernathan"
-   },
-   {
-       "image": "tahiti-09.jpg",
-       "name": "Ja Soon Kim",
-       "handle": "omjsk"
-   },
-   {
-       "image": "tahiti-10.jpg",
-       "name": "Tyson Wheatley",
-       "handle": "twheat"
-   },
-   {
-       "image": "tahiti-11.jpg",
-       "name": "Dan Tom",
-       "handle": "dantom"
-   },
-   {
-       "image": "tahiti-12.jpg",
-       "name": "Tyson Wheatley",
-       "handle": "twheat"
-   },
-   {
-       "image": "tahiti-13.jpg",
-       "name": "Tasha van Zandt",
-       "handle": "tashavanzandt"
-   },
-   {
-       "image": "tahiti-14.jpg",
-       "name": "Shelly Strazis",
-       "handle": "shellystrazis"
-   },
-   {
-       "image": "tahiti-15.jpg",
-       "name": "Emily Nathan",
-       "handle": "ernathan"
-   },
-   {
-       "image": "tahiti-16.jpg",
-       "name": "Emily Nathan",
-       "handle": "ernathan"
-   },
-   {
-       "image": "tahiti-17.jpg",
-       "name": "Tyson Wheatley",
-       "handle": "twheat"
-   },
-   {
-       "image": "tahiti-18.jpg",
-       "name": "Shelly Strazis",
-       "handle": "shellystrazis"
-   },
-   {
-       "image": "tahiti-19.jpg",
-       "name": "Dan Tom",
-       "handle": "dantom"
-   },
-   {
-       "image": "tahiti-20.jpg",
-       "name": "Emily Nathan",
-       "handle": "ernathan"
-   },
-   {
-       "image": "tahiti-21.jpg",
-       "name": "Salty Wings",
-       "handle": "saltywings"
-   }
-   ]
-
-
    $(document).on("ready", function() {
-
-     var newHTML1 = [];
-     var newHTML2 = [];
-
-     $.each(tahitiPeople, function(i, value) {
-       newHTML1.push('<div class="gram"><a href="http://instagram.com/'+ value.handle +'" target="_blank"><img class="lazy" src="images/'+ value.image + '" alt="' + value.name + '" /> <p>'+ value.name + '</p></a></div>');
-     });
-     $("#tahiti-grid").html(newHTML1.join("  "));
-
-    $.each(tofinoPeople, function(i, value) {
-      newHTML2.push('<div class="gram"><a href="http://instagram.com/'+ value.handle +'" target="_blank"><img class="lazy" src="images/'+ value.image + '" alt="' + value.name + '" /> <p>'+ value.name + '</p></a></div>');
-    });
-    $("#tofino-grid").html(newHTML2.join("  "));
-
      $(function() {
        $("img.lazy").lazyload({
          threshold : 200
        });
      });
-
    });
 
 
@@ -342,9 +110,113 @@ var tahitiPeople = [
     <p>Daily programming will include surf, yoga, creativity and photography training with full freedom to explore the coast on your own timeline if you prefer.</p>
   </div>
 </div>
-  <div id="tofino-grid"class="grid-wrapper">
-
-  </div>
+<div id="tofino-grid" class="grid-wrapper">
+    <div class="gram">
+        <a href="http://instagram.com/ernathan" target="_blank"><img class="lazy" src="images/tofino-01.jpg" alt="Emily Nathan">
+            <p>Emily Nathan</p>
+        </a>
+    </div>
+    <div class="gram">
+        <a href="http://instagram.com/omjsk" target="_blank"><img class="lazy" src="images/tofino-02.jpg" alt="Ja Soon Kim">
+            <p>Ja Soon Kim</p>
+        </a>
+    </div>
+    <div class="gram">
+        <a href="http://instagram.com/ernathan" target="_blank"><img class="lazy" src="images/tofino-03.jpg" alt="Emily Nathan">
+            <p>Emily Nathan</p>
+        </a>
+    </div>
+    <div class="gram">
+        <a href="http://instagram.com/nicole_franzen" target="_blank"><img class="lazy" src="images/tofino-04.jpg" alt="Nicole Franzen">
+            <p>Nicole Franzen</p>
+        </a>
+    </div>
+    <div class="gram">
+        <a href="http://instagram.com/ernathan" target="_blank"><img class="lazy" src="images/tofino-05.jpg" alt="Emily Nathan">
+            <p>Emily Nathan</p>
+        </a>
+    </div>
+    <div class="gram">
+        <a href="http://instagram.com/ernathan" target="_blank"><img class="lazy" src="images/tofino-06.jpg" alt="Emily Nathan">
+            <p>Emily Nathan</p>
+        </a>
+    </div>
+    <div class="gram">
+        <a href="http://instagram.com/ryanstruck" target="_blank"><img class="lazy" src="images/tofino-07.jpg" alt="Ryan Struck">
+            <p>Ryan Struck</p>
+        </a>
+    </div>
+    <div class="gram">
+        <a href="http://instagram.com/ernathan" target="_blank"><img class="lazy" src="images/tofino-08.jpg" alt="Emily Nathan">
+            <p>Emily Nathan</p>
+        </a>
+    </div>
+    <div class="gram">
+        <a href="http://instagram.com/ernathan" target="_blank"><img class="lazy" src="images/tofino-09.jpg" alt="Emily Nathan">
+            <p>Emily Nathan</p>
+        </a>
+    </div>
+    <div class="gram">
+        <a href="http://instagram.com/ernathan" target="_blank"><img class="lazy" src="images/tofino-10.jpg" alt="Emily Nathan">
+            <p>Emily Nathan</p>
+        </a>
+    </div>
+    <div class="gram">
+        <a href="http://instagram.com/ryanstruck" target="_blank"><img class="lazy" src="images/tofino-11.jpg" alt="Ryan Struck">
+            <p>Ryan Struck</p>
+        </a>
+    </div>
+    <div class="gram">
+        <a href="http://instagram.com/nicole_franzen" target="_blank"><img class="lazy" src="images/tofino-12.jpg" alt="Nicole Franzen">
+            <p>Nicole Franzen</p>
+        </a>
+    </div>
+    <div class="gram">
+        <a href="http://instagram.com/ernathan" target="_blank"><img class="lazy" src="images/tofino-13.jpg" alt="Emily Nathan">
+            <p>Emily Nathan</p>
+        </a>
+    </div>
+    <div class="gram">
+        <a href="http://instagram.com/ernathan" target="_blank"><img class="lazy" src="images/tofino-14.jpg" alt="Emily Nathan">
+            <p>Emily Nathan</p>
+        </a>
+    </div>
+    <div class="gram">
+        <a href="http://instagram.com/ernathan" target="_blank"><img class="lazy" src="images/tofino-15.jpg" alt="Emily Nathan">
+            <p>Emily Nathan</p>
+        </a>
+    </div>
+    <div class="gram">
+        <a href="http://instagram.com/nicole_franzen" target="_blank"><img class="lazy" src="images/tofino-16.jpg" alt="Nicole Franzen">
+            <p>Nicole Franzen</p>
+        </a>
+    </div>
+    <div class="gram">
+        <a href="http://instagram.com/ryanstruck" target="_blank"><img class="lazy" src="images/tofino-17.jpg" alt="Ryan Struck">
+            <p>Ryan Struck</p>
+        </a>
+    </div>
+    <div class="gram">
+        <a href="http://instagram.com/nicole_franzen" target="_blank"><img class="lazy" src="images/tofino-18.jpg" alt="Nicole Franzen">
+            <p>Nicole Franzen</p>
+        </a>
+    </div>
+    <div class="gram">
+        <a href="http://instagram.com/ryanstruck" target="_blank"><img class="lazy" src="images/tofino-19.jpg" alt="Ryan Struck">
+            <p>Ryan Struck</p>
+        </a>
+    </div>
+    <div class="gram">
+        <a href="http://instagram.com/ernathan" target="_blank"><img class="lazy" src="images/tofino-20.jpg" alt="Emily Nathan">
+            <p>Emily Nathan</p>
+        </a>
+    </div>
+    <div class="gram">
+        <a href="http://instagram.com/ryanstruck" target="_blank"><img class="lazy" src="images/tofino-21.jpg" alt="Ryan Struck">
+            <p>Ryan Struck</p>
+        </a>
+    </div>
+</div>
 
 
   <div id="tahiti" class="img-head" style= "height: 600px; background-image: url(images/00_Tahiti_TAQ_trip.jpg)"></div>
@@ -365,17 +237,126 @@ var tahitiPeople = [
       </p>
     </div>
     <div class="main-content">
-      <p>On Tahiti and Mo'orea Island we will experience two gorgeous islands over six nights and seven days. On Tahiti we will sleep in homestay bungalows with delicious meals prepared daily by our hosts. In Mo'orea we will stay in the garden style bungalows right on the ocean. The islands, deep in the pacific, offer tropical landscapes, a reef accessible in minutes that’s a mecca for underwater wildlife just waiting to be photographed, and equally exciting surf in each spot.</p>
-      <p>We will start on Tahiti Island, then hop over to Mo'orea with Earth Missions founder Tom Werney, and a Tahitian photographer as our water guides. Also at your side will be travel photographer and founder of Tiny Atlas Quarterly, Emily Nathan, and surf-adventurer and creator of AllSwell notebooks, Laura Rubin.</p>
-      <p>These creative professionals will be there to provide surf, creative and photography guidance for the whole group or via one-to-one sessions for those who prefer private tutorials.</p>
-      <p>Not a surfer or experienced photographer yet? No worries! All you need is a love for the ocean and the arts, and an open mind.</p>
-      <p>Daily programming will include surf, yoga, creativity and photography training with full freedom to explore the coast on your own timeline if you prefer.</p>
+      <p>The islands, deep in the Pacific, offer tropical landscapes, a reef accessibly in minutes, world class surf and surf photography, wildlife filled turquoise lagoons, and the warmest Tahitian hospitality.</p>
+      <h3>La Orana</h3>
+      <p>From March 20-26 Tiny Atlas Quarterly and our trip partners Earth Missions (http://earthmissions.com) x AllSwell Creative (https://allswellcreative.com) hosted an epic island-hopping adventure on Mo’orea and Tahiti in collaboration with Adobe Stock (https://stock.adobe.com) who collaborated with Tiny Atlas and the photographers below to produce best-in-class photography.</p>
+      <h3>Itinerary</h3>
+      <p>After landing in Pape’ete, we traveled by ferry to the island of Mo'orea, staying right on the lagoon in over-water bungalows. Days in Mo’orea were measured in sunrises, mountainous photo hikes, fresh cooked family meals, drone flights, boat rides, sting rays swims and lemon shark underwater encounters. Departing Mo’orea we travelled to Tahiti, staying just past  “the end of the road” in Teahupo’o in local homes and bungalows accessible only by driving a pickup truck through a river or via a foot bridge and across a lush local neighborhood. In Teahupo’o our crew experienced this gorgeous land mostly from the water via daily boat adventures with our local guide Milton: capturing pro surfers on one of the most epic waves in the world, swimming in the rain in waterfall fed fresh rivers and while sailing out to remote Tetiaroa atoll.</p>
+
+      <h3>Creative Exploration</h3>
+      <p>Throughout the trip our group of photographers/influencers explored Adobe Stock’s portfolio of tools (@adobestock, @adobecreativecloud) that helps emerging photographers connect their work with a larger audience. At Tiny Atlas we hear so often from photographers that they are shooting amazing work and trying to figure out how to translate that into client relationships, i.e. getting paid for their creativity. Becoming an Adobe Stock contributor represents one opportunity to do just that.</p>
+
+      <h3>Imagery</h3>
+      <p>The Tiny Atlas Tahiti collection (link TK) for Adobe Premium Stock  features the incredible results from our adventure.</p>
     </div>
   </div>
   <div id="tahiti-grid" class="grid-wrapper">
-
+      <div class="gram">
+          <a href="http://instagram.com/saltywings" target="_blank"><img class="lazy" src="images/tahiti-01.jpg" alt="Salty Wings">
+              <p>Salty Wings</p>
+          </a>
+      </div>
+      <div class="gram">
+          <a href="http://instagram.com/saltywings" target="_blank"><img class="lazy" src="images/tahiti-02.jpg" alt="Salty Wings">
+              <p>Salty Wings</p>
+          </a>
+      </div>
+      <div class="gram">
+          <a href="http://instagram.com/saltywings" target="_blank"><img class="lazy" src="images/tahiti-03.jpg" alt="Salty Wings">
+              <p>Salty Wings</p>
+          </a>
+      </div>
+      <div class="gram">
+          <a href="http://instagram.com/omjsk" target="_blank"><img class="lazy" src="images/tahiti-04.jpg" alt="Ja Soon Kim">
+              <p>Ja Soon Kim</p>
+          </a>
+      </div>
+      <div class="gram">
+          <a href="http://instagram.com/twheat" target="_blank"><img class="lazy" src="images/tahiti-05.jpg" alt="Tyson Wheatley">
+              <p>Tyson Wheatley</p>
+          </a>
+      </div>
+      <div class="gram">
+          <a href="http://instagram.com/ernathan" target="_blank"><img class="lazy" src="images/tahiti-06.jpg" alt="Emily Nathan">
+              <p>Emily Nathan</p>
+          </a>
+      </div>
+      <div class="gram">
+          <a href="http://instagram.com/dantom" target="_blank"><img class="lazy" src="images/tahiti-07.jpg" alt="Dan Tom">
+              <p>Dan Tom</p>
+          </a>
+      </div>
+      <div class="gram">
+          <a href="http://instagram.com/ernathan" target="_blank"><img class="lazy" src="images/tahiti-08.jpg" alt="Emily Nathan">
+              <p>Emily Nathan</p>
+          </a>
+      </div>
+      <div class="gram">
+          <a href="http://instagram.com/omjsk" target="_blank"><img class="lazy" src="images/tahiti-09.jpg" alt="Ja Soon Kim">
+              <p>Ja Soon Kim</p>
+          </a>
+      </div>
+      <div class="gram">
+          <a href="http://instagram.com/twheat" target="_blank"><img class="lazy" src="images/tahiti-10.jpg" alt="Tyson Wheatley">
+              <p>Tyson Wheatley</p>
+          </a>
+      </div>
+      <div class="gram">
+          <a href="http://instagram.com/dantom" target="_blank"><img class="lazy" src="images/tahiti-11.jpg" alt="Dan Tom">
+              <p>Dan Tom</p>
+          </a>
+      </div>
+      <div class="gram">
+          <a href="http://instagram.com/twheat" target="_blank"><img class="lazy" src="images/tahiti-12.jpg" alt="Tyson Wheatley">
+              <p>Tyson Wheatley</p>
+          </a>
+      </div>
+      <div class="gram">
+          <a href="http://instagram.com/tashavanzandt" target="_blank"><img class="lazy" src="images/tahiti-13.jpg" alt="Tasha van Zandt">
+              <p>Tasha van Zandt</p>
+          </a>
+      </div>
+      <div class="gram">
+          <a href="http://instagram.com/shellystrazis" target="_blank"><img class="lazy" src="images/tahiti-14.jpg" alt="Shelly Strazis">
+              <p>Shelly Strazis</p>
+          </a>
+      </div>
+      <div class="gram">
+          <a href="http://instagram.com/ernathan" target="_blank"><img class="lazy" src="images/tahiti-15.jpg" alt="Emily Nathan">
+              <p>Emily Nathan</p>
+          </a>
+      </div>
+      <div class="gram">
+          <a href="http://instagram.com/ernathan" target="_blank"><img class="lazy" src="images/tahiti-16.jpg" alt="Emily Nathan">
+              <p>Emily Nathan</p>
+          </a>
+      </div>
+      <div class="gram">
+          <a href="http://instagram.com/twheat" target="_blank"><img class="lazy" src="images/tahiti-17.jpg" alt="Tyson Wheatley">
+              <p>Tyson Wheatley</p>
+          </a>
+      </div>
+      <div class="gram">
+          <a href="http://instagram.com/shellystrazis" target="_blank"><img class="lazy" src="images/tahiti-18.jpg" alt="Shelly Strazis">
+              <p>Shelly Strazis</p>
+          </a>
+      </div>
+      <div class="gram">
+          <a href="http://instagram.com/dantom" target="_blank"><img class="lazy" src="images/tahiti-19.jpg" alt="Dan Tom">
+              <p>Dan Tom</p>
+          </a>
+      </div>
+      <div class="gram">
+          <a href="http://instagram.com/ernathan" target="_blank"><img class="lazy" src="images/tahiti-20.jpg" alt="Emily Nathan">
+              <p>Emily Nathan</p>
+          </a>
+      </div>
+      <div class="gram">
+          <a href="http://instagram.com/saltywings" target="_blank"><img class="lazy" src="images/tahiti-21.jpg" alt="Salty Wings">
+              <p>Salty Wings</p>
+          </a>
+      </div>
   </div>
-
 
 
   <!-- <div id="nav-holder"><div id="nav"><a href="../../index.html"><img src="images/tiny-atlas-sm.jpg" alt="Tiny Atlas Quarterly"></a></div></div> -->
