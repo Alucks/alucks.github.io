@@ -21,15 +21,115 @@
 <body class="centered">
 <script>
 
-$(document).on("ready", function() {
-  $(function() {
-    $("img.lazy").lazyload({
-      threshold : 200
-    });
-  });
-});
+var tofinoPeople = [
+    {
+        "image": "tofino-01.jpg",
+        "name": "Emily Nathan",
+        "handle": "ernathan"
+    },
+    {
+        "image": "tofino-02.jpg",
+        "name": "Ja Soon Kim",
+        "handle": "omjsk"
+    },
+    {
+        "image": "tofino-03.jpg",
+        "name": "Emily Nathan",
+        "handle": "ernathan"
+    },
+    {
+        "image": "tofino-04.jpg",
+        "name": "Nicole Franzen",
+        "handle": "nicole_franzen"
+    },
+    {
+        "image": "tofino-05.jpg",
+        "name": "Emily Nathan",
+        "handle": "ernathan"
+    },
+   {
+       "image": "tofino-06.jpg",
+       "name": "Emily Nathan",
+       "handle": "ernathan"
+   },
+   {
+       "image": "tofino-07.jpg",
+       "name": "Ryan Struck",
+       "handle": "ryanstruck"
+   },
+   {
+       "image": "tofino-08.jpg",
+       "name": "Emily Nathan",
+       "handle": "ernathan"
+   },
+   {
+       "image": "tofino-09.jpg",
+       "name": "Emily Nathan",
+       "handle": "ernathan"
+   },
+   {
+       "image": "tofino-10.jpg",
+       "name": "Emily Nathan",
+       "handle": "ernathan"
+   },
+   {
+       "image": "tofino-11.jpg",
+       "name": "Ryan Struck",
+       "handle": "ryanstruck"
+   },
+   {
+       "image": "tofino-12.jpg",
+       "name": "Nicole Franzen",
+       "handle": "nicole_franzen"
+   },
+   {
+       "image": "tofino-13.jpg",
+       "name": "Emily Nathan",
+       "handle": "ernathan"
+   },
+   {
+       "image": "tofino-14.jpg",
+       "name": "Emily Nathan",
+       "handle": "ernathan"
+   },
+   {
+       "image": "tofino-15.jpg",
+       "name": "Emily Nathan",
+       "handle": "ernathan"
+   },
+   {
+       "image": "tofino-16.jpg",
+       "name": "Nicole Franzen",
+       "handle": "nicole_franzen"
+   },
+   {
+       "image": "tofino-17.jpg",
+       "name": "Ryan Struck",
+       "handle": "ryanstruck"
+   },
+   {
+       "image": "tofino-18.jpg",
+       "name": "Nicole Franzen",
+       "handle": "nicole_franzen"
+   },
+   {
+       "image": "tofino-19.jpg",
+       "name": "Ryan Struck",
+       "handle": "ryanstruck"
+   },
+   {
+       "image": "tofino-20.jpg",
+       "name": "Emily Nathan",
+       "handle": "ernathan"
+   },
+   {
+       "image": "tofino-21.jpg",
+       "name": "Ryan Struck",
+       "handle": "ryanstruck"
+   }
+   ]
 
-var people = [
+var tahitiPeople = [
     {
         "image": "tahiti-01.jpg",
         "name": "Salty Wings",
@@ -138,6 +238,31 @@ var people = [
    ]
 
 
+   $(document).on("ready", function() {
+
+     var newHTML1 = [];
+     var newHTML2 = [];
+
+     $.each(tahitiPeople, function(i, value) {
+       newHTML1.push('<div class="gram"><a href="http://instagram.com/'+ value.handle +'" target="_blank"><img class="lazy" src="images/'+ value.image + '" alt="' + value.name + '" /> <p>'+ value.name + '</p></a></div>');
+     });
+     $("#tahiti-grid").html(newHTML1.join("  "));
+
+    $.each(tofinoPeople, function(i, value) {
+      newHTML2.push('<div class="gram"><a href="http://instagram.com/'+ value.handle +'" target="_blank"><img class="lazy" src="images/'+ value.image + '" alt="' + value.name + '" /> <p>'+ value.name + '</p></a></div>');
+    });
+    $("#tofino-grid").html(newHTML2.join("  "));
+
+     $(function() {
+       $("img.lazy").lazyload({
+         threshold : 200
+       });
+     });
+
+   });
+
+
+
 
 </script>
 
@@ -217,20 +342,8 @@ var people = [
     <p>Daily programming will include surf, yoga, creativity and photography training with full freedom to explore the coast on your own timeline if you prefer.</p>
   </div>
 </div>
-  <div class="grid-wrapper">
+  <div id="tofino-grid"class="grid-wrapper">
 
-  <div class="gram"><img class="lazy" src="images/01_Tofino_TAQ_trip_square.jpg"></div>
-  <div class="gram"><img class="lazy" src="images/02_Tofino_TAQ_trip_square.jpg"></div>
-  <div class="gram"><img class="lazy" src="images/03_Tofino_TAQ_trip_square.jpg"></div>
-  <div class="gram"><img class="lazy" src="images/04_Tofino_TAQ_trip_square.jpg"></div>
-  <div class="gram"><img class="lazy" src="images/05_Tofino_TAQ_trip_square.jpg"></div>
-  <div class="gram"><img class="lazy" src="images/06_Tofino_TAQ_trip_square.jpg"></div>
-  <div class="gram"><img class="lazy" src="images/07_Tofino_TAQ_trip_square.jpg"></div>
-  <div class="gram"><img class="lazy" src="images/08_Tofino_TAQ_trip_square.jpg"></div>
-  <div class="gram"><img class="lazy" src="images/09_Tofino_TAQ_trip_square.jpg"></div>
-  <div class="gram"><img class="lazy" src="images/10_Tofino_TAQ_trip_square.jpg"></div>
-  <div class="gram"><img class="lazy" src="images/11_Tofino_TAQ_trip_square.jpg"></div>
-  <div class="gram"><a href="http://allswellcreative.com/products/allswell-notebook-3" alt"AllSwell Collab Notebook" target="_blank"><img class="lazy" src="images/Journal.jpg"><p>Buy the notebook</p></a></div>
   </div>
 
 
@@ -259,17 +372,8 @@ var people = [
       <p>Daily programming will include surf, yoga, creativity and photography training with full freedom to explore the coast on your own timeline if you prefer.</p>
     </div>
   </div>
-  <div class="grid-wrapper">
+  <div id="tahiti-grid" class="grid-wrapper">
 
-  <div class="gram"><img class="lazy" src="images/01_Tahiti_TAQ_trip_square.jpg"></div>
-  <div class="gram"><img class="lazy" src="images/02_Tahiti_TAQ_trip_square.jpg"></div>
-  <div class="gram"><img class="lazy" src="images/03_Tahiti_TAQ_trip_square.jpg"></div>
-  <div class="gram"><img class="lazy" src="images/04_Tahiti_TAQ_trip_square.jpg"></div>
-  <div class="gram"><img class="lazy" src="images/05_Tahiti_TAQ_trip_square.jpg"></div>
-  <div class="gram"><img class="lazy" src="images/06_Tahiti_TAQ_trip_square.jpg"></div>
-  <div class="gram"><img class="lazy" src="images/07_Tahiti_TAQ_trip_square.jpg"></div>
-  <div class="gram"><img class="lazy" src="images/08_Tahiti_TAQ_trip_square.jpg"></div>
-  <div class="gram"><a href="http://allswellcreative.com/products/allswell-notebook-3" alt"AllSwell Collab Notebook" target="_blank"><img class="lazy" src="images/Journal.jpg"><p>Buy the notebook</p></a></div>
   </div>
 
 
