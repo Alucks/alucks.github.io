@@ -180,6 +180,11 @@ h2 {
      font-family: 'NewsGothicBT-RomanCondensed',sans-serif !important;
 }
 
+h4{
+	text-transform: uppercase;
+	margin: 1.33em 0 0 0;
+}
+
 p {
 	line-height:120%;
 	margin:0.5em 0 0 0;
@@ -784,15 +789,19 @@ only screen and (min-device-pixel-ratio : 1.5) {
 	/* color: #717035; */
 }
 
-.details-card .sidebar p{
+.details-card .sidebar p, .details-card .sidebar ul{
 		float: left;
 		clear: both;
 		width: 130px;
 		color: #232323;
 }
 
-.details-card .sidebar p{
+.details-card .sidebar p, .details-card .sidebar ul{
 	margin: 0 30px 1em 0;
+}
+
+.details-card .sidebar .no-b-m{
+	margin-bottom: 0;
 }
 .details-card .sidebar .label{
 	font-family: 'GT-Haptik-Regular', helvetica, sans-serif;
@@ -802,6 +811,22 @@ only screen and (min-device-pixel-ratio : 1.5) {
 .details-card .main-content {
 display: inline-block;
 max-width: 550px;
+}
+.main-content ul{
+	padding: 0px 0px 0px 18px;
+}
+.main-content li, .sidebar li{
+	padding-bottom: 10px;
+}
+
+.main-content .half{
+	display: inline-block;
+	width: 50%;
+	float: left;
+}
+.main-content .half ul, .sidebar ul{
+padding: 0px;
+list-style: none;
 }
 
 .grid-wrapper {
@@ -947,7 +972,7 @@ height:280px;
 
 a {transition: .3s ease-in-out;text-decoration: none;color: #232323;}
 
-p a:hover{
+p a:hover, li a:hover{
 	/* color: #e25813; */
 	border-bottom: 1px solid rgba(0,0,0,0);
 }
