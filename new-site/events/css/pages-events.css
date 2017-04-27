@@ -774,7 +774,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
 	 max-width: 100%;
 	 color: #232323;
 	 background-color: #fff;
-	 margin:-130px auto 50px;
+	 margin:-560px auto 50px;
 	 box-shadow: 0 26px 40px -24px rgba(0,0,0,0.2);
 }
 
@@ -1016,7 +1016,7 @@ a p {
 @media (max-width:750px) {
 
 .details-card {
-	margin:0px auto 30px;
+	margin:-50px auto 30px;
 }
 
 .details-card .sidebar p{
