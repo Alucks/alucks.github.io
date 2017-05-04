@@ -774,7 +774,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
 	 max-width: 100%;
 	 color: #232323;
 	 background-color: #fff;
-	 margin:-300px auto 50px;
+	 margin: -300px auto 50px;
 	 box-shadow: 0 26px 40px -24px rgba(0,0,0,0.2);
 }
 
