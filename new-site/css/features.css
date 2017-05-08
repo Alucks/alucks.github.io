@@ -342,25 +342,55 @@ p.pg-box-content {
 /*-----------    22    --------------*/
 #page22 {
 	display:none;
-	z-index: 28;
+	z-index: 29;
 }
 
 /*-----------    23    --------------*/
 #page23 {
 	display:none;
-	z-index: 28;
+	z-index: 30;
 }
 
 /*-----------    24    --------------*/
 #page24 {
 	display:none;
-	z-index: 28;
+	z-index: 31;
 }
 
 /*-----------    25    --------------*/
 #page25 {
 	display:none;
-	z-index: 28;
+	z-index: 32;
+}
+
+/*-----------    26    --------------*/
+#page26 {
+	display:none;
+	z-index: 33;
+}
+
+/*-----------    27    --------------*/
+#page27 {
+	display:none;
+	z-index: 34;
+}
+
+/*-----------    28    --------------*/
+#page28 {
+	display:none;
+	z-index: 35;
+}
+
+/*-----------    29    --------------*/
+#page29 {
+	display:none;
+	z-index: 36;
+}
+
+/*-----------    30    --------------*/
+#page30 {
+	display:none;
+	z-index: 37;
 }
 
 /*-----------    EDITORIAL   --------------*/
