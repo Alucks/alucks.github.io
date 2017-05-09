@@ -393,6 +393,12 @@ p.pg-box-content {
 	z-index: 37;
 }
 
+/*-----------    30    --------------*/
+#page31 {
+	display:none;
+	z-index: 38;
+}
+
 /*-----------    EDITORIAL   --------------*/
 p.italics{
 	font-style: italic;
