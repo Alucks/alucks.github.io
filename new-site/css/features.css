@@ -890,7 +890,7 @@ div.pg-credits-box img {
 		max-height: none;
 	 }
 
-	#page1, #page2, #page3, #page4, #page5, #page6, #page7, #page8, #page9, #page10, #page11, #page12, #page13, #page14, #page15, #page16, #page17, #page18, #page19, #page20, #page21, #page22, #page23, #page24, #page25 {
+	#page1, #page2, #page3, #page4, #page5, #page6, #page7, #page8, #page9, #page10, #page11, #page12, #page13, #page14, #page15, #page16, #page17, #page18, #page19, #page20, #page21, #page22, #page23, #page24, #page25, #page26, #page27, #page28, #page29, #page30, #page31 {
 		display: block;
 	}
 
@@ -950,10 +950,10 @@ div.pg-credits-box img {
 	}
 
 	/* CAPTIONS */
-
+/*
 	#nav {
           width: 100%;
-	}
+	}*/
 
 	#page-resources-box, #pg-wardrobe {
           top: 76.42%; left: 30%; width:62%;
