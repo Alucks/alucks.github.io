@@ -836,6 +836,11 @@ div.pg-credits-box img {
 	margin-bottom: 2px;
 }
 
+.masthead.stockists h3 {
+	margin-top: 50px;
+	margin-bottom: -40px;
+}
+
 /*----------- MEDIA QUERIES -------------------- */
 /*----------- ORIENTATION -------------*/
 @media (orientation: portrait) {
