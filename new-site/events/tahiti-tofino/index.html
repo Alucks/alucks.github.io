@@ -24,7 +24,10 @@
    $(document).on("ready", function() {
      $(function() {
        $("img.lazy").lazyload({
-         threshold : 200
+         effect : "fadeIn"
+       });
+       $('img.lazy').load(function() {
+         console.log($(this).attr('src') + ' loaded');
        });
      });
    });
@@ -157,107 +160,107 @@
   </div>
   <div id="tahiti-grid" class="grid-wrapper">
       <div class="gram">
-          <a href="http://instagram.com/saltywings" target="_blank"><img class="lazy" src="images/tahiti-01.jpg" alt="Salty Wings">
+          <a href="http://instagram.com/saltywings" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tahiti-01.jpg" alt="Salty Wings">
               <p>Salty Wings</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/saltywings" target="_blank"><img class="lazy" src="images/tahiti-02.jpg" alt="Salty Wings">
+          <a href="http://instagram.com/saltywings" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tahiti-02.jpg" alt="Salty Wings">
               <p>Salty Wings</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/saltywings" target="_blank"><img class="lazy" src="images/tahiti-03.jpg" alt="Salty Wings">
+          <a href="http://instagram.com/saltywings" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tahiti-03.jpg" alt="Salty Wings">
               <p>Salty Wings</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/omjsk" target="_blank"><img class="lazy" src="images/tahiti-04.jpg" alt="Ja Soon Kim">
+          <a href="http://instagram.com/omjsk" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tahiti-04.jpg" alt="Ja Soon Kim">
               <p>Ja Soon Kim</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/twheat" target="_blank"><img class="lazy" src="images/tahiti-05.jpg" alt="Tyson Wheatley">
+          <a href="http://instagram.com/twheat" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tahiti-05.jpg" alt="Tyson Wheatley">
               <p>Tyson Wheatley</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/ernathan" target="_blank"><img class="lazy" src="images/tahiti-06.jpg" alt="Emily Nathan">
+          <a href="http://instagram.com/ernathan" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tahiti-06.jpg" alt="Emily Nathan">
               <p>Emily Nathan</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/dantom" target="_blank"><img class="lazy" src="images/tahiti-07.jpg" alt="Dan Tom">
+          <a href="http://instagram.com/dantom" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tahiti-07.jpg" alt="Dan Tom">
               <p>Dan Tom</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/ernathan" target="_blank"><img class="lazy" src="images/tahiti-08.jpg" alt="Emily Nathan">
+          <a href="http://instagram.com/ernathan" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tahiti-08.jpg" alt="Emily Nathan">
               <p>Emily Nathan</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/omjsk" target="_blank"><img class="lazy" src="images/tahiti-09.jpg" alt="Ja Soon Kim">
+          <a href="http://instagram.com/omjsk" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tahiti-09.jpg" alt="Ja Soon Kim">
               <p>Ja Soon Kim</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/twheat" target="_blank"><img class="lazy" src="images/tahiti-10.jpg" alt="Tyson Wheatley">
+          <a href="http://instagram.com/twheat" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tahiti-10.jpg" alt="Tyson Wheatley">
               <p>Tyson Wheatley</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/dantom" target="_blank"><img class="lazy" src="images/tahiti-11.jpg" alt="Dan Tom">
+          <a href="http://instagram.com/dantom" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tahiti-11.jpg" alt="Dan Tom">
               <p>Dan Tom</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/twheat" target="_blank"><img class="lazy" src="images/tahiti-12.jpg" alt="Tyson Wheatley">
+          <a href="http://instagram.com/twheat" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tahiti-12.jpg" alt="Tyson Wheatley">
               <p>Tyson Wheatley</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/tashavanzandt" target="_blank"><img class="lazy" src="images/tahiti-13.jpg" alt="Tasha van Zandt">
+          <a href="http://instagram.com/tashavanzandt" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tahiti-13.jpg" alt="Tasha van Zandt">
               <p>Tasha van Zandt</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/shellystrazis" target="_blank"><img class="lazy" src="images/tahiti-14.jpg" alt="Shelly Strazis">
+          <a href="http://instagram.com/shellystrazis" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tahiti-14.jpg" alt="Shelly Strazis">
               <p>Shelly Strazis</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/ernathan" target="_blank"><img class="lazy" src="images/tahiti-15.jpg" alt="Emily Nathan">
+          <a href="http://instagram.com/ernathan" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tahiti-15.jpg" alt="Emily Nathan">
               <p>Emily Nathan</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/ernathan" target="_blank"><img class="lazy" src="images/tahiti-16.jpg" alt="Emily Nathan">
+          <a href="http://instagram.com/ernathan" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tahiti-16.jpg" alt="Emily Nathan">
               <p>Emily Nathan</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/twheat" target="_blank"><img class="lazy" src="images/tahiti-17.jpg" alt="Tyson Wheatley">
+          <a href="http://instagram.com/twheat" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tahiti-17.jpg" alt="Tyson Wheatley">
               <p>Tyson Wheatley</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/shellystrazis" target="_blank"><img class="lazy" src="images/tahiti-18.jpg" alt="Shelly Strazis">
+          <a href="http://instagram.com/shellystrazis" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tahiti-18.jpg" alt="Shelly Strazis">
               <p>Shelly Strazis</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/dantom" target="_blank"><img class="lazy" src="images/tahiti-19.jpg" alt="Dan Tom">
+          <a href="http://instagram.com/dantom" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tahiti-19.jpg" alt="Dan Tom">
               <p>Dan Tom</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/ernathan" target="_blank"><img class="lazy" src="images/tahiti-20.jpg" alt="Emily Nathan">
+          <a href="http://instagram.com/ernathan" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tahiti-20.jpg" alt="Emily Nathan">
               <p>Emily Nathan</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/saltywings" target="_blank"><img class="lazy" src="images/tahiti-21.jpg" alt="Salty Wings">
+          <a href="http://instagram.com/saltywings" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tahiti-21.jpg" alt="Salty Wings">
               <p>Salty Wings</p>
           </a>
       </div>
@@ -304,107 +307,107 @@
   </div>
   <div id="tofino-grid" class="grid-wrapper">
       <div class="gram">
-          <a href="http://instagram.com/ernathan" target="_blank"><img class="lazy" src="images/tofino-01.jpg" alt="Emily Nathan">
+          <a href="http://instagram.com/ernathan" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tofino-01.jpg" alt="Emily Nathan">
               <p>Emily Nathan</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/omjsk" target="_blank"><img class="lazy" src="images/tofino-02.jpg" alt="Ja Soon Kim">
+          <a href="http://instagram.com/omjsk" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tofino-02.jpg" alt="Ja Soon Kim">
               <p>Ja Soon Kim</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/ernathan" target="_blank"><img class="lazy" src="images/tofino-03.jpg" alt="Emily Nathan">
+          <a href="http://instagram.com/ernathan" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tofino-03.jpg" alt="Emily Nathan">
               <p>Emily Nathan</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/nicole_franzen" target="_blank"><img class="lazy" src="images/tofino-04.jpg" alt="Nicole Franzen">
+          <a href="http://instagram.com/nicole_franzen" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tofino-04.jpg" alt="Nicole Franzen">
               <p>Nicole Franzen</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/ernathan" target="_blank"><img class="lazy" src="images/tofino-05.jpg" alt="Emily Nathan">
+          <a href="http://instagram.com/ernathan" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tofino-05.jpg" alt="Emily Nathan">
               <p>Emily Nathan</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/ernathan" target="_blank"><img class="lazy" src="images/tofino-06.jpg" alt="Emily Nathan">
+          <a href="http://instagram.com/ernathan" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tofino-06.jpg" alt="Emily Nathan">
               <p>Emily Nathan</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/ryanstruck" target="_blank"><img class="lazy" src="images/tofino-07.jpg" alt="Ryan Struck">
+          <a href="http://instagram.com/ryanstruck" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tofino-07.jpg" alt="Ryan Struck">
               <p>Ryan Struck</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/ernathan" target="_blank"><img class="lazy" src="images/tofino-08.jpg" alt="Emily Nathan">
+          <a href="http://instagram.com/ernathan" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tofino-08.jpg" alt="Emily Nathan">
               <p>Emily Nathan</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/ernathan" target="_blank"><img class="lazy" src="images/tofino-09.jpg" alt="Emily Nathan">
+          <a href="http://instagram.com/ernathan" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tofino-09.jpg" alt="Emily Nathan">
               <p>Emily Nathan</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/ernathan" target="_blank"><img class="lazy" src="images/tofino-10.jpg" alt="Emily Nathan">
+          <a href="http://instagram.com/ernathan" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tofino-10.jpg" alt="Emily Nathan">
               <p>Emily Nathan</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/ryanstruck" target="_blank"><img class="lazy" src="images/tofino-11.jpg" alt="Ryan Struck">
+          <a href="http://instagram.com/ryanstruck" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tofino-11.jpg" alt="Ryan Struck">
               <p>Ryan Struck</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/nicole_franzen" target="_blank"><img class="lazy" src="images/tofino-12.jpg" alt="Nicole Franzen">
+          <a href="http://instagram.com/nicole_franzen" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tofino-12.jpg" alt="Nicole Franzen">
               <p>Nicole Franzen</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/ernathan" target="_blank"><img class="lazy" src="images/tofino-13.jpg" alt="Emily Nathan">
+          <a href="http://instagram.com/ernathan" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tofino-13.jpg" alt="Emily Nathan">
               <p>Emily Nathan</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/ernathan" target="_blank"><img class="lazy" src="images/tofino-14.jpg" alt="Emily Nathan">
+          <a href="http://instagram.com/ernathan" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tofino-14.jpg" alt="Emily Nathan">
               <p>Emily Nathan</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/ernathan" target="_blank"><img class="lazy" src="images/tofino-15.jpg" alt="Emily Nathan">
+          <a href="http://instagram.com/ernathan" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tofino-15.jpg" alt="Emily Nathan">
               <p>Emily Nathan</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/nicole_franzen" target="_blank"><img class="lazy" src="images/tofino-16.jpg" alt="Nicole Franzen">
+          <a href="http://instagram.com/nicole_franzen" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tofino-16.jpg" alt="Nicole Franzen">
               <p>Nicole Franzen</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/ryanstruck" target="_blank"><img class="lazy" src="images/tofino-17.jpg" alt="Ryan Struck">
+          <a href="http://instagram.com/ryanstruck" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tofino-17.jpg" alt="Ryan Struck">
               <p>Ryan Struck</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/nicole_franzen" target="_blank"><img class="lazy" src="images/tofino-18.jpg" alt="Nicole Franzen">
+          <a href="http://instagram.com/nicole_franzen" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tofino-18.jpg" alt="Nicole Franzen">
               <p>Nicole Franzen</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/ryanstruck" target="_blank"><img class="lazy" src="images/tofino-19.jpg" alt="Ryan Struck">
+          <a href="http://instagram.com/ryanstruck" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tofino-19.jpg" alt="Ryan Struck">
               <p>Ryan Struck</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/ernathan" target="_blank"><img class="lazy" src="images/tofino-20.jpg" alt="Emily Nathan">
+          <a href="http://instagram.com/ernathan" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tofino-20.jpg" alt="Emily Nathan">
               <p>Emily Nathan</p>
           </a>
       </div>
       <div class="gram">
-          <a href="http://instagram.com/ryanstruck" target="_blank"><img class="lazy" src="images/tofino-21.jpg" alt="Ryan Struck">
+          <a href="http://instagram.com/ryanstruck" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tofino-21.jpg" alt="Ryan Struck">
               <p>Ryan Struck</p>
           </a>
       </div>

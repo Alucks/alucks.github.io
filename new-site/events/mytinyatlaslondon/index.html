@@ -21,6 +21,18 @@
 <body class="centered">
 <script>
 
+$(function() {
+    $("img.lazy").lazyload({
+        event : "sporty"
+    });
+});
+
+$(window).bind("load", function() {
+    var timeout = setTimeout(function() {
+        $("img.lazy").trigger("sporty")
+    }, 5000);
+});
+
 </script>
 
 <!-- <div class="header-container">
@@ -63,11 +75,9 @@
             </div>
         </div>
 
-  <div id="tahiti" class="img-head" style= "height: 600px; background-image: url(images/london-bg.jpg)">
-    <img src="images/london-logo.png" alt="My Tiny Atlas London" class="logo">
-  </div>
+  <div id="tahiti" class="img-head" style= "height: 600px; background-image: url(images/00_Tahiti_TAQ_trip.jpg)"></div>
 
-  <div class="details-card with-logo">
+  <div class="details-card">
     <h3>#mytinyatlasLONDON</h3>
     <div class="sidebar">
       <p class="info">
@@ -79,9 +89,8 @@
       <p class="info">
         <span class="label">Where</span><br />
         Dulwich Picture Gallery<br />
-        Gallery Rd<br />
-        Southwark SE21 7AD<br />
-        UK
+        3376 18th St<br />
+        San Francisco
       </p>
     </div>
     <div class="main-content">
@@ -94,44 +103,70 @@
   </div>
   <h2>Print Winners</h2>
   <div id="print-grid" class="grid-wrapper">
-    <div class="gram">
-        <a href="http://instagram.com/saltywings" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tahiti-01.jpg" alt="Salty Wings">
-            <p>Salty Wings</p>
-        </a>
-    </div>
-    <div class="gram">
-        <a href="http://instagram.com/saltywings" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tahiti-02.jpg" alt="Salty Wings">
-            <p>Salty Wings</p>
-        </a>
-    </div>
-    <div class="gram">
-        <a href="http://instagram.com/saltywings" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tahiti-03.jpg" alt="Salty Wings">
-            <p>Salty Wings</p>
-        </a>
-    </div>
-
+      <div class="gram">
+          <a href="http://instagram.com/saltywings" target="_blank"><img  class="lazy" data-original="images/tahiti-01.jpg" alt="Salty Wings">
+              <p>Salty Wings</p>
+          </a>
+      </div>
+      <div class="gram">
+          <a href="http://instagram.com/saltywings" target="_blank"><img  class="lazy" data-original="images/tahiti-02.jpg" alt="Salty Wings">
+              <p>Salty Wings</p>
+          </a>
+      </div>
+      <div class="gram">
+          <a href="http://instagram.com/saltywings" target="_blank"><img  class="lazy" data-original="images/tahiti-03.jpg" alt="Salty Wings">
+              <p>Salty Wings</p>
+          </a>
+      </div>
+      <div class="gram">
+          <a href="http://instagram.com/omjsk" target="_blank"><img  class="lazy" data-original="images/tahiti-04.jpg" alt="Ja Soon Kim">
+              <p>Ja Soon Kim</p>
+          </a>
+      </div>
+      <div class="gram">
+          <a href="http://instagram.com/twheat" target="_blank"><img  class="lazy" data-original="images/tahiti-05.jpg" alt="Tyson Wheatley">
+              <p>Tyson Wheatley</p>
+          </a>
+      </div>
+      <div class="gram">
+          <a href="http://instagram.com/ernathan" target="_blank"><img  class="lazy" data-original="images/tahiti-06.jpg" alt="Emily Nathan">
+              <p>Emily Nathan</p>
+          </a>
+      </div>
   </div>
-
   <h2>Web Gallery Winners</h2>
-
   <div id="web-grid" class="grid-wrapper">
-    <div class="gram">
-        <a href="http://instagram.com/saltywings" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tahiti-01.jpg" alt="Salty Wings">
-            <p>Salty Wings</p>
-        </a>
+        <div class="gram">
+            <a href="http://instagram.com/saltywings" target="_blank"><img  class="lazy" data-original="images/tahiti-01.jpg" alt="Salty Wings">
+                <p>Salty Wings</p>
+            </a>
+        </div>
+        <div class="gram">
+            <a href="http://instagram.com/saltywings" target="_blank"><img  class="lazy" data-original="images/tahiti-02.jpg" alt="Salty Wings">
+                <p>Salty Wings</p>
+            </a>
+        </div>
+        <div class="gram">
+            <a href="http://instagram.com/saltywings" target="_blank"><img  class="lazy" data-original="images/tahiti-03.jpg" alt="Salty Wings">
+                <p>Salty Wings</p>
+            </a>
+        </div>
+        <div class="gram">
+            <a href="http://instagram.com/omjsk" target="_blank"><img  class="lazy" data-original="images/tahiti-04.jpg" alt="Ja Soon Kim">
+                <p>Ja Soon Kim</p>
+            </a>
+        </div>
+        <div class="gram">
+            <a href="http://instagram.com/twheat" target="_blank"><img  class="lazy" data-original="images/tahiti-05.jpg" alt="Tyson Wheatley">
+                <p>Tyson Wheatley</p>
+            </a>
+        </div>
+        <div class="gram">
+            <a href="http://instagram.com/ernathan" target="_blank"><img  class="lazy" data-original="images/tahiti-06.jpg" alt="Emily Nathan">
+                <p>Emily Nathan</p>
+            </a>
+        </div>
     </div>
-    <div class="gram">
-        <a href="http://instagram.com/saltywings" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tahiti-02.jpg" alt="Salty Wings">
-            <p>Salty Wings</p>
-        </a>
-    </div>
-    <div class="gram">
-        <a href="http://instagram.com/saltywings" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tahiti-03.jpg" alt="Salty Wings">
-            <p>Salty Wings</p>
-        </a>
-    </div>
-
-  </div>
 
 </body>
 </html>

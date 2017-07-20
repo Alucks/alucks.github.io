@@ -778,6 +778,10 @@ only screen and (min-device-pixel-ratio : 1.5) {
 	 box-shadow: 0 26px 40px -24px rgba(0,0,0,0.2);
 }
 
+.details-card.with-logo {
+	margin: -140px auto 50px;
+}
+
 .details-card h3{
 		font-size: 1.4em;
 		color: #232323;
@@ -943,6 +947,10 @@ font-size: 1.8em;
 	width: 33%;
 	max-width: 640px;
 	padding: 10px;
+}
+
+.lazy{
+
 }
 
 .gram img {
