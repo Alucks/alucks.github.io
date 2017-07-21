@@ -768,7 +768,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
 
 .details-card {
 	 transform: translateX(0px);
-	 padding: 30px 30px 30px;
+	 padding: 30px 30px 60px;
 	 height: auto;
 	 width:770px;
 	 max-width: 100%;
