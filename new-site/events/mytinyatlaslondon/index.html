@@ -20,17 +20,6 @@
 </head>
 <body class="centered">
 <script>
-$(document).on("ready", function() {
-  $(function() {
-    $("img.lazy").lazyload({
-      threshold : 200
-    });
-    $('img.lazy').load(function() {
-      console.log($(this).attr('src') + ' loaded');
-    });
-  });
-});
-
 var printPeople = [
     {
         "image": "_jessum_.jpg",
@@ -274,7 +263,7 @@ $("#print-grid").html(newHTML1.join("  "));
         </div>
 
   <div id="tahiti" class="img-head" style= "height: 650px; background-image: url(images/london-bg-v2.jpg)">
-    <img src="images/london-logo-v2.png" alt="My Tiny Atlas London" class="logo" style="margin-top: 60px;">
+    <img src="images/london-logo-v2.png" alt="My Tiny Atlas London" class="logo" style="margin-top: 60px; width:300px;">
   </div>
 
   <div class="details-card with-logo">
