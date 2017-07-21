@@ -1,228 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Tiny Atlas Quarterly | London</title>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="apple-mobile-web-app-capable" content="yes" />
 
-        <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
-        <link rel="stylesheet" type="text/css" href="../../css/fonts.css" />
-        <link rel="stylesheet" type="text/css" href="../../css/header.css" />
-        <link rel="stylesheet" type="text/css" href="../css/pages-events.css" />
-        <link rel="shortcut icon" href="../../images/favicon.png">
+<head>
+    <title>Tiny Atlas Quarterly | London</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
 
-        <script src="http://code.jquery.com/jquery-latest.js"></script>
-        <script src="../js/jquery.lazyload.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/header.css" />
+    <link rel="stylesheet" type="text/css" href="../css/pages-events.css" />
+    <link rel="shortcut icon" href="../../images/favicon.png">
 
-    </head>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="../js/jquery.lazyload.min.js"></script>
+
 </head>
+</head>
+
 <body class="centered">
-<script>
-var printPeople = [
-    {
-        "image": "_jessum_.jpg",
-        "name": "_jessum_",
-        "undefined": "_jessum_"
-    },
-    {
-        "image": "angelacoomey-1.jpg",
-        "name": "angelacoomey",
-        "undefined": "angelacoomey-1"
-    },
-    {
-        "image": "angelacoomey-2.jpg",
-        "name": "angelacoomey",
-        "undefined": "angelacoomey-2"
-    },
-    {
-        "image": "brittfabello.jpg",
-        "name": "brittfabello",
-        "undefined": "brittfabello"
-    },
-    {
-        "image": "gabriellelander.jpg",
-        "name": "gabriellelander",
-        "undefined": "gabriellelander"
-    },
-    {
-        "image": "giuliaballetti-1.jpg",
-        "name": "giuliaballetti",
-        "undefined": "giuliaballetti-1"
-    },
-    {
-        "image": "giuliaballetti-2.jpg",
-        "name": "giuliaballetti",
-        "undefined": "giuliaballetti-2"
-    },
-    {
-        "image": "madevidailly.jpg",
-        "name": "madevidailly",
-        "undefined": "madevidailly"
-    },
-    {
-        "image": "denicoman.jpg",
-        "name": "denicoman",
-        "undefined": "denicoman"
-    },
-    {
-        "image": "middleofadventure.jpg",
-        "name": "middleofadventure",
-        "undefined": "middleofadventure"
-    },
-    {
-        "image": "paulthorburn.jpg",
-        "name": "paulthorburn",
-        "undefined": "paulthorburn"
-    },
-    {
-        "image": "petra_zehner.jpg",
-        "name": "petra_zehner",
-        "undefined": "petra_zehner"
-    },
-    {
-        "image": "elice_f-1.jpg",
-        "name": "elice_f",
-        "undefined": "elice_f-1"
-    },
-    {
-        "image": "elice_f-2.jpg",
-        "name": "elice_f",
-        "undefined": "elice_f-2"
-    },
-    {
-        "image": "elice_f-3.jpg",
-        "name": "elice_f",
-        "undefined": "elice_f-3"
-    },
-    {
-        "image": "elice_f-4.jpg",
-        "name": "elice_f",
-        "undefined": "elice_f-4"
-    },
-    {
-        "image": "haarkon_.jpg",
-        "name": "haarkon_",
-        "undefined": "haarkon_"
-    },
-    {
-        "image": "jessonthames.jpg",
-        "name": "jessonthames",
-        "undefined": "jessonthames"
-    },
-    {
-        "image": "angrybaker.jpg",
-        "name": "angrybaker",
-        "undefined": "angrybaker"
-    },
-    {
-        "image": "blythmonster.jpg",
-        "name": "blythmonster",
-        "undefined": "blythmonster"
-    },
-    {
-        "image": "francesmehardie-1.jpg",
-        "name": "francesmehardie",
-        "undefined": "francesmehardie-1"
-    },
-    {
-        "image": "francesmehardie-2.jpg",
-        "name": "francesmehardie",
-        "undefined": "francesmehardie-2"
-    },
-    {
-        "image": "mr.and.mrs.london.jpg",
-        "name": "mr.and.mrs.london",
-        "undefined": "mr.and.mrs.london"
-    },
-    {
-        "image": "annaglennpearce.jpg",
-        "name": "annaglennpearce",
-        "undefined": "annaglennpearce"
-    },
-    {
-        "image": "x._.tine.jpg",
-        "name": "x._.tine",
-        "undefined": "x._.tine"
-    },
-    {
-        "image": "jennywennypennypants.jpg",
-        "name": "jennywennypennypants",
-        "undefined": "jennywennypennypants"
-    },
-    {
-        "image": "crazycatladyldn.jpg",
-        "name": "crazycatladyldn",
-        "undefined": "crazycatladyldn"
-    },
-    {
-        "image": "kelag_wanderlust.jpg",
-        "name": "kelag_wanderlust",
-        "undefined": "kelag_wanderlust"
-    },
-    {
-        "image": "bei.bei.wei.jpg",
-        "name": "bei.bei.wei",
-        "undefined": "bei.bei.wei"
-    },
-    {
-        "image": "alice.and.lyra.jpg",
-        "name": "alice.and.lyra",
-        "undefined": "alice.and.lyra"
-    },
-    {
-        "image": "eastlondonmornings.jpg",
-        "name": "eastlondonmornings",
-        "undefined": "eastlondonmornings"
-    },
-    {
-        "image": "heatherdayart.jpg",
-        "name": "heatherdayart",
-        "undefined": "heatherdayart"
-    },
-    {
-        "image": "__suzannah.jpg",
-        "name": "__suzannah",
-        "undefined": "__suzannah"
-    },
-    {
-        "image": "ieva.galzone.jpg",
-        "name": "ieva.galzone",
-        "undefined": "ieva.galzone"
-    },
-    {
-        "image": "roselladegori.jpg",
-        "name": "roselladegori",
-        "undefined": "roselladegori"
-    },
-    {
-        "image": "sophia.gb.jpg",
-        "name": "sophia.gb",
-        "undefined": "sophia.gb"
-    },
-    {
-        "image": "whatinasees.jpg",
-        "name": "whatinasees",
-        "undefined": "whatinasees"
-    }
-]
+    <script>
+    $(document).on("ready", function() {
+      $(function() {
+        $("img.lazy").lazyload({
+          threshold : 200
+        });
+        $('img.lazy').load(function() {
+          console.log($(this).attr('src') + ' loaded');
+        });
+      });
+    });
+    </script>
 
-var webPeople = [
-]
-
-
-var newHTML1 = [];
-var newHTML2 = [];
-
-$.each(printPeople, function(i, value) {
-    newHTML1.push('<div class="gram"><a href="http://instagram.com/' + value.handle + '" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/' + value.image + '" alt="photography by ' + value.handle  + '" /> <p>' + value.handle  + '</p></a></div>');
-});
-$("#print-grid").html(newHTML1.join("  "));
-
-</script>
-
-<!-- <div class="header-container">
+    <!-- <div class="header-container">
 			<div class="header-links-container">
 
             <span class="header-links"><a href="about/index.html">Events</a></span>
@@ -233,20 +45,20 @@ $("#print-grid").html(newHTML1.join("  "));
             </div>
 </div> -->
 
-        <div class="header-container">
-            <div class="header-logo">
-                <a href="../../index.html"><img src="../../images/TAQ-logo.png" alt="" class="logo"></a>
-            </div>
-            <div class="header-links-container">
-              <!-- <span class="header-links link-active"><a href="index.html">Current Issue</a></span> -->
-              <span class="header-links list-triangle"><a href="../../index.html">Current Issue</a>
+    <div class="header-container">
+        <div class="header-logo">
+            <a href="../../index.html"><img src="../../images/TAQ-logo.png" alt="" class="logo"></a>
+        </div>
+        <div class="header-links-container">
+            <!-- <span class="header-links link-active"><a href="index.html">Current Issue</a></span> -->
+            <span class="header-links list-triangle"><a href="../../index.html">Current Issue</a>
                <ul>
                  <li><a href="../../about/editors-letter.html">Editor's Letter</a></li>
                  <li><a href="../../about/masthead.html">Masthead</a></li>
                </ul>
              </span>
 
-             <span class="header-links"><a href="../../about/index.html">About</a></span>
+            <span class="header-links"><a href="../../about/index.html">About</a></span>
 
             <span class="header-links list-triangle"><a href="../index.html">Events</a>
                   <ul>
@@ -258,78 +70,258 @@ $("#print-grid").html(newHTML1.join("  "));
                   </ul>
                 </span>
 
-                <span class="header-links"><a href="https://alitedesigns.com/collections/californiamade" target="_blank">Shop</a></span>
+            <span class="header-links"><a href="https://alitedesigns.com/collections/californiamade" target="_blank">Shop</a></span>
+        </div>
+    </div>
+
+    <div id="tahiti" class="img-head" style="height: 650px; background-image: url(images/london-bg-v2.jpg)">
+        <img src="images/london-logo-v2.png" alt="My Tiny Atlas London" class="logo" style="margin-top: 60px; width:300px;">
+    </div>
+
+    <div class="details-card with-logo">
+        <h3>#mytinyatlasLONDON</h3>
+        <div class="sidebar">
+            <p class="info" style="width:160px">
+                <span class="label">When</span><br /> July 19th - 22nd
+            </p>
+            <p class="info" style="width:160px">
+                <span class="label">Where</span><br /> Shoreditch, Croydon,<br /> Dulwich, Greenwich<br /> London - United Kingdom
+            </p>
+        </div>
+        <div class="main-content" style="width:520px">
+            <p>London; one of the most loved cities in the world, and through the eyes of the Tiny Atlas Quarterly community we bought #mytinyatlasLondon to life.</p>
+            <p>With thanks to our friends: <a href="https://www.instagram.com/fujifilm_instax_northamerica/?hl=en" target="_blank">Fujfilm Instax North America</a>, <a href="https://wowair.us" target="_blank">WOW air</a>,
+                <a href="https://shop.paperchasepress.com" target="_blank">Paper Chase Press</a>,
+                <a href="https://www.ohanacommunications.com" target="_blank">Ohana Communications</a>,
+                <a href="http://www.theproducer.com" target="_blank">The Producer</a>,
+                <a href="http://www.visitlondon.com" target="_blank">Visit London</a>,
+                <a href="http://www.visitgreenwich.org.uk" target="_blank">Visit Greenwich</a>,
+                <a href="https://www.croydon.gov.uk" target="_blank">Croydon Council</a>,
+                <a href="https://www.rise-gallery.co.uk" target="_blank"> Rise Gallery</a>,
+                <a href="https://www.gojourny.com" target="_blank">Journy</a>,
+                <a href="https://www.desertretreater.com" target="_blank">Sean Spellman</a>,
+                <a href="https://www.thened.com" target="_blank"></a>,
+                <a href="https://londonliverpoolstreet.andaz.hyatt.com/en/hotel/home.html" target="_blank">ANdAZ London</a>, and
+                <a href="http://www.dulwichpicturegallery.org.uk" target="_blank">the Dulwich Picture Gallery</a>.
+            </p>
+            <p></p>
+            <p></p>
+        </div>
+
+    </div>
+    <h2>Print Winners</h2>
+    <div id="print-grid" class="grid-wrapper">
+        <div id="print-grid" class="grid-wrapper">
+            <div class="gram">
+                <a href="http://instagram.com/_jessum_" target="_blank"><img img="" class="lazy" src="../img/placeholder.jpg" data-original="images/_jessum_.jpg" alt="photography by _jessum_">
+                    <p>_jessum_</p>
+                </a>
+            </div>
+            <div class="gram">
+                <a href="http://instagram.com/angelacoomey" target="_blank"><img img="" class="lazy" src="../img/placeholder.jpg" data-original="images/angelacoomey-1.jpg" alt="photography by angelacoomey">
+                    <p>angelacoomey</p>
+                </a>
+            </div>
+            <div class="gram">
+                <a href="http://instagram.com/angelacoomey" target="_blank"><img img="" class="lazy" src="../img/placeholder.jpg" data-original="images/angelacoomey-2.jpg" alt="photography by angelacoomey">
+                    <p>angelacoomey</p>
+                </a>
+            </div>
+            <div class="gram">
+                <a href="http://instagram.com/brittfabello" target="_blank"><img img="" class="lazy" src="../img/placeholder.jpg" data-original="images/brittfabello.jpg" alt="photography by brittfabello">
+                    <p>brittfabello</p>
+                </a>
+            </div>
+            <div class="gram">
+                <a href="http://instagram.com/gabriellelander" target="_blank"><img img="" class="lazy" src="../img/placeholder.jpg" data-original="images/gabriellelander.jpg" alt="photography by gabriellelander">
+                    <p>gabriellelander</p>
+                </a>
+            </div>
+            <div class="gram">
+                <a href="http://instagram.com/giuliaballetti" target="_blank"><img img="" class="lazy" src="../img/placeholder.jpg" data-original="images/giuliaballetti-1.jpg" alt="photography by giuliaballetti">
+                    <p>giuliaballetti</p>
+                </a>
+            </div>
+            <div class="gram">
+                <a href="http://instagram.com/giuliaballetti" target="_blank"><img img="" class="lazy" src="../img/placeholder.jpg" data-original="images/giuliaballetti-2.jpg" alt="photography by giuliaballetti">
+                    <p>giuliaballetti</p>
+                </a>
+            </div>
+            <div class="gram">
+                <a href="http://instagram.com/madevidailly" target="_blank"><img img="" class="lazy" src="../img/placeholder.jpg" data-original="images/madevidailly.jpg" alt="photography by madevidailly">
+                    <p>madevidailly</p>
+                </a>
+            </div>
+            <div class="gram">
+                <a href="http://instagram.com/denicoman" target="_blank"><img img="" class="lazy" src="../img/placeholder.jpg" data-original="images/denicoman.jpg" alt="photography by denicoman">
+                    <p>denicoman</p>
+                </a>
+            </div>
+            <div class="gram">
+                <a href="http://instagram.com/middleofadventure" target="_blank"><img img="" class="lazy" src="../img/placeholder.jpg" data-original="images/middleofadventure.jpg" alt="photography by middleofadventure">
+                    <p>middleofadventure</p>
+                </a>
+            </div>
+            <div class="gram">
+                <a href="http://instagram.com/paulthorburn" target="_blank"><img img="" class="lazy" src="../img/placeholder.jpg" data-original="images/paulthorburn.jpg" alt="photography by paulthorburn">
+                    <p>paulthorburn</p>
+                </a>
+            </div>
+            <div class="gram">
+                <a href="http://instagram.com/petra_zehner" target="_blank"><img img="" class="lazy" src="../img/placeholder.jpg" data-original="images/petra_zehner.jpg" alt="photography by petra_zehner">
+                    <p>petra_zehner</p>
+                </a>
+            </div>
+            <div class="gram">
+                <a href="http://instagram.com/elice_f" target="_blank"><img img="" class="lazy" src="../img/placeholder.jpg" data-original="images/elice_f-1.jpg" alt="photography by elice_f">
+                    <p>elice_f</p>
+                </a>
+            </div>
+            <div class="gram">
+                <a href="http://instagram.com/elice_f" target="_blank"><img img="" class="lazy" src="../img/placeholder.jpg" data-original="images/elice_f-2.jpg" alt="photography by elice_f">
+                    <p>elice_f</p>
+                </a>
+            </div>
+            <div class="gram">
+                <a href="http://instagram.com/elice_f" target="_blank"><img img="" class="lazy" src="../img/placeholder.jpg" data-original="images/elice_f-3.jpg" alt="photography by elice_f">
+                    <p>elice_f</p>
+                </a>
+            </div>
+            <div class="gram">
+                <a href="http://instagram.com/elice_f" target="_blank"><img img="" class="lazy" src="../img/placeholder.jpg" data-original="images/elice_f-4.jpg" alt="photography by elice_f">
+                    <p>elice_f</p>
+                </a>
+            </div>
+            <div class="gram">
+                <a href="http://instagram.com/haarkon_" target="_blank"><img img="" class="lazy" src="../img/placeholder.jpg" data-original="images/haarkon_.jpg" alt="photography by haarkon_">
+                    <p>haarkon_</p>
+                </a>
+            </div>
+            <div class="gram">
+                <a href="http://instagram.com/jessonthames" target="_blank"><img img="" class="lazy" src="../img/placeholder.jpg" data-original="images/jessonthames.jpg" alt="photography by jessonthames">
+                    <p>jessonthames</p>
+                </a>
+            </div>
+            <div class="gram">
+                <a href="http://instagram.com/angrybaker" target="_blank"><img img="" class="lazy" src="../img/placeholder.jpg" data-original="images/angrybaker.jpg" alt="photography by angrybaker">
+                    <p>angrybaker</p>
+                </a>
+            </div>
+            <div class="gram">
+                <a href="http://instagram.com/blythmonster" target="_blank"><img img="" class="lazy" src="../img/placeholder.jpg" data-original="images/blythmonster.jpg" alt="photography by blythmonster">
+                    <p>blythmonster</p>
+                </a>
+            </div>
+            <div class="gram">
+                <a href="http://instagram.com/francesmehardie" target="_blank"><img img="" class="lazy" src="../img/placeholder.jpg" data-original="images/francesmehardie-1.jpg" alt="photography by francesmehardie">
+                    <p>francesmehardie</p>
+                </a>
+            </div>
+            <div class="gram">
+                <a href="http://instagram.com/francesmehardie" target="_blank"><img img="" class="lazy" src="../img/placeholder.jpg" data-original="images/francesmehardie-2.jpg" alt="photography by francesmehardie">
+                    <p>francesmehardie</p>
+                </a>
+            </div>
+            <div class="gram">
+                <a href="http://instagram.com/mr.and.mrs.london" target="_blank"><img img="" class="lazy" src="../img/placeholder.jpg" data-original="images/mr.and.mrs.london.jpg" alt="photography by mr.and.mrs.london">
+                    <p>mr.and.mrs.london</p>
+                </a>
+            </div>
+            <div class="gram">
+                <a href="http://instagram.com/annaglennpearce" target="_blank"><img img="" class="lazy" src="../img/placeholder.jpg" data-original="images/annaglennpearce.jpg" alt="photography by annaglennpearce">
+                    <p>annaglennpearce</p>
+                </a>
+            </div>
+            <div class="gram">
+                <a href="http://instagram.com/x._.tine" target="_blank"><img img="" class="lazy" src="../img/placeholder.jpg" data-original="images/x._.tine.jpg" alt="photography by x._.tine">
+                    <p>x._.tine</p>
+                </a>
+            </div>
+            <div class="gram">
+                <a href="http://instagram.com/jennywennypennypants" target="_blank"><img img="" class="lazy" src="../img/placeholder.jpg" data-original="images/jennywennypennypants.jpg" alt="photography by jennywennypennypants">
+                    <p>jennywennypennypants</p>
+                </a>
+            </div>
+            <div class="gram">
+                <a href="http://instagram.com/crazycatladyldn" target="_blank"><img img="" class="lazy" src="../img/placeholder.jpg" data-original="images/crazycatladyldn.jpg" alt="photography by crazycatladyldn">
+                    <p>crazycatladyldn</p>
+                </a>
+            </div>
+            <div class="gram">
+                <a href="http://instagram.com/kelag_wanderlust" target="_blank"><img img="" class="lazy" src="../img/placeholder.jpg" data-original="images/kelag_wanderlust.jpg" alt="photography by kelag_wanderlust">
+                    <p>kelag_wanderlust</p>
+                </a>
+            </div>
+            <div class="gram">
+                <a href="http://instagram.com/bei.bei.wei" target="_blank"><img img="" class="lazy" src="../img/placeholder.jpg" data-original="images/bei.bei.wei.jpg" alt="photography by bei.bei.wei">
+                    <p>bei.bei.wei</p>
+                </a>
+            </div>
+            <div class="gram">
+                <a href="http://instagram.com/alice.and.lyra" target="_blank"><img img="" class="lazy" src="../img/placeholder.jpg" data-original="images/alice.and.lyra.jpg" alt="photography by alice.and.lyra">
+                    <p>alice.and.lyra</p>
+                </a>
+            </div>
+            <div class="gram">
+                <a href="http://instagram.com/eastlondonmornings" target="_blank"><img img="" class="lazy" src="../img/placeholder.jpg" data-original="images/eastlondonmornings.jpg" alt="photography by eastlondonmornings">
+                    <p>eastlondonmornings</p>
+                </a>
+            </div>
+            <div class="gram">
+                <a href="http://instagram.com/heatherdayart" target="_blank"><img img="" class="lazy" src="../img/placeholder.jpg" data-original="images/heatherdayart.jpg" alt="photography by heatherdayart">
+                    <p>heatherdayart</p>
+                </a>
+            </div>
+            <div class="gram">
+                <a href="http://instagram.com/__suzannah" target="_blank"><img img="" class="lazy" src="../img/placeholder.jpg" data-original="images/__suzannah.jpg" alt="photography by __suzannah">
+                    <p>__suzannah</p>
+                </a>
+            </div>
+            <div class="gram">
+                <a href="http://instagram.com/ieva.galzone" target="_blank"><img img="" class="lazy" src="../img/placeholder.jpg" data-original="images/ieva.galzone.jpg" alt="photography by ieva.galzone">
+                    <p>ieva.galzone</p>
+                </a>
+            </div>
+            <div class="gram">
+                <a href="http://instagram.com/roselladegori" target="_blank"><img img="" class="lazy" src="../img/placeholder.jpg" data-original="images/roselladegori.jpg" alt="photography by roselladegori">
+                    <p>roselladegori</p>
+                </a>
+            </div>
+            <div class="gram">
+                <a href="http://instagram.com/sophia.gb" target="_blank"><img img="" class="lazy" src="../img/placeholder.jpg" data-original="images/sophia.gb.jpg" alt="photography by sophia.gb">
+                    <p>sophia.gb</p>
+                </a>
+            </div>
+            <div class="gram">
+                <a href="http://instagram.com/whatinasees" target="_blank"><img img="" class="lazy" src="../img/placeholder.jpg" data-original="images/whatinasees.jpg" alt="photography by whatinasees">
+                    <p>whatinasees</p>
+                </a>
             </div>
         </div>
 
-  <div id="tahiti" class="img-head" style= "height: 650px; background-image: url(images/london-bg-v2.jpg)">
-    <img src="images/london-logo-v2.png" alt="My Tiny Atlas London" class="logo" style="margin-top: 60px; width:300px;">
-  </div>
-
-  <div class="details-card with-logo">
-    <h3>#mytinyatlasLONDON</h3>
-    <div class="sidebar">
-      <p class="info" style="width:160px">
-        <span class="label">When</span><br />
-        July 19th - 22nd
-      </p>
-      <p class="info" style="width:160px">
-        <span class="label">Where</span><br />
-        Shoreditch, Croydon,<br />
-        Dulwich, Greenwich<br />
-        London - United Kingdom
-      </p>
-    </div>
-    <div class="main-content"style="width:520px">
-      <p>London; one of the most loved cities in the world, and through the eyes of the Tiny Atlas Quarterly community we bought #mytinyatlasLondon to life.</p>
-      <p>With thanks to our friends: <a href="https://www.instagram.com/fujifilm_instax_northamerica/?hl=en" target="_blank">Fujfilm Instax North America</a>, <a href="https://wowair.us" target="_blank">WOW air</a>,
-      <a href="https://shop.paperchasepress.com" target="_blank">Paper Chase Press</a>,
-      <a href="https://www.ohanacommunications.com" target="_blank">Ohana Communications</a>,
-      <a href="http://www.theproducer.com" target="_blank">The Producer</a>,
-      <a href="http://www.visitlondon.com" target="_blank">Visit London</a>,
-      <a href="http://www.visitgreenwich.org.uk" target="_blank">Visit Greenwich</a>,
-      <a href="https://www.croydon.gov.uk" target="_blank">Croydon Council</a>,
-      <a href="https://www.rise-gallery.co.uk" target="_blank"> Rise Gallery</a>,
-      <a href="https://www.gojourny.com" target="_blank">Journy</a>,
-      <a href="https://www.desertretreater.com" target="_blank">Sean Spellman</a>,
-      <a href="https://www.thened.com" target="_blank"></a>,
-      <a href="https://londonliverpoolstreet.andaz.hyatt.com/en/hotel/home.html" target="_blank">ANdAZ London</a>, and
-      <a href="http://www.dulwichpicturegallery.org.uk" target="_blank">the Dulwich Picture Gallery</a>.
-      </p>
-      <p></p>
-      <p></p>
-
-
-
-
     </div>
 
-  </div>
-  <h2>Print Winners</h2>
-  <div id="print-grid" class="grid-wrapper">
+    <h2>Web Gallery Winners</h2>
 
-  </div>
+    <div id="web-grid" class="grid-wrapper">
+        <div class="gram">
+            <a href="http://instagram.com/saltywings" target="_blank"><img img class="lazy" src="../img/placeholder.jpg" data-original="images/tahiti-01.jpg" alt="Salty Wings">
+                <p>Salty Wings</p>
+            </a>
+        </div>
+        <div class="gram">
+            <a href="http://instagram.com/saltywings" target="_blank"><img img class="lazy" src="../img/placeholder.jpg" data-original="images/tahiti-02.jpg" alt="Salty Wings">
+                <p>Salty Wings</p>
+            </a>
+        </div>
+        <div class="gram">
+            <a href="http://instagram.com/saltywings" target="_blank"><img img class="lazy" src="../img/placeholder.jpg" data-original="images/tahiti-03.jpg" alt="Salty Wings">
+                <p>Salty Wings</p>
+            </a>
+        </div>
 
-  <h2>Web Gallery Winners</h2>
-
-  <div id="web-grid" class="grid-wrapper">
-    <div class="gram">
-        <a href="http://instagram.com/saltywings" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tahiti-01.jpg" alt="Salty Wings">
-            <p>Salty Wings</p>
-        </a>
     </div>
-    <div class="gram">
-        <a href="http://instagram.com/saltywings" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tahiti-02.jpg" alt="Salty Wings">
-            <p>Salty Wings</p>
-        </a>
-    </div>
-    <div class="gram">
-        <a href="http://instagram.com/saltywings" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/tahiti-03.jpg" alt="Salty Wings">
-            <p>Salty Wings</p>
-        </a>
-    </div>
-
-  </div>
 
 </body>
+
 </html>
