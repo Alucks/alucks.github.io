@@ -1023,7 +1023,7 @@ a p {
 
 @media (max-width:750px) {
 
-.details-card {
+.details-card, .details-card.with-logo {
 	margin:-50px auto 30px;
 }
 
