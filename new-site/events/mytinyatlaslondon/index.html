@@ -20,6 +20,216 @@
 </head>
 <body class="centered">
 <script>
+$(document).on("ready", function() {
+  $(function() {
+    $("img.lazy").lazyload({
+      threshold : 200
+    });
+    $('img.lazy').load(function() {
+      console.log($(this).attr('src') + ' loaded');
+    });
+  });
+});
+
+var printPeople = [
+    {
+        "image": "_jessum_.jpg",
+        "name": "_jessum_",
+        "undefined": "_jessum_"
+    },
+    {
+        "image": "angelacoomey-1.jpg",
+        "name": "angelacoomey",
+        "undefined": "angelacoomey-1"
+    },
+    {
+        "image": "angelacoomey-2.jpg",
+        "name": "angelacoomey",
+        "undefined": "angelacoomey-2"
+    },
+    {
+        "image": "brittfabello.jpg",
+        "name": "brittfabello",
+        "undefined": "brittfabello"
+    },
+    {
+        "image": "gabriellelander.jpg",
+        "name": "gabriellelander",
+        "undefined": "gabriellelander"
+    },
+    {
+        "image": "giuliaballetti-1.jpg",
+        "name": "giuliaballetti",
+        "undefined": "giuliaballetti-1"
+    },
+    {
+        "image": "giuliaballetti-2.jpg",
+        "name": "giuliaballetti",
+        "undefined": "giuliaballetti-2"
+    },
+    {
+        "image": "madevidailly.jpg",
+        "name": "madevidailly",
+        "undefined": "madevidailly"
+    },
+    {
+        "image": "denicoman.jpg",
+        "name": "denicoman",
+        "undefined": "denicoman"
+    },
+    {
+        "image": "middleofadventure.jpg",
+        "name": "middleofadventure",
+        "undefined": "middleofadventure"
+    },
+    {
+        "image": "paulthorburn.jpg",
+        "name": "paulthorburn",
+        "undefined": "paulthorburn"
+    },
+    {
+        "image": "petra_zehner.jpg",
+        "name": "petra_zehner",
+        "undefined": "petra_zehner"
+    },
+    {
+        "image": "elice_f-1.jpg",
+        "name": "elice_f",
+        "undefined": "elice_f-1"
+    },
+    {
+        "image": "elice_f-2.jpg",
+        "name": "elice_f",
+        "undefined": "elice_f-2"
+    },
+    {
+        "image": "elice_f-3.jpg",
+        "name": "elice_f",
+        "undefined": "elice_f-3"
+    },
+    {
+        "image": "elice_f-4.jpg",
+        "name": "elice_f",
+        "undefined": "elice_f-4"
+    },
+    {
+        "image": "haarkon_.jpg",
+        "name": "haarkon_",
+        "undefined": "haarkon_"
+    },
+    {
+        "image": "jessonthames.jpg",
+        "name": "jessonthames",
+        "undefined": "jessonthames"
+    },
+    {
+        "image": "angrybaker.jpg",
+        "name": "angrybaker",
+        "undefined": "angrybaker"
+    },
+    {
+        "image": "blythmonster.jpg",
+        "name": "blythmonster",
+        "undefined": "blythmonster"
+    },
+    {
+        "image": "francesmehardie-1.jpg",
+        "name": "francesmehardie",
+        "undefined": "francesmehardie-1"
+    },
+    {
+        "image": "francesmehardie-2.jpg",
+        "name": "francesmehardie",
+        "undefined": "francesmehardie-2"
+    },
+    {
+        "image": "mr.and.mrs.london.jpg",
+        "name": "mr.and.mrs.london",
+        "undefined": "mr.and.mrs.london"
+    },
+    {
+        "image": "annaglennpearce.jpg",
+        "name": "annaglennpearce",
+        "undefined": "annaglennpearce"
+    },
+    {
+        "image": "x._.tine.jpg",
+        "name": "x._.tine",
+        "undefined": "x._.tine"
+    },
+    {
+        "image": "jennywennypennypants.jpg",
+        "name": "jennywennypennypants",
+        "undefined": "jennywennypennypants"
+    },
+    {
+        "image": "crazycatladyldn.jpg",
+        "name": "crazycatladyldn",
+        "undefined": "crazycatladyldn"
+    },
+    {
+        "image": "kelag_wanderlust.jpg",
+        "name": "kelag_wanderlust",
+        "undefined": "kelag_wanderlust"
+    },
+    {
+        "image": "bei.bei.wei.jpg",
+        "name": "bei.bei.wei",
+        "undefined": "bei.bei.wei"
+    },
+    {
+        "image": "alice.and.lyra.jpg",
+        "name": "alice.and.lyra",
+        "undefined": "alice.and.lyra"
+    },
+    {
+        "image": "eastlondonmornings.jpg",
+        "name": "eastlondonmornings",
+        "undefined": "eastlondonmornings"
+    },
+    {
+        "image": "heatherdayart.jpg",
+        "name": "heatherdayart",
+        "undefined": "heatherdayart"
+    },
+    {
+        "image": "__suzannah.jpg",
+        "name": "__suzannah",
+        "undefined": "__suzannah"
+    },
+    {
+        "image": "ieva.galzone.jpg",
+        "name": "ieva.galzone",
+        "undefined": "ieva.galzone"
+    },
+    {
+        "image": "roselladegori.jpg",
+        "name": "roselladegori",
+        "undefined": "roselladegori"
+    },
+    {
+        "image": "sophia.gb.jpg",
+        "name": "sophia.gb",
+        "undefined": "sophia.gb"
+    },
+    {
+        "image": "whatinasees.jpg",
+        "name": "whatinasees",
+        "undefined": "whatinasees"
+    }
+]
+
+var webPeople = [
+]
+
+
+var newHTML1 = [];
+var newHTML2 = [];
+
+$.each(printPeople, function(i, value) {
+    newHTML1.push('<div class="gram"><a href="http://instagram.com/' + value.handle + '" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/' + value.image + '" alt="photography by ' + value.handle  + '" /> <p>' + value.handle  + '</p></a></div>');
+});
+$("#print-grid").html(newHTML1.join("  "));
 
 </script>
 
