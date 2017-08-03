@@ -186,8 +186,7 @@ var printPeople = [
     }
 ]
 
-var webPeople = [
-    {
+3    {
         "image": "anna_rudo.jpg",
         "handle": "anna_rudo",
         "undefined": "anna_rudo"
