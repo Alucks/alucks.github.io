@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tiny Atlas Quarterly | Dubrovnik </title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="../css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="../css/features.css" />
+    <link rel="shortcut icon" href="../images/favicon.png">
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="../js/velocity.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.transit.js"></script>
+
+    <script>
+        // Picture element HTML5 shiv
+        document.createElement("picture");
+    </script>
+    <script src="../js/picturefill.2.1.0.js" async></script>
+
+    <script src="../js/sil.js"></script>
+
+    <script>
+        $(window).load(function() {
+            //This is where you could start a loading animation.
+
+            //Then start loading the images.
+            $.preloadImages({
+                StepCallback: function(CurrentImage, TotalImages, LoadedElement, LoadTime) {
+                    console.log("Loaded image " + CurrentImage + "/" + TotalImages + " in " + LoadTime + " ms.");
+
+                    //This is where you could update some sort of progress indicator.
+                },
+
+                DoneCallback: function() {
+                    console.log("Done loading the images.");
+
+                    //This is where you could stop the loading animation.
+                }
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(function() {
+            $("#page1").each(function(index) {
+                $(this).hide().delay(100 * index).velocity({
+                    opacity: 1
+                }, {
+                    display: "block"
+                }, {
+                    duration: 2000
+                }, "easeOutCirc");
+            });
+            $("#nav-buttons").each(function(index) {
+                $(this).hide().delay(100 * index).velocity({
+                    opacity: 1
+                }, {
+                    display: "block"
+                }, {
+                    duration: 2000
+                }, "easeOutCirc");
+            });
+            $("#nav-holder").each(function(index) {
+                $(this).hide().delay(100 * index).velocity({
+                    opacity: 1
+                }, {
+                    display: "block"
+                }, {
+                    duration: 2000
+                }, "easeOutCirc");
+            });
+        });
+    </script>
+
+    <style media="screen">
+        #page1 .pg-upper-right-caption {
+            top: 5vh;
+        }
+    </style>
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1763007330608074');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" src="https://www.facebook.com/tr?id=1763007330608074&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+</head>
+
+
+<body id="taqPage">
+
+    <!-- PAGE NAVIGATION ------------------------------------------------------------->
+    <div id="nav-buttons" class="pg-nav"><span class="pg-prev" id="pg-pageDown"></span><span class="pg-next" id="pg-pageUp"></span></div>
+    <div style="display:none;">
+        <img src="../images/arrow_next.png">
+        <img src="../images/arrow_prev.png">
+        <img src="../images/blank-L.png">
+        <img src="../images/blank-S.png">
+        <img src="../images/tiny-atlas-sm.jpg">
+    </div>
+
+    <!-- PAGE 01 ------------------------------------------------------------->
+    <div id="page1" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/01_Dubrovnik_Erin_Kunkel_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/01_Dubrovnik_Erin_Kunkel_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/01_Dubrovnik_Erin_Kunkel_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Dubrovnik, Erin Kunkel">
+            </picture>
+            <!-- IMAGE END -->
+
+            <div class="pg-box pg-lower-caption pg-upper-right-caption pg-box-intro">
+
+                <!-- CAPTION -->
+                <!-- LEFT CAPTION -->
+                <div class="pg-box-content">
+                    <!-- CONTENT -->
+                    <!-- INTERVIW -->
+                    <div id="pg-interview">
+                        <div class="title-ill"><img src="images/dubrovnik-title.png" alt="" style="width:410px;"></div>
+                        <h3>Photography by: <a href="http://www.erinkunkel.com/" target="_blank">Erin Kunkel</a><br />
+                         Written by: <a href="http://www.erinkunkel.com/" target="_blank">Erin Kunkel</a><br />
+                         Title Design by: <a href="#" target="_blank">---</a><br />
+                    </div>
+                </div>
+                <!--END INTERVIEW -->
+            </div>
+            <!-- END BOX -->
+
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 01 ------------------------------------------------------------->
+
+    <!-- PAGE 02 ------------------------------------------------------------->
+    <div id="page2" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/02_Dubrovnik_Erin_Kunkel_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/02_Dubrovnik_Erin_Kunkel_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <source srcset="images/02_Dubrovnik_Erin_Kunkel_TAQ_CITY-V.jpg" media="(orientation: portrait)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/02_Dubrovnik_Erin_Kunkel_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Dubrovnik, Erin Kunkel">
+            </picture>
+            <!-- IMAGE END -->
+
+                        <!-- BOX  INTERVIEW-->
+                        <div class="pg-box pg-lower-caption pg-upper-right-caption pg-caption-light">
+                            <!-- CAPTION -->
+                            <!-- LEFT CAPTION -->
+                            <div class="pg-box-content">
+                                <!-- CONTENT -->
+                                <!-- INTERVIW -->
+                                <div id="pg-interview">
+                                    <h2 class="with-ill-small">Dubrovnik, Croatia</h2>
+                                    <p>Dubrovnik, a stunningly beautiful, ancient coastal city, can no doubt feel like a touristy postcard. It’s not its fault - the Adriatic coastline is simply otherworldly, and all the Game of Thrones associations have done their job. The old city in Dubrovnik is small, making it hard to avoid cruise ship tourists and other visitors - but get up go early in the morning or linger at dusk, and you'll have more space to wander. It’s not hard to find quiet places away from people-packed center of Dubrovnik, and other nearby towns like Milni are less frequented by tourists, easily reachable by water taxi. There, small taverns and pristine sites generate some serious magic. </p>
+                                </div>
+                            </div>
+                            <!--END INTERVIEW -->
+                        </div>
+                        <!-- END BOX -->
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 02 ------------------------------------------------------------->
+
+    <!-- PAGE 03 ------------------------------------------------------------->
+    <div id="page3" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/03_Dubrovnik_Erin_Kunkel_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/03_Dubrovnik_Erin_Kunkel_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <source srcset="images/03_Dubrovnik_Erin_Kunkel_TAQ_CITY-V.jpg" media="(orientation: portrait)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/03_Dubrovnik_Erin_Kunkel_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Dubrovnik, Erin Kunkel">
+            </picture>
+            <!-- IMAGE END -->
+
+
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 03 ------------------------------------------------------------->
+
+    <!-- PAGE 04 ------------------------------------------------------------->
+    <div id="page4" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/04_Dubrovnik_Erin_Kunkel_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/04_Dubrovnik_Erin_Kunkel_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/04_Dubrovnik_Erin_Kunkel_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Dubrovnik, Erin Kunkel">
+            </picture>
+            <!-- IMAGE END -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 04 ------------------------------------------------------------->
+
+    <!-- PAGE 05 ------------------------------------------------------------->
+    <div id="page5" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/05_Dubrovnik_Erin_Kunkel_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/05_Dubrovnik_Erin_Kunkel_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <source srcset="images/05_Dubrovnik_Erin_Kunkel_TAQ_CITY-V.jpg" media="(orientation: portrait)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/05_Dubrovnik_Erin_Kunkel_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Dubrovnik, Erin Kunkel">
+            </picture>
+            <!-- IMAGE END -->
+
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 05 ------------------------------------------------------------->
+
+    <!-- PAGE 06 ------------------------------------------------------------->
+    <div id="page6" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/06_Dubrovnik_Erin_Kunkel_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/06_Dubrovnik_Erin_Kunkel_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                  <source srcset="images/06_Dubrovnik_Erin_Kunkel_TAQ_CITY-V.jpg" media="(orientation: portrait)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/06_Dubrovnik_Erin_Kunkel_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Dubrovnik, Erin Kunkel">
+            </picture>
+            <!-- IMAGE END -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 06 ------------------------------------------------------------->
+
+    <!-- PAGE 07 ------------------------------------------------------------->
+    <div id="page7" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/07_Dubrovnik_Erin_Kunkel_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/07_Dubrovnik_Erin_Kunkel_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <source srcset="images/07_Dubrovnik_Erin_Kunkel_TAQ_CITY-V.jpg" media="(orientation: portrait)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/07_Dubrovnik_Erin_Kunkel_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Dubrovnik, Erin Kunkel">
+            </picture>
+            <!-- IMAGE END -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 07 ------------------------------------------------------------->
+
+    <!-- PAGE 08 ------------------------------------------------------------->
+    <div id="page8" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/08_Dubrovnik_Erin_Kunkel_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/08_Dubrovnik_Erin_Kunkel_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <source srcset="images/08_Dubrovnik_Erin_Kunkel_TAQ_CITY-V.jpg" media="(orientation: portrait)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/08_Dubrovnik_Erin_Kunkel_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Dubrovnik, Erin Kunkel">
+            </picture>
+            <!-- IMAGE END -->
+
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 08 ------------------------------------------------------------->
+
+    <!-- PAGE 09 ------------------------------------------------------------->
+    <div id="page9" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/09_Dubrovnik_Erin_Kunkel_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/09_Dubrovnik_Erin_Kunkel_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <source srcset="images/09_Dubrovnik_Erin_Kunkel_TAQ_CITY-V.jpg" media="(orientation: portrait)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/09_Dubrovnik_Erin_Kunkel_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Dubrovnik, Erin Kunkel">
+            </picture>
+            <!-- IMAGE END -->
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 09 ------------------------------------------------------------->
+
+    <!-- PAGE 10 ------------------------------------------------------------->
+    <div id="page10" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/10_Dubrovnik_Erin_Kunkel_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/10_Dubrovnik_Erin_Kunkel_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/10_Dubrovnik_Erin_Kunkel_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Dubrovnik, Erin Kunkel">
+            </picture>
+            <!-- IMAGE END -->
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 10 ------------------------------------------------------------->
+
+    <!-- PAGE 11 ------------------------------------------------------------->
+    <div id="page11" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/11_Dubrovnik_Erin_Kunkel_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/11_Dubrovnik_Erin_Kunkel_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/11_Dubrovnik_Erin_Kunkel_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Dubrovnik, Erin Kunkel">
+            </picture>
+            <!-- IMAGE END -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 11 ------------------------------------------------------------->
+
+    <!-- PAGE 12 ------------------------------------------------------------->
+    <div id="page12" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/12_Dubrovnik_Erin_Kunkel_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/12_Dubrovnik_Erin_Kunkel_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <source srcset="images/12_Dubrovnik_Erin_Kunkel_TAQ_CITY-V.jpg" media="(orientation: portrait)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/12_Dubrovnik_Erin_Kunkel_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Dubrovnik, Erin Kunkel">
+            </picture>
+            <!-- IMAGE END -->
+
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 12 ------------------------------------------------------------->
+
+    <!-- PAGE 13 ------------------------------------------------------------->
+    <div id="page13" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/13_Dubrovnik_Erin_Kunkel_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/13_Dubrovnik_Erin_Kunkel_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <source srcset="images/13_Dubrovnik_Erin_Kunkel_TAQ_CITY-V.jpg" media="(orientation: portrait)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/13_Dubrovnik_Erin_Kunkel_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Dubrovnik, Erin Kunkel">
+            </picture>
+            <!-- IMAGE END -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 13 ------------------------------------------------------------->
+
+    <!-- PAGE 14 ------------------------------------------------------------->
+    <div id="page14" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/14_Dubrovnik_Erin_Kunkel_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/14_Dubrovnik_Erin_Kunkel_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                  <source srcset="images/14_Dubrovnik_Erin_Kunkel_TAQ_CITY-V.jpg" media="(orientation: portrait)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/14_Dubrovnik_Erin_Kunkel_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Dubrovnik, Erin Kunkel">
+            </picture>
+            <!-- IMAGE END -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 14 ------------------------------------------------------------->
+
+    <!-- PAGE 15 ------------------------------------------------------------->
+    <div id="page15" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/15_Dubrovnik_Erin_Kunkel_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/15_Dubrovnik_Erin_Kunkel_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/15_Dubrovnik_Erin_Kunkel_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Dubrovnik, Erin Kunkel">
+            </picture>
+            <!-- IMAGE END -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 15 ------------------------------------------------------------->
+
+    <!-- PAGE 16 ------------------------------------------------------------->
+    <div id="page16" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/16_Dubrovnik_Erin_Kunkel_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/16_Dubrovnik_Erin_Kunkel_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                  <source srcset="images/16_Dubrovnik_Erin_Kunkel_TAQ_CITY-V.jpg" media="(orientation: portrait)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/16_Dubrovnik_Erin_Kunkel_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Dubrovnik, Erin Kunkel">
+            </picture>
+            <!-- IMAGE END -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 16 ------------------------------------------------------------->
+
+    <!-- PAGE 17 ------------------------------------------------------------->
+    <div id="page17" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/17_Dubrovnik_Erin_Kunkel_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/17_Dubrovnik_Erin_Kunkel_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/17_Dubrovnik_Erin_Kunkel_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Dubrovnik, Erin Kunkel">
+            </picture>
+            <!-- IMAGE END -->
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 17 ------------------------------------------------------------->
+
+    <!-- PAGE 18 ------------------------------------------------------------->
+    <div id="page18" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/18_Dubrovnik_Erin_Kunkel_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/18_Dubrovnik_Erin_Kunkel_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/18_Dubrovnik_Erin_Kunkel_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Dubrovnik, Erin Kunkel">
+            </picture>
+            <!-- IMAGE END -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 18 ------------------------------------------------------------->
+
+    <!-- PAGE 19 ------------------------------------------------------------->
+    <div id="page19" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/19_Dubrovnik_Erin_Kunkel_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/19_Dubrovnik_Erin_Kunkel_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                  <source srcset="images/19_Dubrovnik_Erin_Kunkel_TAQ_CITY-V.jpg" media="(orientation: portrait)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/19_Dubrovnik_Erin_Kunkel_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Dubrovnik, Erin Kunkel">
+            </picture>
+            <!-- IMAGE END -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 19 ------------------------------------------------------------->
+
+    <!-- PAGE 20 ------------------------------------------------------------->
+    <div id="page20" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/20_Dubrovnik_Erin_Kunkel_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/20_Dubrovnik_Erin_Kunkel_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/20_Dubrovnik_Erin_Kunkel_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Dubrovnik, Erin Kunkel">
+            </picture>
+            <!-- IMAGE END -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 20 ------------------------------------------------------------->
+
+    <!-- PAGE 21 ------------------------------------------------------------->
+    <div id="page21" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/21_Dubrovnik_Erin_Kunkel_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/21_Dubrovnik_Erin_Kunkel_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                  <source srcset="images/21_Dubrovnik_Erin_Kunkel_TAQ_CITY-V.jpg" media="(orientation: portrait)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/21_Dubrovnik_Erin_Kunkel_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Dubrovnik, Erin Kunkel">
+            </picture>
+            <!-- IMAGE END -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 21 ------------------------------------------------------------->
+
+    <!-- PAGE 22 ------------------------------------------------------------->
+    <div id="page22" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/22_Dubrovnik_Erin_Kunkel_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/22_Dubrovnik_Erin_Kunkel_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                  <source srcset="images/22_Dubrovnik_Erin_Kunkel_TAQ_CITY-V.jpg" media="(orientation: portrait)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/22_Dubrovnik_Erin_Kunkel_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Dubrovnik, Erin Kunkel">
+            </picture>
+            <!-- IMAGE END -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 22 ------------------------------------------------------------->
+
+    <!-- PAGE 23 ------------------------------------------------------------->
+    <div id="page23" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/23_Dubrovnik_Erin_Kunkel_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/23_Dubrovnik_Erin_Kunkel_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                  <source srcset="images/23_Dubrovnik_Erin_Kunkel_TAQ_CITY-V.jpg" media="(orientation: portrait)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/23_Dubrovnik_Erin_Kunkel_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Dubrovnik, Erin Kunkel">
+            </picture>
+            <!-- IMAGE END -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 23 ------------------------------------------------------------->
+
+    <!-- PAGE 24 ------------------------------------------------------------->
+    <div id="page24" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/24_Dubrovnik_Erin_Kunkel_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/24_Dubrovnik_Erin_Kunkel_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/24_Dubrovnik_Erin_Kunkel_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Dubrovnik, Erin Kunkel">
+            </picture>
+            <!-- IMAGE END -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 24 ------------------------------------------------------------->
+
+    <!-- PAGE 25 ------------------------------------------------------------->
+    <div id="page25" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/25_Dubrovnik_Erin_Kunkel_TAQ_CITY-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/25_Dubrovnik_Erin_Kunkel_TAQ_CITY-M.jpg" media="(min-width: 768px)">
+                  <source srcset="images/25_Dubrovnik_Erin_Kunkel_TAQ_CITY-V.jpg" media="(orientation: portrait)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/25_Dubrovnik_Erin_Kunkel_TAQ_CITY-S.jpg" alt="Tiny Atlas Quarterly, Dubrovnik, Erin Kunkel">
+            </picture>
+            <!-- IMAGE END -->
+
+            <!-- BOX  INTERVIEW-->
+            <div class="pg-box pg-lower-caption pg-upper-right-caption pg-caption-light">
+                <!-- CAPTION -->
+                <!-- LEFT CAPTION -->
+                <div class="pg-box-content">
+                    <!-- CONTENT -->
+                    <!-- INTERVIW -->
+                    <div id="pg-interview">
+
+                        <h2 class="with-ill">Resources</h2>
+
+                        <h4>Eat:</h4>
+
+                        <h5><a href="http://www.restaurant-leut.com/" target="_blank">Restaurant Leut</a></h5>
+                        <p>Located in the old center of Cavtat, this is a Dalmatian restaurant, serving the flavors of the Adriatic region. Waterfront sitting is a must, and so is the fresh seafood. </p>
+
+                        <h5><a href="http://www.pepperseatery.com" target="_blank">Pepper’s Eatery</a></h5>
+                        <p>A chic, modern Mediterranean restaurant turning local ingredients into international delicacies. Asian-inspired dishes, such as the crispy shredded duck, are worth the wait.</p>
+
+                        <h5><a href="http://www.bota-sare.hr/" target="_blank">Bota Oyster and Sushi Bar</a></h5>
+                        <p>Sushi in a historic location? This Dubrovnik restaurant makes it possible, serving creative rolls against the backdrop of peeling walls and mood lighting.</p>
+
+                        <h4>Stay:</h4>
+                        <h5><a href="http://www.sheratondubrovnikriviera.com/" target="_blank">Sheraton Dubrovnik Riviera Hotel</a></h5>
+                        <p>Built in 2015, the pristine hotel is a modern and relaxing getaway nicely complementing Dubrovnik’s romantic, historic vibe. Sea view rooms are a hot ticket. </p>
+
+                        <h5><a href="http://www.kazbekdubrovnik.com/" target="_blank">Hotel Kazbek</a></h5>
+                        <p>An atmospheric hotel in a large 16th century villa, a charming courtyard included.</p>
+
+                        <h5><a href="http://www.stjosephs.hr/" target="_blank">St. Joseph’s</a></h5>
+                        <p>This charming boutique destination combines a shabby-chic historic building with contemporary design touches. </p>
+
+                        <h4>Do:</h4>
+                        <h5><a href="https://en.wikipedia.org/wiki/Trsteno_Arboretum" target="_blank">Trsteno Arboretum</a></h5>
+                        <p>Dating all the way back to 1492, the arboretum  developed out of a park surrounding the summer residence of the Gučetić-Gozze family. A photogenic and lush retreat.</p>
+
+                        <h5><a href="http://www.tzdubrovnik.hr/lang/en/get/gm_seoska_domacinstva/7088/village_household_dubelj.html" target="_blank">Village Household Dubelj</a></h5>
+                        <p>A great historic spot to experience the traditional production of olive oil, and to taste local food and rakia.</p>
+
+                        <h5><a href="http://www.dubrovnikcroatia.info/mlini.html" target="_blank">Milni</a></h5>
+                        <p>Located halfway between Dubrovnik and Cavtat, Mlini  is a peaceful retreat back in time, with a new boutique hotel and charming taverns</p>
+
+                    </div>
+                </div>
+                <!--END INTERVIEW -->
+            </div>
+            <!-- END BOX -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 25 ------------------------------------------------------------->
+
+    <!-- PAGE 0 ------------------------------------------------------------->
+    <!-- wrapper div -->
+    <div id="page-zero" class="pg-page">
+        <div class="pg-wrapper">
+            <!-- image -->
+            <img src="../images/blank-L.png" />
+        </div>
+        <!-- end wrapper div -->
+        <!-- NAV -->
+        <div id="nav-holder">
+            <div id="nav">
+                <a href="../index.html"><img src="../images/back-arrow.svg" alt="" class="back-arrow"><img src="../images/feature-logo.png" alt="Tiny Atlas Quarterly" class="crest"></a>
+                <div class="title">
+                    <span class="issue">City 2O17</span><br>
+                    <span class="feature">Dubrovnik</span>
+                </div>
+                <div class="feature-links">
+                    <span id="pageLink"><a href="#page25">Trip Resources</a></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- END PAGE 0 ------------------------------------------------------------->
+
+    <script type="text/javascript" src="../js/hammer.min.js"></script>
+    <script>
+        //----------------- SLIDE SHOW ------------------------------//
+        var pgPages = new Array("page1",
+            "page2",
+            "page3",
+            "page5",
+            "page4",
+            "page6",
+            "page7",
+            "page8",
+            "page9",
+            "page10",
+            "page11",
+            "page12",
+            "page13",
+            "page14",
+            "page15",
+            "page16",
+            "page17",
+            "page18",
+            "page19",
+            "page20",
+            "page21",
+            "page22",
+            "page23",
+            "page24",
+            "page25");
+        var pageCount = 0;
+        var pageNext;
+        $('#pg-pageUp').on('click', function() {
+            pageUp();
+        });
+
+        $('#pg-pageDown').on('click', function() {
+            pageDown();
+        });
+
+        //------ START UP DOWN ------//
+        function pageUp() {
+            if (pageCount == (pgPages.length - 1)) {
+                $("#" + pgPages[pgPages.length - 1]).velocity({
+                    opacity: 0
+                }, {
+                    display: "none"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // OUT
+                pageCount = 0;
+                $("#" + pgPages[pageCount]).velocity({
+                    opacity: 1
+                }, {
+                    display: "block"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // IN
+            } else {
+                pageNext = pageCount + 1;
+                $("#" + pgPages[pageCount]).velocity({
+                    opacity: 0
+                }, {
+                    display: "none"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // OUT
+                $("#" + pgPages[pageNext]).velocity({
+                    opacity: 1
+                }, {
+                    display: "block"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // IN
+                pageCount++;
+            }
+        }
+
+        function pageDown() {
+            if (pageCount == 0) {
+                $("#" + pgPages[0]).velocity({
+                    opacity: 0
+                }, {
+                    display: "none"
+                }); // OUT
+                $("#" + pgPages[pgPages.length - 1]).velocity({
+                    opacity: 1
+                }, {
+                    display: "block"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // IN
+                pageCount = pgPages.length - 1;
+            } else {
+                pageNext = pageCount - 1;
+                $("#" + pgPages[pageCount]).velocity({
+                    opacity: 0
+                }, {
+                    display: "none"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // OUT
+                $("#" + pgPages[pageNext]).velocity({
+                    opacity: 1
+                }, {
+                    display: "block"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // IN
+                pageCount--;
+            }
+        }
+        //------ END UP DOWN ------//
+
+        //------ Resources Linking ------//
+        $('#pageLink').on('click', function() {
+            pageLink();
+        });
+
+        function pageLink() {
+            if (window.innerHeight > window.innerWidth) {
+
+            } else {
+                $("#" + pgPages[pageCount]).velocity({
+                    opacity: 0
+                }, {
+                    display: "none"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // OUT
+                $("#page17").velocity({
+                    opacity: 1
+                }, {
+                    display: "block"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // IN
+                pageCount = 24;
+                pageNext = 24;
+            }
+        }
+
+
+        // TOUCH HANDLERS
+        var myElement = document.getElementById('taqPage');
+        var mc = new Hammer(myElement);
+
+        // listen to events...
+        mc.on("swipeleft", function() {
+            pageUp();
+        });
+        mc.on("swiperight", function() {
+            pageDown();
+        });
+        //----------------- END SLIDE SHOW -----------------//
+
+
+        //------------------ NAV WIDTH -----------------//
+
+
+
+        //------------------ THE GOOGLE --------------------//
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-39716054-1']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</body>
+
+</html>
