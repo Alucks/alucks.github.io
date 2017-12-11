@@ -953,11 +953,19 @@ font-size: 1.8em;
 
 }
 
-.gram img {
+.gram img, .insta-square {
 	transition: .5s;
   box-shadow: 1px 1px 6px rgba(136, 136, 136, 0.29);
   /*border: white 12px solid;*/
   border-radius: 2px;
+}
+
+.insta-square {
+width: 100%;
+padding-bottom:100%;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
 }
 .gram .hotels {
 	color: #222;

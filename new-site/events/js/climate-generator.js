@@ -1199,14 +1199,12 @@ var newHTML2 = [];
 $(document).on("ready", function() {
 
     $.each(printPeople, function(i, value) {
-        newHTML1.push('<div class="gram"><a href="http://instagram.com/' + value.name + '" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/picks/' + value.image +
-            '" alt="photography by ' + value.name + '" /> <p>' + value.name + '</p></a></div>');
+        newHTML1.push('<div class="gram"><a href="http://instagram.com/' + value.name + '" target="_blank"><div class="insta-square lazy" style="background-image:url("../img/placeholder.jpg");" data-src="images/picks/' + value.image + '"></div> <p>' + value.name + '</p></a></div>');
     });
     $("#print-grid").html(newHTML1.join("  "));
 
     $.each(webPeople, function(i, value) {
-        newHTML2.push('<div class="gram"><a href="http://instagram.com/' + value.name + '" target="_blank"><img img  class="lazy" src="../img/placeholder.jpg" data-original="images/' + value.image + '" alt="photography by ' +
-            value.name + '" /> <p>' + value.name + '</p></a></div>');
+        newHTML2.push('<div class="gram"><a href="http://instagram.com/' + value.name + '" target="_blank"><div class="insta-square lazy" style="background-image:url("../img/placeholder.jpg");" data-src="images/' + value.image + '"></div> <p>' + value.name + '</p></a></div>');
     });
     $("#web-grid").html(newHTML2.join("  "));
 });
