@@ -852,7 +852,7 @@ list-style: none;
 	background-repeat: no-repeat;
 	background-size: cover;
 	overflow: hidden;
-	max-width: 1660px;
+	max-width: 2800px;
 }
 .centered .img-head .logo{
     margin-top: 40px;
@@ -958,6 +958,7 @@ font-size: 1.8em;
   box-shadow: 1px 1px 6px rgba(136, 136, 136, 0.29);
   /*border: white 12px solid;*/
   border-radius: 2px;
+	background-image:url('../img/placeholder.jpg');
 }
 
 .insta-square {
