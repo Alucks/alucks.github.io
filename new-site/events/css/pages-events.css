@@ -807,7 +807,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
 .details-card .sidebar .no-b-m{
 	margin-bottom: 0;
 }
-.details-card .sidebar .label{
+.details-card .label{
 	font-family: 'GT-Haptik-Regular', helvetica, sans-serif;
 	text-transform: uppercase;
 	font-size: .7em;
@@ -1004,6 +1004,33 @@ a p {
 	font-size: .9em;
 }
 
+/* Events Index */
+.centered .event-bg{
+	height: 100vh;
+	min-height: 900px;
+	width: 100%;
+	margin: 0px auto;
+	float: none;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	max-width: 2800px;
+}
+
+.details-card.event-card {
+	margin: 250px 0 0 140px;
+	max-width:400px;
+	padding: 30px;
+}
+
+.e-link{
+	font-size: 1.1em;
+	margin-top: 10px;
+
+}
+
+/* Media Queries */
 
 @media (min-width:1240px) {
 

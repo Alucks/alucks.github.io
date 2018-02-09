@@ -219,6 +219,9 @@ text-transform: uppercase;
   padding: 10px 20px 40px;
 }
 
+.description a{
+  transition: .2s ease-in-out;
+}
 
 .description a:hover {
   border-bottom: 1px solid #232323;
