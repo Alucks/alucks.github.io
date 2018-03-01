@@ -1036,6 +1036,11 @@ a p {
 		margin: 60vw auto 0;
 		max-width: 800px;
 	}
+	.centered .event-bg{
+		height: initial;
+    min-height: initial;
+		background-position: top center;
+	}
 }
 
 
