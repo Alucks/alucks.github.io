@@ -1040,6 +1040,7 @@ a p {
 		height: initial;
     min-height: initial;
 		background-position: top center;
+		background-size: contain;
 	}
 }
 
