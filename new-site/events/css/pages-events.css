@@ -1033,7 +1033,7 @@ a p {
 /* Media Queries */
 @media (max-width:740px){
 	.details-card.event-card {
-		margin: 60vw auto 0;
+		margin: 52vw auto 0;
 		max-width: 800px;
 	}
 	.centered .event-bg{
