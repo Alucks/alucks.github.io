@@ -29,7 +29,7 @@ padding-bottom: 20px;
 }
 
 .cover {
-  background: url(../images/city-cover.jpg) center no-repeat;
+  background: url(../images/cover-img.jpg) center no-repeat;
   background-size: cover;
   left: 50%;
   position: fixed;
