@@ -535,7 +535,9 @@ p {
 }
 
 .ill{
-
+	width: 100%;
+	display: inline-block;
+	float: left;
 }
 
 .ill-small{
@@ -662,7 +664,7 @@ div.text-box-a a:link, div.text-box-a a:visited {
 }
 
 #pg-interview p:last-child{
-	margin-bottom: 60px;
+	margin-bottom: 20px;
 }
 
 .pg-caption-left {
