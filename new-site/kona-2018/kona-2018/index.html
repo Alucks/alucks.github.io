@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tiny Atlas Quarterly | Kona </title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="../css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="../css/features.css" />
+    <link rel="shortcut icon" href="../images/favicon.png">
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="../js/velocity.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.transit.js"></script>
+
+    <script>
+        // Picture element HTML5 shiv
+        document.createElement("picture");
+    </script>
+    <script src="../js/picturefill.2.1.0.js" async></script>
+
+    <script src="../js/sil.js"></script>
+
+    <script>
+        $(window).load(function() {
+            //This is where you could start a loading animation.
+
+            //Then start loading the images.
+            $.preloadImages({
+                StepCallback: function(CurrentImage, TotalImages, LoadedElement, LoadTime) {
+                    console.log("Loaded image " + CurrentImage + "/" + TotalImages + " in " + LoadTime + " ms.");
+
+                    //This is where you could update some sort of progress indicator.
+                },
+
+                DoneCallback: function() {
+                    console.log("Done loading the images.");
+
+                    //This is where you could stop the loading animation.
+                }
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(function() {
+            $("#page1").each(function(index) {
+                $(this).hide().delay(100 * index).velocity({
+                    opacity: 1
+                }, {
+                    display: "block"
+                }, {
+                    duration: 2000
+                }, "easeOutCirc");
+            });
+            $("#nav-buttons").each(function(index) {
+                $(this).hide().delay(100 * index).velocity({
+                    opacity: 1
+                }, {
+                    display: "block"
+                }, {
+                    duration: 2000
+                }, "easeOutCirc");
+            });
+            $("#nav-holder").each(function(index) {
+                $(this).hide().delay(100 * index).velocity({
+                    opacity: 1
+                }, {
+                    display: "block"
+                }, {
+                    duration: 2000
+                }, "easeOutCirc");
+            });
+        });
+    </script>
+
+    <style media="screen">
+        #page1 .pg-upper-right-caption {
+            top: 5vh;
+        }
+    </style>
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1763007330608074');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" src="https://www.facebook.com/tr?id=1763007330608074&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+</head>
+
+
+<body id="taqPage">
+
+    <!-- PAGE NAVIGATION ------------------------------------------------------------->
+    <div id="nav-buttons" class="pg-nav"><span class="pg-prev" id="pg-pageDown"></span><span class="pg-next" id="pg-pageUp"></span></div>
+    <div style="display:none;">
+        <img src="../images/arrow_next.png">
+        <img src="../images/arrow_prev.png">
+        <img src="../images/blank-L.png">
+        <img src="../images/blank-S.png">
+        <img src="../images/tiny-atlas-sm.jpg">
+    </div>
+
+    <!-- PAGE 01 ------------------------------------------------------------->
+    <div id="page1" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/01_kona_emilynathan-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/01_kona_emilynathan-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/01_kona_emilynathan-S.jpg" alt="Tiny Atlas Quarterly, Kona">
+            </picture>
+            <!-- IMAGE END -->
+
+            <div class="pg-box pg-lower-caption pg-upper-right-caption pg-box-intro">
+
+                <!-- CAPTION -->
+                <!-- LEFT CAPTION -->
+                <div class="pg-box-content">
+                    <!-- CONTENT -->
+                    <!-- INTERVIW -->
+                    <div id="pg-interview">
+                        <div class="title-ill"><img src="images/kona-title.png" alt="" style="width:410px;"></div>
+                         <h2>Caldera at night</h2>
+                         <p>The Halema'uma'u crater erupting in the early hours, on the slopes of Kilauea. Before sunrise and after sunset, the fiery glow of the lava lake dyes the steam with vibrant reds and oranges.</p>
+                         <p>Photography by: <a href="http://www.emilynathan.com" target="_blank">Emily Nathan</a> &amp; <a href="https://andrewtkearns.com/">Andrew Kearns</a> <br />
+                          Writing by: <a href="https://www.charlotteboates.me/" target="_blank">Charlotte Boates</a><br />
+                          Script Lettering and Hawaii Illustrations by: <br><a href="https://www.juliannagoodman.com">Julianna Goodman</a></p>
+                    </div>
+                </div>
+                <!--END INTERVIEW -->
+            </div>
+            <!-- END BOX -->
+
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 01 ------------------------------------------------------------->
+
+    <!-- PAGE 02 ------------------------------------------------------------->
+    <div id="page2" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/02_kona_emilynathan-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/02_kona_emilynathan-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/02_kona_emilynathan-S.jpg" alt="Tiny Atlas Quarterly, Kona">
+            </picture>
+            <!-- IMAGE END -->
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 02 ------------------------------------------------------------->
+
+    <!-- PAGE 03 ------------------------------------------------------------->
+    <div id="page3" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/03_kona_emilynathan-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/03_kona_emilynathan-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/03_kona_emilynathan-S.jpg" alt="Tiny Atlas Quarterly, Kona">
+            </picture>
+            <!-- IMAGE END -->
+
+
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 03 ------------------------------------------------------------->
+
+    <!-- PAGE 04 ------------------------------------------------------------->
+    <div id="page4" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/04_kona_emilynathan-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/04_kona_emilynathan-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/04_kona_emilynathan-S.jpg" alt="Tiny Atlas Quarterly, Kona">
+            </picture>
+            <!-- IMAGE END -->
+
+            <!-- BOX  INTERVIEW-->
+            <div class="pg-box pg-lower-caption pg-upper-right-caption pg-caption-light">
+                <!-- CAPTION -->
+                <!-- LEFT CAPTION -->
+                <div class="pg-box-content">
+                    <!-- CONTENT -->
+                    <!-- INTERVIW -->
+                    <div id="pg-interview">
+                        <h2>Kilauea Iki Trail</h2>
+                        <p>Floral 'ōhi'a lehua trees and tropical ferns surround the desolate Kilauea Iki Trail. As you walk along the narrow, etched path, steam vents and fissures are reminders of the lava flowing underneath.</p>
+                    </div>
+                </div>
+                <!--END INTERVIEW -->
+            </div>
+            <!-- END BOX -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 04 ------------------------------------------------------------->
+
+    <!-- PAGE 05 ------------------------------------------------------------->
+    <div id="page5" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/05_kona_emilynathan-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/05_kona_emilynathan-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/05_kona_emilynathan-S.jpg" alt="Tiny Atlas Quarterly, Kona">
+            </picture>
+            <!-- IMAGE END -->
+
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 05 ------------------------------------------------------------->
+
+    <!-- PAGE 06 ------------------------------------------------------------->
+    <div id="page6" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/06_kona_emilynathan-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/06_kona_emilynathan-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/06_kona_emilynathan-S.jpg" alt="Tiny Atlas Quarterly, Kona">
+            </picture>
+            <!-- IMAGE END -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 06 ------------------------------------------------------------->
+
+    <!-- PAGE 07 ------------------------------------------------------------->
+    <div id="page7" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/07_kona_emilynathan-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/07_kona_emilynathan-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/07_kona_emilynathan-S.jpg" alt="Tiny Atlas Quarterly, Kona">
+            </picture>
+            <!-- IMAGE END -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 07 ------------------------------------------------------------->
+
+    <!-- PAGE 08 ------------------------------------------------------------->
+    <div id="page8" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/08_kona_emilynathan-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/08_kona_emilynathan-M.jpg" media="(min-width: 768px)">
+                <source srcset="images/08_kona_emilynathan-V.jpg" media="(orientation: portrait)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/08_kona_emilynathan-S.jpg" alt="Tiny Atlas Quarterly, Kona">
+            </picture>
+            <!-- IMAGE END -->
+
+            <!-- BOX  INTERVIEW-->
+            <div class="pg-box pg-lower-caption pg-upper-right-caption pg-caption-light">
+                <!-- CAPTION -->
+                <!-- LEFT CAPTION -->
+                <div class="pg-box-content">
+                    <!-- CONTENT -->
+                    <!-- INTERVIW -->
+                    <div id="pg-interview">
+                        <img src="images/illo_blue_flowers.png" alt="" class="ill">
+                        <h2 class="with-ill-small">Volcanoes National Park</h2>
+                        <p>Nearly every feature in the park is tied to Pele, the Hawaiian volcano goddess. Small lava droplets are "Pele's tears," and the fine strands of volcanic glass littered on the landscape are "Pele's hair." Leis are left throughout the park as offerings, their vibrant tropical flowers a stark contrast to the ashen rock.</p>
+                    </div>
+                </div>
+                <!--END INTERVIEW -->
+            </div>
+            <!-- END BOX -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 08 ------------------------------------------------------------->
+
+    <!-- PAGE 09 ------------------------------------------------------------->
+    <div id="page9" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/09_kona_emilynathan-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/09_kona_emilynathan-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/09_kona_emilynathan-S.jpg" alt="Tiny Atlas Quarterly, Kona">
+            </picture>
+            <!-- IMAGE END -->
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 09 ------------------------------------------------------------->
+
+    <!-- PAGE 10 ------------------------------------------------------------->
+    <div id="page10" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/10_kona_emilynathan-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/10_kona_emilynathan-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/10_kona_emilynathan-S.jpg" alt="Tiny Atlas Quarterly, Kona">
+            </picture>
+            <!-- IMAGE END -->
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 10 ------------------------------------------------------------->
+
+    <!-- PAGE 11 ------------------------------------------------------------->
+    <div id="page11" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/11_kona_emilynathan-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/11_kona_emilynathan-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/11_kona_emilynathan-S.jpg" alt="Tiny Atlas Quarterly, Kona">
+            </picture>
+            <!-- IMAGE END -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 11 ------------------------------------------------------------->
+
+    <!-- PAGE 12 ------------------------------------------------------------->
+    <div id="page12" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/12_kona_emilynathan-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/12_kona_emilynathan-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/12_kona_emilynathan-S.jpg" alt="Tiny Atlas Quarterly, Kona">
+            </picture>
+            <!-- IMAGE END -->
+
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 12 ------------------------------------------------------------->
+
+    <!-- PAGE 13 ------------------------------------------------------------->
+    <div id="page13" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/13_kona_emilynathan-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/13_kona_emilynathan-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/13_kona_emilynathan-S.jpg" alt="Tiny Atlas Quarterly, Kona">
+            </picture>
+            <!-- IMAGE END -->
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 13 ------------------------------------------------------------->
+
+    <!-- PAGE 14 ------------------------------------------------------------->
+    <div id="page14" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/14_kona_emilynathan-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/14_kona_emilynathan-M.jpg" media="(min-width: 768px)">
+                <source srcset="images/14_kona_emilynathan-V.jpg" media="(orientation: portrait)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/14_kona_emilynathan-S.jpg" alt="Tiny Atlas Quarterly, Kona">
+            </picture>
+            <!-- IMAGE END -->
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 14 ------------------------------------------------------------->
+
+    <!-- PAGE 15 ------------------------------------------------------------->
+    <div id="page15" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/15_kona_emilynathan-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/15_kona_emilynathan-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/15_kona_emilynathan-S.jpg" alt="Tiny Atlas Quarterly, Kona">
+            </picture>
+            <!-- IMAGE END -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 15 ------------------------------------------------------------->
+
+    <!-- PAGE 16 ------------------------------------------------------------->
+    <div id="page16" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/16_kona_emilynathan-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/16_kona_emilynathan-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/16_kona_emilynathan-S.jpg" alt="Tiny Atlas Quarterly, Kona">
+            </picture>
+            <!-- IMAGE END -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 16 ------------------------------------------------------------->
+
+    <!-- PAGE 17 ------------------------------------------------------------->
+    <div id="page17" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/17_kona_emilynathan-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/17_kona_emilynathan-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/17_kona_emilynathan-S.jpg" alt="Tiny Atlas Quarterly, Kona">
+            </picture>
+            <!-- IMAGE END -->
+
+            <!-- BOX  INTERVIEW-->
+            <div class="pg-box pg-lower-caption pg-upper-right-caption pg-caption-light">
+                <!-- CAPTION -->
+                <!-- LEFT CAPTION -->
+                <div class="pg-box-content">
+                    <!-- CONTENT -->
+                    <!-- INTERVIW -->
+                    <div id="pg-interview">
+                        <h2>Turtles</h2>
+                        <p>A green sea turtle, or honu in Hawaiian, relaxes on the volcanic shore. Nesting beaches are scattered across the Kona coast, resting points from their migration to a coral atoll in northwest Hawaii.</p>
+                    </div>
+                </div>
+                <!--END INTERVIEW -->
+            </div>
+            <!-- END BOX -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 17 ------------------------------------------------------------->
+
+    <!-- PAGE 18 ------------------------------------------------------------->
+    <div id="page18" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/18_kona_emilynathan-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/18_kona_emilynathan-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/18_kona_emilynathan-S.jpg" alt="Tiny Atlas Quarterly, Kona">
+            </picture>
+            <!-- IMAGE END -->
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 18 ------------------------------------------------------------->
+
+    <!-- PAGE 19 ------------------------------------------------------------->
+    <div id="page19" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/19_kona_emilynathan-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/19_kona_emilynathan-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/19_kona_emilynathan-S.jpg" alt="Tiny Atlas Quarterly, Kona">
+            </picture>
+            <!-- IMAGE END -->
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 19 ------------------------------------------------------------->
+
+    <!-- PAGE 20 ------------------------------------------------------------->
+    <div id="page20" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/20_kona_emilynathan-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/20_kona_emilynathan-M.jpg" media="(min-width: 768px)">
+                <source srcset="images/20_kona_emilynathan-V.jpg" media="(orientation: portrait)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/20_kona_emilynathan-S.jpg" alt="Tiny Atlas Quarterly, Kona">
+            </picture>
+            <!-- IMAGE END -->
+
+            <!-- BOX  INTERVIEW-->
+            <div class="pg-box pg-lower-caption pg-upper-right-caption pg-caption-light">
+                <!-- CAPTION -->
+                <!-- LEFT CAPTION -->
+                <div class="pg-box-content">
+                    <!-- CONTENT -->
+                    <!-- INTERVIW -->
+                    <div id="pg-interview">
+                        <img src="images/illo_multi_flowers.png" alt="" class="ill">
+                        <h2 class="with-ill-small">Local beach</h2>
+                        <p>Under the surface of the sandy beaches dotted across the island, turtles, spinner dolphins, and tropical fish make their homes.</p>
+                    </div>
+                </div>
+                <!--END INTERVIEW -->
+            </div>
+            <!-- END BOX -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 20 ------------------------------------------------------------->
+
+    <!-- PAGE 21 ------------------------------------------------------------->
+    <div id="page21" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/21_kona_emilynathan-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/21_kona_emilynathan-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/21_kona_emilynathan-S.jpg" alt="Tiny Atlas Quarterly, Kona">
+            </picture>
+            <!-- IMAGE END -->
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 21 ------------------------------------------------------------->
+
+    <!-- PAGE 22 ------------------------------------------------------------->
+    <div id="page22" class="pg-page">
+        <!-- WRAPPER -->
+        <div class="pg-wrapper">
+            <!-- IMAGE START -->
+            <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="images/22_kona_emilynathan-L.jpg" media="(min-width: 960px)">
+                <source srcset="images/22_kona_emilynathan-M.jpg" media="(min-width: 768px)">
+                <!--[if IE 9]></video><![endif]-->
+                <img srcset="images/22_kona_emilynathan-S.jpg" alt="Tiny Atlas Quarterly, Kona">
+            </picture>
+            <!-- IMAGE END -->
+
+            <!-- BOX  INTERVIEW-->
+            <div class="pg-box pg-lower-caption pg-upper-right-caption pg-caption-light">
+                <!-- CAPTION -->
+                <!-- LEFT CAPTION -->
+                <div class="pg-box-content">
+                    <!-- CONTENT -->
+                    <!-- INTERVIW -->
+                    <div id="pg-interview">
+                        <h2 class="with-ill">Resources</h2>
+
+                        <h4>Eat:</h4>
+                        <h5><a href="http://maigrille.com/">Mai Grille</a></h5>
+                        <p>Modern Hawaiian fare with a farm-to-table focus, created by innovative Big Island chef Allen Hess. Open all day, including brunch.</p>
+
+                        <h5><a href="http://www.teshimarestaurant.com/">Teshima's Restaurant</a></h5>
+                        <p>A local establishment, Teshima's has been open in Kona for almost one hundred years. Think Japanese classics like sashimi and sukiyaki, and bento boxes for lunch.</p>
+
+                        <h5><a href="http://www.redwatercafe.com/">Red Water Cafe</a></h5>
+                        <p>Both locals and tourists come together at this classic spot in Waimea. Paintings by local artists adorn the walls, and dishes are multicultural and creative — think ahi with shiso or lilikoi coconut curry.</p>
+
+                        <h4>Stay:</h4>
+                        <h5><a href="https://www.volcanovillagelodge.com/">Volcano Village Lodge</a></h5>
+                        <p>A cozy bed and breakfast tucked away just outside of Volcanoes National Park. The perfect refuge after a day of exploring the island's volcanoes, black sand beaches, and native Hawaiian rainforest.</p>
+
+                        <h5><a href="https://www.fourseasons.com/hualalai/">Four Seasons Resort Hualalai</a></h5>
+                        <p>The Four Seasons in Hualalai, Kona, was built for taking it easy. Beautiful suites open up to a lawn plentiful with lush, tropical plants. Pools dot the property, providing plenty of opportunities to cool down. A natural pond is carved into the volcanic rock, home to thousands of species of tropical fish, for in-hotel snorkeling. This serene spot also houses a selection of restaurants and a natural spa.</p>
+
+                        <h5><a href="http://www.hiltonwaikoloavillage.com/">Hilton Waikoloa Village</a></h5>
+                        <p>Family-friendly hotel reachable by hotel boat or tram through a lush garden waterway. With a spa, three waterfall pools, and plenty of dining options.</p>
+
+                        <h4>Do:</h4>
+                        <h5><a href="https://www.nps.gov/havo/index.htm">Hawai'i Volcanoes National Park</a></h5>
+                        <p>Home to two active Hawaiian volcanoes, Kilauea and Mauna Loa. Walk through the 500 year-old Thurston Lava Tube and spot native birds like crimson 'apapane or the lesser common oma'o. See the fiery lava meet the sea and lava flows on the Chain of Craters Road, and explore dozens of miles of hiking trails that wind through this spectacular landscape.</p>
+
+                        <h5><a href="https://hawaiistateparks.org/parks/hawaii/kealakekua-bay-state-historical-park/">Snorkel at Kealakekua Bay</a></h5>
+                        <p>Admire the tropical marine life and spot sea turtles at secluded Kealakekua Bay for some of Hawaii's very best snorkeling.</p>
+
+                        <h5><a href="https://www.hawaii-forest.com/tours/kona-maunakea/">Maunakea Summit & Stars</a></h5>
+                        <p>Take in the sunset at 14,000 feet on Maunakea, then admire the spectacularly clear skies as you learn about the stars and navigation. Hosted by Hawaii Forest & Trail.</p>
+
+                        <h5><a href="https://www.nps.gov/kaho/index.htm">Kaloko-Honokohau National Historical Park</a></h5>
+                        <p>Kaloko-Honokohau is an  ancient Hawaiian fishing village, home to petroglyphs, fishponds, and often sea turtles basking on the beach. Take in beautiful scenery as you learn about how this early Hawaiian settlement survived on the lava fields along the Kona coast. </p>
+
+                    </div>
+                </div>
+                <!--END INTERVIEW -->
+            </div>
+            <!-- END BOX -->
+
+        </div>
+        <!-- end wrapper div -->
+    </div>
+    <!-- END PAGE 22 ------------------------------------------------------------->
+
+    <!-- PAGE 0 ------------------------------------------------------------->
+    <!-- wrapper div -->
+    <div id="page-zero" class="pg-page">
+        <div class="pg-wrapper">
+            <!-- image -->
+            <img src="../images/blank-L.png" />
+        </div>
+        <!-- end wrapper div -->
+        <!-- NAV -->
+        <div id="nav-holder">
+            <div id="nav">
+                <a href="../index.html"><img src="../images/back-arrow.svg" alt="" class="back-arrow"><img src="../images/feature-logo.png" alt="Tiny Atlas Quarterly" class="crest"></a>
+                <div class="title">
+                    <span class="issue">Remote 2018</span><br>
+                    <span class="feature">Kona</span>
+                </div>
+                <div class="feature-links">
+                    <span id="pageLink"><a href="#page22">Trip Resources</a></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- END PAGE 0 ------------------------------------------------------------->
+
+    <script type="text/javascript" src="../js/hammer.min.js"></script>
+    <script>
+        //----------------- SLIDE SHOW ------------------------------//
+        var pgPages = new Array("page1",
+            "page2",
+            "page3",
+            "page5",
+            "page4",
+            "page6",
+            "page7",
+            "page8",
+            "page9",
+            "page10",
+            "page11",
+            "page12",
+            "page13",
+            "page14",
+            "page15",
+            "page16",
+            "page17",
+            "page18",
+            "page19",
+            "page20",
+            "page21",
+            "page22");
+        var pageCount = 0;
+        var pageNext;
+        $('#pg-pageUp').on('click', function() {
+            pageUp();
+        });
+
+        $('#pg-pageDown').on('click', function() {
+            pageDown();
+        });
+
+        //------ START UP DOWN ------//
+        function pageUp() {
+            if (pageCount == (pgPages.length - 1)) {
+                $("#" + pgPages[pgPages.length - 1]).velocity({
+                    opacity: 0
+                }, {
+                    display: "none"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // OUT
+                pageCount = 0;
+                $("#" + pgPages[pageCount]).velocity({
+                    opacity: 1
+                }, {
+                    display: "block"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // IN
+            } else {
+                pageNext = pageCount + 1;
+                $("#" + pgPages[pageCount]).velocity({
+                    opacity: 0
+                }, {
+                    display: "none"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // OUT
+                $("#" + pgPages[pageNext]).velocity({
+                    opacity: 1
+                }, {
+                    display: "block"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // IN
+                pageCount++;
+            }
+        }
+
+        function pageDown() {
+            if (pageCount == 0) {
+                $("#" + pgPages[0]).velocity({
+                    opacity: 0
+                }, {
+                    display: "none"
+                }); // OUT
+                $("#" + pgPages[pgPages.length - 1]).velocity({
+                    opacity: 1
+                }, {
+                    display: "block"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // IN
+                pageCount = pgPages.length - 1;
+            } else {
+                pageNext = pageCount - 1;
+                $("#" + pgPages[pageCount]).velocity({
+                    opacity: 0
+                }, {
+                    display: "none"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // OUT
+                $("#" + pgPages[pageNext]).velocity({
+                    opacity: 1
+                }, {
+                    display: "block"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // IN
+                pageCount--;
+            }
+        }
+        //------ END UP DOWN ------//
+
+        //------ Resources Linking ------//
+        $('#pageLink').on('click', function() {
+            pageLink();
+        });
+
+        function pageLink() {
+            if (window.innerHeight > window.innerWidth) {
+
+            } else {
+                $("#" + pgPages[pageCount]).velocity({
+                    opacity: 0
+                }, {
+                    display: "none"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // OUT
+                $("#page22").velocity({
+                    opacity: 1
+                }, {
+                    display: "block"
+                }, {
+                    duration: 1000
+                }, "easeInOutQuint"); // IN
+                pageCount = 21;
+                pageNext = 21;
+            }
+        }
+
+
+        // TOUCH HANDLERS
+        var myElement = document.getElementById('taqPage');
+        var mc = new Hammer(myElement);
+
+        // listen to events...
+        mc.on("swipeleft", function() {
+            pageUp();
+        });
+        mc.on("swiperight", function() {
+            pageDown();
+        });
+        //----------------- END SLIDE SHOW -----------------//
+
+
+        //------------------ NAV WIDTH -----------------//
+
+
+
+        //------------------ THE GOOGLE --------------------//
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-39716054-1']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</body>
+
+</html>
