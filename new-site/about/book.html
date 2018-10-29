@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tiny Atlas Quarterly | Editor's Letter</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="../css/fonts.css" />
+        <link rel="stylesheet" type="text/css" href="../css/features.css" />
+        <link rel="stylesheet" type="text/css" href="../css/header.css" />
+        <link rel="shortcut icon" href="../images/favicon.png">
+
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script type="text/javascript" src="../js/velocity.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.easing.min.js"></script>
+        <script type="text/javascript" src="../js/jquery.transit.js"></script>
+
+		<script>
+		// Picture element HTML5 shiv
+		document.createElement( "picture" );
+		</script>
+		<script src="../js/picturefill.2.1.0.js" async></script>
+
+        <script src="../js/sil.js"></script>
+
+        <script>
+        $(window).load(function () {
+    		//This is where you could start a loading animation.
+
+    		//Then start loading the images.
+    		$.preloadImages({
+        		StepCallback: function (CurrentImage, TotalImages, LoadedElement, LoadTime) {
+            	console.log("Loaded image " + CurrentImage + "/" + TotalImages + " in " + LoadTime + " ms.");
+
+            	//This is where you could update some sort of progress indicator.
+        		},
+
+        		DoneCallback: function () {
+            	console.log("Done loading the images.");
+
+            	//This is where you could stop the loading animation.
+        		}
+    		});
+		});
+		</script>
+
+        <script type="text/javascript">
+				$(function(){
+    				$("#page1").each(function(index) {
+						$(this).hide().delay(100*index).velocity({ opacity: 1 }, { display: "block" }, { duration: 2000 },"easeOutCirc");
+    				});
+					$("#nav-buttons").each(function(index) {
+						$(this).hide().delay(100*index).velocity({ opacity: 1 }, { display: "block" }, { duration: 2000 },"easeOutCirc");
+    				});
+					$("#nav-holder").each(function(index) {
+						$(this).hide().delay(100*index).velocity({ opacity: 1 }, { display: "block" }, { duration: 2000 },"easeOutCirc");
+    				});
+				});
+        </script>
+        <!-- Facebook Pixel Code -->
+        <script>
+            ! function(f, b, e, v, n, t, s) {
+                if (f.fbq) return;
+                n = f.fbq = function() {
+                    n.callMethod ?
+                        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                };
+                if (!f._fbq) f._fbq = n;
+                n.push = n;
+                n.loaded = !0;
+                n.version = '2.0';
+                n.queue = [];
+                t = b.createElement(e);
+                t.async = !0;
+                t.src = v;
+                s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            }(window, document, 'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '1763007330608074');
+            fbq('track', 'PageView');
+        </script>
+        <noscript>
+          <img height="1" width="1" src="https://www.facebook.com/tr?id=1763007330608074&ev=PageView&noscript=1"/>
+        </noscript>
+        <!-- End Facebook Pixel Code -->
+
+    </head>
+
+
+<body id="taqPage">
+
+  <div class="header-container">
+      <div class="header-logo">
+          <a href="../index.html"><img src="../images/TAQ-logo.png" alt="" class="logo"></a>
+      </div>
+      <div class="header-links-container">
+        <span class="header-links list-triangle"><a href="../index.html">Current Issue</a>
+          <ul>
+            <li><a href="editors-letter.html"  class="link-active">Editor's Letter</a></li>
+            <li><a href="masthead.html">Masthead</a></li>
+          </ul>
+        </span>
+        <span class="header-links"><a href="index.html">About</a></span>
+        <span class="header-links list-triangle"><a href="../events/index.html">Events</a>
+          <ul>
+            <li><a href="../events/lummi-island/index.html">Lummi Island</a></li> <li><a href="../events/mendocino/index.html">Mendocino</a></li>
+            <li><a href="../events/alohilani-giveaway/index.html">Alohilani</a></li>
+            <li><a href="../events/climate/index.html">Climate</a></li>
+            <li><a href="../events/mytinyatlaslondon/index.html">London</a></li>
+            <li><a href="../events/solas/index.html">SOLAS</a></li>
+            <li><a href="../events/tahiti-tofino/index.html">Tiny Atlas Trips</a></li>
+            <li><a href="../events/montauk/index.html">Montauk Show</a></li>
+          </ul>
+        </span>
+        <span class="header-links"><a href="https://alitedesigns.com/collections/tiny-atlas-quarterly-solas-camera-bag" target="_blank">Shop</a>
+        </span>
+      </div>
+  </div>
+
+
+            <!-- PAGE NAVIGATION ------------------------------------------------------------->
+
+
+            <!-- PAGE 01 ------------------------------------------------------------->
+            <div id="page1" class="pg-page">
+              <!-- WRAPPER -->
+              <div class="pg-wrapper">
+                     <!-- IMAGE START -->
+                <picture>
+                  <!--[if IE 9]><video style="display: none;"><![endif]-->
+                  <source srcset="images/2018-Editors-Letter-AndrewKearns-L.jpg" media="(min-width: 960px)">
+                  <source srcset="images/2018-Editors-Letter-AndrewKearns-M.jpg" media="(min-width: 768px)">
+                    <!--[if IE 9]></video><![endif]-->
+                  <img srcset="images/2018-Editors-Letter-AndrewKearns-S.jpg" alt="Tiny Atlas Quarterly, Oahu, Emily Nathan">
+                </picture>
+                <!-- IMAGE END -->
+
+                <div class="pg-box pg-lower-caption pg-upper-right-caption pg-caption-light">
+
+                    <!-- CAPTION -->
+                    <!-- LEFT CAPTION -->
+                    <div class="pg-box-content">
+                       <!-- CONTENT -->
+                       <!-- INTERVIW -->
+                       <div id="pg-interview">
+                       <div class="title-ill about-logo"><img src="images/logo-big.png" alt=""></div>
+
+                       <h2 class="with-ill">Remote</h2>
+                       <p>Arriving somewhere new and finding a geography completely unlike the one I grew up in always strikes me with joy. Give me headache-high mountains, a warm lagoon filled with sea turtles (and sharks!), a fir and cedar-filled terrain of pristine islets, bears wrestling berries off shrubs, 'ōhi'a trees soaking in rain from vog (volcanic fog),  or miles of shiny black lava, crunching as it cracks like a crusty snow beneath my sneakers. You name it. I’m immediately alive, present and awake to my surroundings.</p>
+                       <p>I was born and raised in the Midwest. Geographically speaking that meant I grew up in a land of green lawns and maple trees, an occasional hill and many lakes. There is a lot of beauty to be found in the Midwest but the landscape also left a lot to the imagination. As a kid I poured over my parents’ National Geographic magazines. I spent hours locating F9 or B24 in our oversized linen atlas and I would spin our globe and drag my fingertips over the paper mountains. Funny thing is, kids from all around the world, from Perth and the Alps, from Polynesia and Texas, Mongolia and Namibia witness their more dramatic landscapes and come up with the same urge. Well some kids, those like me and those like you. Maybe we all have what is sometimes referred to as a wanderlust gene, a risk-taking variant allele potentially linked to 20% of humanity’s collective love of travel.</p>
+                       <p>The places in this issue now rolling out are all out of reach for a quick getaway and we chose each of them just for that reason. Hawaii, Greenland, Tahiti, Tofino and more. They all require multiple forms of transportation to get to from most major cities. They take days to get into the rhythm of. And yet, all of these destinations are also home for the kids there- kids who are perhaps dreaming instead of the bustle of massive cities, of rolling plains that seem never ending, or even a simple train-networked university town. While this issue will share a number of places that are far from where many of us live, the idea of a remote destination to some extent will always be a construct. Ultimately, when we (at Tiny Atlas) say Remote, we mean a place far away from our own daily expectations.</p>
+                       <p>For the Tiny Atlas community, time on the road becomes time to explore and learn. Travel is how we meet new people, reconnect with our loved ones, discover new species and landscapes, try new foods and (for many of us) take lots of pictures.</p>
+                       <p>Thank you,<br />Emily Nathan <br />Founder + Publisher<br /> Tiny Atlas Quarterly</p>
+                       <p class="italics">Image by: Andrew Kearns</p>
+                       </div>
+                  </div><!--END INTERVIEW -->
+               </div> <!-- END BOX -->
+
+               </div><!-- end wrapper div -->
+            </div>
+            <!-- END PAGE 01 ------------------------------------------------------------->
+
+<!-- PAGE 0 ------------------------------------------------------------->
+
+          <!-- END PAGE 0 ------------------------------------------------------------->
+
+        <script type="text/javascript" src="../js/hammer.min.js"></script>
+        <script>
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-39716054-1']);
+		  _gaq.push(['_trackPageview']);
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+</body>
+</html>
