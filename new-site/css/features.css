@@ -201,6 +201,7 @@ div.pg-box img{
 
 div.pg-box .title-ill{
 	margin-top:2.2em;
+	margin-bottom: 3.2em;
 }
 
 div.pg-trans-bg {
@@ -219,6 +220,15 @@ p.pg-box-content {
 	padding: 1.8em;
 	color: #000;
 	text-align: left;
+}
+
+ul {
+	  padding-inline-start: 0px;
+}
+
+li {
+	  list-style-type: none;
+	  padding-bottom: 10px;
 }
 
 
@@ -511,7 +521,7 @@ h5{
 	margin: 1.1em 0 .2em 0;
 }
 
-p a, h5 a, span a, h3 a{
+p a, h5 a, span a, h3 a, li a{
 	color: #232323;
 	/* text-decoration: underline; */
 	border-bottom: 1px solid #232323;
@@ -657,7 +667,7 @@ div.text-box-a a:link, div.text-box-a a:visited {
 .pg-upper-right-caption {
 	top: 100px;
 	left: calc(70vw - 200px);
-	width: 420px;
+	width: 460px;
 	margin-bottom: 1200px;
 	max-width: 45vw;
 	/* text-align:left; */
