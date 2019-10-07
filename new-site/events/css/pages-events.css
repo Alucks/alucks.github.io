@@ -801,7 +801,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
 }
 
 .details-card .sidebar p, .details-card .sidebar ul{
-	margin: 0 30px 1em 0;
+	margin: 0 30px 10px 0;
 }
 
 .details-card .sidebar .no-b-m{
