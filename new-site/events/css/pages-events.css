@@ -770,7 +770,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
 	 transform: translateX(0px);
 	 padding: 30px 30px 60px;
 	 height: auto;
-	 /* width:770px; */
+	 width:770px;
 	 max-width: 100%;
 	 color: #232323;
 	 background-color: #fff;
@@ -1020,6 +1020,7 @@ a p {
 
 .details-card.event-card {
 	margin: 250px 0 0 140px;
+	width: auto;
 	max-width:400px;
 	padding: 30px;
 }
